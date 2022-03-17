@@ -18,7 +18,7 @@ import BspKnotensystem.impl.BspKnotensystemPackageImpl;
 
 public class XMLConverter {
 
-	public DocumentRoot readLowCodeXML(URI sourceUri) {
+	public static DocumentRoot convertLowCodeXML(URI sourceUri) {
 
 		BspKnotensystemPackage pack = BspKnotensystemPackageImpl.init();
 
