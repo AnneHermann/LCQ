@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;test/Pattern Matching/duplicate-rows&apos; to &apos;duplicate-rows.epl&apos;" description="Rename resource &apos;duplicate-rows&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Pattern Matching/duplicate-rows" name="duplicate-rows.epl" stamp="1642455376166" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;test/Metrics/LOC.ocl&apos; to &apos;WOC.ocl&apos;" description="Rename resource &apos;LOC.ocl&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Metrics/LOC.ocl" name="WOC.ocl" stamp="1642456373274" updateReferences="true"/>
+</session>

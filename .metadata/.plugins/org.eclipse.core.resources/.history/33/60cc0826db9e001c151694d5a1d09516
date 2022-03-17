@@ -1,0 +1,22 @@
+package metrics;
+
+public class NumberOfNodesAndEdges implements IMetric {
+
+	public void setUp() {
+		org.eclipse.ocl.xtext.completeocl.CompleteOCLStandaloneSetup.doSetup(); // *.ocl
+		org.eclipse.ocl.xtext.essentialocl.EssentialOCLStandaloneSetup.doSetup(); // *.essentialocl
+		org.eclipse.ocl.xtext.oclinecore.OCLinEcoreStandaloneSetup.doSetup(); // *.ecore, *.oclinecore
+		org.eclipse.ocl.xtext.oclstdlib.OCLstdlibStandaloneSetup.doSetup(); // *.oclstdlib
+		org.eclipse.ocl.pivot.OCL.initialize(resourceSet);
+		org.eclipse.ocl.pivot.uml.internal.es2as.UML2AS.initialize(resourceSet);
+		org.eclipse.ocl.pivot.model.OCLstdlib.install();
+		org.eclipse.ocl.pivot.internal.delegate.OCLDelegateDomain.initialize(resourceSet);
+		org.eclipse.ocl.pivot.internal.resource.StandaloneProjectMap.getAdapter(resourceSet);
+
+	}
+
+	public int calculate() {
+		return 0;
+	}
+
+}

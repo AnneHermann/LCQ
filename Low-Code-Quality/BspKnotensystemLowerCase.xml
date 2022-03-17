@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="TransformNodes.xsl"?>
+<BspKnotensystem:DocumentRoot xmlns:BspKnotensystem="file:/C:/Users/hermanne/Documents/Bachelorarbeit/BspKnotensystem.xsd">
+<nodeSystem expressionLanguageName="type-python"
+            id="OymEi9a-1UaaAM-nYDr2ZA"
+            runtimeVersion="2.0.0.0"
+            version="">
+  <viewOptions/>
+  <parameterDefinitions/>
+  <sources>
+      <source id="sTTzuHd4OEy-Z0oV_OHgtg" location="767,205">
+         <sourceColumns/>
+         <visibleColumns/>
+      </source>
+  </sources>
+  <nodes>
+      <node id="e51wYPuEik2z6pPhCDv_HA"
+            location="570,187"
+            nodeClassId="3z8DY1_dU0aTkeHdrkCD0g"
+            nodeName="augment">
+         <inputs>
+            <input parameter="Scope">
+               <source id="8lSufQLhbUyeV566qcoR7g" node="sTTzuHd4OEy-Z0oV_OHgtg"/>
+            </input>
+            <input parameter="AdditionalSymbols"/>
+            <input parameter="ColumnNames">
+               <source id="o8tRNiP32kaijtFvuK4qbQ"/>
+            </input>
+            <input parameter="Expressions">
+               <source id="bEThJGV3OkespTg3EokTdA"/>
+            </input>
+            <input parameter="DataTypes">
+               <source id="RRoliqE9Ck69vb6-TT3jaw"/>
+            </input>
+         </inputs>
+      </node>
+      <node id="ZzgpEOTLZEyOx5e_LZZAkA"
+            location="334,221"
+            nodeClassId="0uv5T0BOXUW3uYJdDbGmfQ"
+            nodeName="duplicate-rows">
+         <inputs>
+            <input parameter="table">
+               <source id="E21OJh9I-02A6E4_jLWGIQ" node="e51wYPuEik2z6pPhCDv_HA"/>
+            </input>
+            <input parameter="keys"/>
+         </inputs>
+      </node>
+  </nodes>
+  <functionResults/>
+  <results>
+      <result id="FLEOv0pmTE6UX8m1aF0nEg" location="278,112">
+         <input>
+            <source id="WA2ermjL8UWLsF7Hvo3v6g" node="ZzgpEOTLZEyOx5e_LZZAkA"/>
+         </input>
+      </result>
+  </results>
+</nodeSystem>
+</BspKnotensystem:DocumentRoot>

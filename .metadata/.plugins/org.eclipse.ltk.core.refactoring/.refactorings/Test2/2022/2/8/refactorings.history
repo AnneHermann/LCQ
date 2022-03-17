@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;BspKnotensystem.ecore, BspKnotensystem.genmodel&apos; to &apos;Test2&apos;" description="Move 2 resources to &apos;Test2&apos;" destination="/Test2" element1="/test/model/BspKnotensystem.ecore" element2="/test/model/BspKnotensystem.genmodel" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="2" stamp="1645544849246" updateReferences="true"/>
+</session>

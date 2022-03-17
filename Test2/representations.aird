@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" uid="_k6n2MJP2EeyjYINo-0Cwlg" version="14.5.1.202106111100">
+  <semanticResources>BspKnotensystem.ecore</semanticResources>
+  <semanticResources>BspKnotensystem.genmodel</semanticResources>
+  <semanticResources>BspKnotensystem.xsd2ecore</semanticResources>
+  <semanticResources>file:/C:/Users/hermanne/Documents/Bachelorarbeit/BspKnotensystem.xsd</semanticResources>
+  <semanticResources>bundleentry://818.fwk443801669/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+  <semanticResources>bundleentry://818.fwk443801669/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+  <semanticResources>http://www.w3.org/2001/xml.xsd</semanticResources>
+  <semanticResources>bundleentry://818.fwk443801669/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
+  <semanticResources>BspKnotensystem.xsd</semanticResources>
+</viewpoint:DAnalysis>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExportRepresentationsAsImagesDialog">
+		<item key="ExportRepresentationsAsImagesDialog.imageFormat" value="JPG"/>
+		<list key="ExportRepresentationsAsImagesDialog.file">
+			<item value="C:\Users\hermanne\OneDrive - Siemens Logistics\Bachlor"/>
+			<item value="C:\Users\hermanne\OneDrive - Siemens Logistics\Bachlor\BspKnotensystem.jpg"/>
+		</list>
+	</section>
+</section>

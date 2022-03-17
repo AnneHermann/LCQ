@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.Resource"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.ResourceSet"/>
+    <fullyQualifiedTypeName name="java.net.URI"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.common.util.URI"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xml.type.internal.DataValue.URI"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.ResourceImpl"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.XMLResource"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.EObject"/>
+    <fullyQualifiedTypeName name="java.io.Console"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.EPackage"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.resource.impl.ResourceFactoryRegistryImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.impl.GenericXMLResourceFactoryImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl"/>
+    <fullyQualifiedTypeName name="BspKnotensystem.impl.BspKnotensystemFactoryImpl"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl"/>
+    <fullyQualifiedTypeName name="BspKnotensystem.BspKnotensystemPackage"/>
+    <fullyQualifiedTypeName name="org.eclipse.emf.ecore.EPackage.Registry"/>
+    <fullyQualifiedTypeName name="BspKnotensystem.BspKnotensystemFactory"/>
+    <fullyQualifiedTypeName name="BspKnotensystem.DocumentRoot"/>
+    <fullyQualifiedTypeName name="metrics.IMetric"/>
+    <fullyQualifiedTypeName name="patterns.IPattern"/>
+    <fullyQualifiedTypeName name="org.eclipse.ocl.Query"/>
+</qualifiedTypeNameHistroy>

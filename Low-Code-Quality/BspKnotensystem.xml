@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="TransformNodes.xsl"?>
+<BspKnotensystem:DocumentRoot xmlns:BspKnotensystem="file:/C:/Users/hermanne/Documents/Bachelorarbeit/BspKnotensystem.xsd">
+<nodeSystem id="OymEi9a-1UaaAM-nYDr2ZA" ExpressionLanguageName="type-python" RuntimeVersion="2.0.0.0" Version="">
+  <ViewOptions />
+  <ParameterDefinitions />
+  <Sources>
+    <Source Id="sTTzuHd4OEy-Z0oV_OHgtg" Location="767,205">
+      <SourceColumns />
+      <VisibleColumns />
+    </Source>
+  </Sources>
+  <Nodes>
+    <Node Id="e51wYPuEik2z6pPhCDv_HA" NodeClassId="3z8DY1_dU0aTkeHdrkCD0g" NodeName="augment" Location="570,187">
+      <Inputs>
+        <Input Parameter="Scope">
+          <Source Id="8lSufQLhbUyeV566qcoR7g" Node="sTTzuHd4OEy-Z0oV_OHgtg" />
+        </Input>
+        <Input Parameter="AdditionalSymbols" />
+        <Input Parameter="ColumnNames">
+          <Source Id="o8tRNiP32kaijtFvuK4qbQ" />
+        </Input>
+        <Input Parameter="Expressions">
+          <Source Id="bEThJGV3OkespTg3EokTdA" />
+        </Input>
+        <Input Parameter="DataTypes">
+          <Source Id="RRoliqE9Ck69vb6-TT3jaw" />
+        </Input>
+      </Inputs>
+    </Node>
+    <Node Id="ZzgpEOTLZEyOx5e_LZZAkA" NodeClassId="0uv5T0BOXUW3uYJdDbGmfQ" NodeName="duplicate-rows" Location="334,221">
+      <Inputs>
+        <Input Parameter="table">
+          <Source Id="E21OJh9I-02A6E4_jLWGIQ" Node="e51wYPuEik2z6pPhCDv_HA" />
+        </Input>
+        <Input Parameter="keys" />
+      </Inputs>
+    </Node>
+  </Nodes>
+  <FunctionResults />
+  <Results>
+    <Result Id="FLEOv0pmTE6UX8m1aF0nEg" Location="278,112">
+      <Input>
+        <Source Id="WA2ermjL8UWLsF7Hvo3v6g" Node="ZzgpEOTLZEyOx5e_LZZAkA" />
+      </Input>
+    </Result>
+  </Results>
+</nodeSystem>
+</BspKnotensystem:DocumentRoot>

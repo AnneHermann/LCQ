@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Low-Code-Quality
+Bundle-SymbolicName: Low-Code-Quality
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: Low-Code-Quality
+Require-Bundle: Test2;bundle-version="1.0.0"
+Import-Package: org.eclipse.ocl,
+ org.eclipse.ocl.helper
