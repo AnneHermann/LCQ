@@ -27,13 +27,14 @@ public class XMLConverter {
 		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", new XMLResourceFactoryImpl());
 		
 		XMLResourceImpl resource = new XMLResourceImpl();
+		
 		try {
 			resource.load(new FileInputStream(new File(sourceUri.path())), Collections.EMPTY_MAP);
 		} catch (FileNotFoundException e1) {
-			// TODO Auto-generated catch block
+			System.out.println("Datei konnte nicht gefunden werden.");
 			e1.printStackTrace();
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
+			System.out.println("Datei konnte nicht gelesen werden.");
 			e1.printStackTrace();
 		}
 
