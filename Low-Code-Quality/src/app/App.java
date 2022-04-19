@@ -16,6 +16,7 @@ public class App {
 		MetricCalculator.CalculateAll(documentRoot, response);
 		PatternMatcher.MatchAll(documentRoot, response);
 		QualityReportCreator.outputResponseToConsole(response);
+		QualityReportCreator.OutputResponseToCSV(response);
 	}
 
 	private static URI createURI(String uri) {

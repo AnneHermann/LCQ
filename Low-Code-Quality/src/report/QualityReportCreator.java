@@ -29,16 +29,14 @@ public class QualityReportCreator {
 	}
 
 	public static void OutputResponseToCSV(QualityReportResponse response) {
-		var csvOutputReport = new File("QualityReport");
-		writeInCSV(buildMetricCSVOutput(response.getMetrics()), csvOutputReport);
-		writeInCSV(buildPatternCSVOutput(response.getPatterns()), csvOutputReport);
+		writeInCSV(buildMetricCSVOutput(response.getMetrics()), new File("QualityReportMetrics.csv"));
+		writeInCSV(buildPatternCSVOutput(response.getPatterns()), new File("QualityReportAntiPattern.csv"));
 		
 	}
 
 	private static void writeInCSV(ArrayList<String[]> input, File csvOutput) {
 		try (PrintWriter printWriter = new PrintWriter(csvOutput)) {
-			printWriter.println();
-		//TODO	input.stream().map(convertToCSV()).forEach(printWriter::println);
+			input.stream().map(item -> convertToCSV(item)).forEach(printWriter::println);
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -46,8 +44,7 @@ public class QualityReportCreator {
 	}
 
 	private static String convertToCSV(String[] data) {
-		//TODO return Stream.of(data).map().collect(Collectors.joining(","));
-		return "";
+		return Stream.of(data).collect(Collectors.joining(","));
 	}
 
 	private static ArrayList<String[]> buildMetricCSVOutput(ArrayList<MetricResponse> metrics) {
@@ -59,12 +56,12 @@ public class QualityReportCreator {
 	}
 
 	private static ArrayList<String[]> buildPatternCSVOutput(ArrayList<PatternResponse> patterns) {
-		var metricDataLines = new ArrayList<String[]>();
+		var patternDataLines = new ArrayList<String[]>();
 		for (var pattern : patterns) {
-			metricDataLines.add(new String[] { pattern.getName(), Boolean.toString(pattern.isFound()),
+			patternDataLines.add(new String[] { pattern.getName(), Boolean.toString(pattern.isFound()),
 					Integer.toString(pattern.getNumberOfOccurrences()) });
 		}
-		return metricDataLines;
+		return patternDataLines;
 	}
 
 	private static String buildMetricOutput(MetricResponse metric) {
