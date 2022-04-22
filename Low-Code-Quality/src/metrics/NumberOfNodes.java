@@ -17,7 +17,7 @@ public class NumberOfNodes implements IMetric {
 	    var numberOfResults = nodeSystem.getResults().get(0).getResult().size();
 	    var numberOfNodes = numberOfFunctionalNodes + numberOfSources + numberOfResults;
 	    
-	    response.addMetric(new MetricResponse(ANZAHL_DER_KNOTEN, Integer.toString(numberOfNodes)));
+	    response.addMetricResponse(new MetricResponse(ANZAHL_DER_KNOTEN, Integer.toString(numberOfNodes)));
 	}
 
 }

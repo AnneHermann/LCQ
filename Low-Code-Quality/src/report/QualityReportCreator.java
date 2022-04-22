@@ -29,18 +29,14 @@ public class QualityReportCreator {
 	}
 
 	public static void OutputResponseToCSV(QualityReportResponse response) {
-		writeInCSV(buildMetricCSVOutput(response.getMetrics()), new File("QualityReportMetrics.csv"));
-		writeInCSV(buildPatternCSVOutput(response.getPatterns()), new File("QualityReportAntiPattern.csv"));
+		writeCSVOutputToConsole(buildMetricCSVOutput(response.getMetrics()), new File("QualityReportMetrics.csv"));
+		writeCSVOutputToConsole(buildPatternCSVOutput(response.getPatterns()), new File("QualityReportAntiPattern.csv"));
 		
 	}
 
-	private static void writeInCSV(ArrayList<String[]> input, File csvOutput) {
-		try (PrintWriter printWriter = new PrintWriter(csvOutput)) {
-			input.stream().map(item -> convertToCSV(item)).forEach(printWriter::println);
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	private static void writeCSVOutputToConsole(ArrayList<String[]> input, File csvOutput) {		
+			input.stream().map(item -> convertToCSV(item)).forEach(System.out::println);
+		
 	}
 
 	private static String convertToCSV(String[] data) {

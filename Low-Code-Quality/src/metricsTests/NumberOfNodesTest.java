@@ -1,4 +1,4 @@
-package metrics;
+package metricsTests;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package app;
+package appTests;
 
 import org.junit.Test;
 

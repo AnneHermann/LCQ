@@ -13,11 +13,11 @@ public class QualityReportResponse {
 		this.patterns = new ArrayList<PatternResponse> ();
 	}
 
-	public void addMetric(MetricResponse metricResponse) {
+	public void addMetricResponse(MetricResponse metricResponse) {
 		metrics.add(metricResponse);
 	}
 
-	public void addPattern(PatternResponse patternResponse) {
+	public void addPatternResponse(PatternResponse patternResponse) {
 		patterns.add(patternResponse);
 	}
 

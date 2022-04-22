@@ -30,10 +30,10 @@ public class AugmentNode implements IPattern {
 	
 	private void addPatternToResponse(int numberOfOccurrences, QualityReportResponse response) {
 		if(numberOfOccurrences == 0) {
-			response.addPattern(new PatternResponse(AUGMENT_KNOTEN, false, 0));
+			response.addPatternResponse(new PatternResponse(AUGMENT_KNOTEN, false, 0));
 		}
 		else {
-			response.addPattern(new PatternResponse(AUGMENT_KNOTEN, true, numberOfOccurrences));
+			response.addPatternResponse(new PatternResponse(AUGMENT_KNOTEN, true, numberOfOccurrences));
 		}
 	}
 
