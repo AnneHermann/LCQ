@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/NodeSystem/src" modelPluginID="NodeSystem" modelName="NodeSystem"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.xsd.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>file:/C:/Users/hermanne/eclipse-workspace%20-%20Kopie/alleKnotenFormartiert.xsd</foreignModel>
+  <genPackages prefix="AlleKnotenFormartiert" resource="XML" disposableProviderFactory="true"
+      loadInitialization="true" literalsInterface="false" ecorePackage="AlleKnotenFormartiert.ecore#/">
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//AggregationNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//AnalysisNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ArgQuantileNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ArithmeticNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ArrayNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//AugmentNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//BatchColumnConversionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//BinPackingNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//BoolFilterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//CacheNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ChangeColumnPrefixNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ChangeColumnSuffixNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ChecksumNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ClassifyNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ClearDecorationsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnAnalysisNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnNameReductionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnPrefixNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnProfileNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnRenameNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//CombinationsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ComparisonNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ComplementNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConditionalNullificationNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConditionalStyleNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConditionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConsolidationNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConstantNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConvertDateNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ConvertNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//CostFunctionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//CountOccurrencesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//CrossJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DateOffsetNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DebugNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DecomposeColumnNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DecomposeColumnsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DefaultValueNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DemultiplexerNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DistinctRowsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DistinctValuesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DocumentRoot">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//DocumentRoot/mixed"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/xMLNSPrefixMap"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/xSISchemaLocation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/functionResult"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/inputs"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/newDataSet"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/nodeSystem"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//DocumentRoot/source"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DomainMappingNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DuplicateRowsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//DuplicatRowsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//EqualityNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ErrorFilterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ErrorHandlingNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ErrorMessagesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ExistenceFilterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ExistenceNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ExpandNestedTablesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ExpandValuesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ExpressionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FilterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FindColumnNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FinitesequenceNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FormatNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FullOuterJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FunctionResultColumnType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultColumnType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultColumnType/resultRank"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FunctionResultType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/functionResultColumn"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/functionResult"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/location"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GeocoderNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GeocoordinateFromLatlongNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GeorouterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GraphClusterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GroupIndexNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GroupIntoNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GroupNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//GroupRowIndexNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//HierarchicalClusteringNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ImageNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//IndexNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//InnerEquiJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//InnerJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//InputType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//InputType/input"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//InputType/parameter"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//LimitFilterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ListToColumnNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//LogicNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//LookupNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//MergeNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//MultiplexNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//MultiplyRowsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NamedClassificationNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NamingNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NegateNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NeighborNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NestedJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NewDataSetType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NewDataSetType/group"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NewDataSetType/source"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NewDataSetType/inputs"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NewDataSetType/functionResult"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NewDataSetType/nodeSystem"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NodesType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodesType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodesType/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodesType/nodeClassId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodesType/nodeName"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NodeSystemType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeSystemType/sources"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeSystemType/nodes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeSystemType/functionResults"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeSystemType/results"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeSystemType/expressionLanguageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeSystemType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeSystemType/runtimeVersion"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeSystemType/version"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NoiseNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NullNodeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NullNodeType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NullNodeType/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NullNodeType/nodeClassId"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NullNodeType/nodeName"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//OrNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//OuterJoinNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//OverlayNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//PackagingNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ParameterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ParetoFrontiersNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ParseConditionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ParseNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//PivotNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//PredecessorValueNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ProductNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ProfileNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RedistributionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ReferenceNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ReplaceColumnNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ReplaceValuesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ResultsType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultsType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultsType/location"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RetargetAllReferencesNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RetargetReferenceNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ReverseGeocoderNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RoundDateNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RoundNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RowIndexNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//RunningTotalNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ScanNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SequenceNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ShortestPathNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SingleRowNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SingleValueNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SortNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SourceType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/location"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/node"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/value"/>
+    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//StringSplitterNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//StringUtilNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//StructureCastNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SubstringNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SuccessorAsNeighborNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SummaryNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SumNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SurrogateNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TakeWhileNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TimeNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TimeSpanConversionNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TimeSpanNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TopNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TopOfGroupsNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//TupleNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//UnionAllNodeType"/>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//UnpivotNodeType"/>
+  </genPackages>
+</genmodel:GenModel>

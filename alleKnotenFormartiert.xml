@@ -1,0 +1,1745 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodeSystem expressionLanguageName="type-python"
+            id="HNM-iG4_lkCEFvcIvKaPJQ"
+            runtimeVersion="2.0.0.0"
+            version="">
+  <sources>
+      <source description="" id="ne7CyVcQw0W-0pbouMXGzg" location="803,38"/>
+  </sources>
+  <nodes>
+      <scanNode id="4-3QUIaPbE6QjTkqmXebUQ"
+                location="610,30"
+                nodeClassId="FUJhUKKzxU6F6Ay7MBc80w"
+                nodeName="scan">
+         <inputs>
+            <input parameter="source">
+               <source id="y77m02Tk7Uqw9K5hcTMadA" node="ne7CyVcQw0W-0pbouMXGzg"/>
+            </input>
+            <input parameter="mode">
+               <source id="Sp-6iKzcn0u8uWmfdO5grQ"/>
+            </input>
+         </inputs>
+      </scanNode>
+      <conditional-styleNode id="T6fYvJTej0-IRm7eYgVfzw"
+                             location="389,35"
+                             nodeClassId="HyydmMdCAE6xoRdlTdAqoA"
+                             nodeName="conditional-style">
+         <inputs>
+            <input parameter="scope">
+               <source id="BJW_eoG7YkuHH17x2URQtA" node="4-3QUIaPbE6QjTkqmXebUQ"/>
+            </input>
+            <input parameter="script">
+               <source id="qLy5EaRZhEqizw7QS5PxFA"
+                       value="# examples&#xA;# style.alignment = 'far' // 'near', 'center'&#xA;# style.forecolor = color.red&#xA;# style.forecolor = color.rgb(0, 0.5, 1)&#xA;# style.forecolor = color.hsv(180, 1, 1)&#xA;# style.backcolor = 'blue'&#xA;# style.visible = False&#xA;# style.displaytext = str(value)&#xA;# style.displayformat = 'P2' // percent&#xA;# style.description = 'description'&#xA;# style.bold = True // .italic, .underline, .strikeout&#xA;# style.icon = icons.factory&#xA;# style.backcolor = 'red' if value &lt; 0.1 * max(scope.Column) else 'blue'"/>
+            </input>
+         </inputs>
+      </conditional-styleNode>
+      <clear-decorationsNode id="RUe75s-7N02C3-wtV7gvyg"
+                             location="187,46"
+                             nodeClassId="PXeUHj_LXESV3Hi1oXhjZQ"
+                             nodeName="clear-decorations">
+         <inputs>
+            <input parameter="source">
+               <source id="aHfxkjAqTk69oajj8FcOyw" node="T6fYvJTej0-IRm7eYgVfzw"/>
+            </input>
+         </inputs>
+      </clear-decorationsNode>
+      <error-filterNode id="LT84pXNZGkmDm2yVzMcDtw"
+                        location="186,132"
+                        nodeClassId="_p-y0QrPAkei1AHtLRVcTA"
+                        nodeName="error-filter">
+         <inputs>
+            <input parameter="Source">
+               <source id="kRb7_zJQRECElvqAewXaSQ" node="ppSkjgrmsUaw40gQwcnfyw"/>
+            </input>
+         </inputs>
+      </error-filterNode>
+      <error-handlingNode id="ppSkjgrmsUaw40gQwcnfyw"
+                          location="388,139"
+                          nodeClassId="_orhVvEe80ONt5Qf40by7Q"
+                          nodeName="error-handling">
+         <inputs>
+            <input parameter="source">
+               <source id="XhrZKJL7TEePcOHJK15lZg" node="wwwR_epcdESjU0kTjTu4Ng"/>
+            </input>
+         </inputs>
+      </error-handlingNode>
+      <error-messagesNode id="wwwR_epcdESjU0kTjTu4Ng"
+                          location="600,143"
+                          nodeClassId="X0cJsvaPf06jYZSfuFqR6Q"
+                          nodeName="error-messages">
+         <inputs>
+            <input parameter="source">
+               <source id="vd3StVlSt0md9jHEYpo41A" node="GBkH6CoKa0qrGBbMnjVWFw"/>
+            </input>
+            <input parameter="suffix">
+               <source id="Vqrhr7dkHk6-YngcBNJ_kQ"/>
+            </input>
+         </inputs>
+      </error-messagesNode>
+      <indexNode id="GBkH6CoKa0qrGBbMnjVWFw"
+                 location="203,214"
+                 nodeClassId="29FkY9f_BEqD679wyvbY2Q"
+                 nodeName="index">
+         <inputs>
+            <input parameter="Source">
+               <source id="ouJLjhXDlEO6cFTbMkqb6w" node="JvIlIlv7oUOqarZyKRmMPA"/>
+            </input>
+         </inputs>
+      </indexNode>
+      <namingNode id="JvIlIlv7oUOqarZyKRmMPA"
+                  location="433,235"
+                  nodeClassId="KPRnfT1hw0OcUISNv588AQ"
+                  nodeName="naming">
+         <inputs>
+            <input parameter="Source">
+               <source id="zWdoyYHJ10qkIcQVZDcEiA" node="m_9DX9UuaUuzIlbGA2n5-w"/>
+            </input>
+            <input parameter="NamingMode">
+               <source id="oX-0ndItg0e3jV1cNtUkqg"/>
+            </input>
+         </inputs>
+      </namingNode>
+      <cacheNode id="m_9DX9UuaUuzIlbGA2n5-w"
+                 location="679,229"
+                 nodeClassId="ZtokXeIrIk22iXDwDEcaWw"
+                 nodeName="cache">
+         <inputs>
+            <input parameter="Source">
+               <source id="Wp4yKUDqxEujczIGUqZTRw" node="LSnLQfL-nkaqUFJ1PkOLpg"/>
+            </input>
+            <input parameter="Mode">
+               <source id="sTbG3tZ5k02yaP-YTI-stg" value="clustered"/>
+            </input>
+         </inputs>
+      </cacheNode>
+      <decompose-columnNode id="LSnLQfL-nkaqUFJ1PkOLpg"
+                            location="204,309"
+                            nodeClassId="qTfji8ICa0qv5X-zfkTXpg"
+                            nodeName="decompose-column">
+         <inputs>
+            <input parameter="source-column">
+               <source id="XvJvvSs1w0-W3algqXo_9g" node="15xsEjzjQEy0RAxC-0N3yQ"/>
+            </input>
+         </inputs>
+      </decompose-columnNode>
+      <decompose-columnsNode id="15xsEjzjQEy0RAxC-0N3yQ"
+                             location="430,328"
+                             nodeClassId="hNCmphGOCUSvH_tnTCza1A"
+                             nodeName="decompose-columns">
+         <inputs>
+            <input parameter="source">
+               <source id="36hVQI1O3U2RQX-KmnRU1w" node="Z-tgDWIZhE-NVrxIGTXX_Q"/>
+            </input>
+            <input parameter="max-depth">
+               <source id="EUhXeS8uu0WP23x8KHqscQ" value="1"/>
+            </input>
+            <input parameter="path-separator">
+               <source id="vcBSjSkZg0KpHui565PbCQ" value="_"/>
+            </input>
+         </inputs>
+      </decompose-columnsNode>
+      <replaceColumnNode id="Z-tgDWIZhE-NVrxIGTXX_Q"
+                         location="656,329"
+                         nodeClassId="9w2Yc84hx0GfG8txefDMig"
+                         nodeName="ReplaceColumn">
+         <inputs>
+            <input parameter="DataSet">
+               <source id="MmWQ8NBQ2kq3mq7ijcak5w" node="JP-iP1X24UaW4zdlhf_N9A"/>
+            </input>
+            <input parameter="Victim">
+               <source id="7_cf-fNgHECHKKTOoiPFmQ" node="5F2j5TGiJk-X_d9J5MTQVQ"/>
+            </input>
+            <input parameter="Replacement">
+               <source id="KhR42mWVbkO0_BV8EVYNww" node="5F2j5TGiJk-X_d9J5MTQVQ"/>
+            </input>
+         </inputs>
+      </replaceColumnNode>
+      <column-name-reductionNode id="JP-iP1X24UaW4zdlhf_N9A"
+                                 location="240,449"
+                                 nodeClassId="CxUldxIziUGZcpROcelMrA"
+                                 nodeName="column-name-reduction">
+         <inputs>
+            <input parameter="DataSet">
+               <source id="M5-jB4KgPUCJ3zwj-Ss9lw" node="5F2j5TGiJk-X_d9J5MTQVQ"/>
+            </input>
+         </inputs>
+      </column-name-reductionNode>
+      <column-prefixNode id="5F2j5TGiJk-X_d9J5MTQVQ"
+                         location="504,468"
+                         nodeClassId="1pQwQKs6lkOspGPAYIxfxw"
+                         nodeName="column-prefix">
+         <inputs>
+            <input parameter="Scope">
+               <source id="dhF5Li553k29b6BeJp0_cw" node="wzio7nGRN0WmxT3_1VeOZQ"/>
+            </input>
+            <input parameter="Prefix">
+               <source id="6Swb796nFEGudWQfn8dThw"/>
+            </input>
+         </inputs>
+      </column-prefixNode>
+      <change-column-prefixNode id="wzio7nGRN0WmxT3_1VeOZQ"
+                                location="719,474"
+                                nodeClassId="8ytXpTVs-kS0Cd3kJhB-aw"
+                                nodeName="change-column-prefix">
+         <inputs>
+            <input parameter="table">
+               <source id="yJZH_z-0GEet3kqatrKkwg" node="6D79oyo820qjRZGZCXf5zw"/>
+            </input>
+            <input parameter="old-prefix">
+               <source id="j2_R-UvnlkyiXmGwel0nEA"/>
+            </input>
+            <input parameter="new-prefix">
+               <source id="74xlhf0ngUWHdTr3uIdz3A"/>
+            </input>
+         </inputs>
+      </change-column-prefixNode>
+      <change-column-suffixNode id="6D79oyo820qjRZGZCXf5zw"
+                                location="204,532"
+                                nodeClassId="U98HgCln00aTWqlK_VhCYw"
+                                nodeName="change-column-suffix">
+         <inputs>
+            <input parameter="table">
+               <source id="lWmRD6SY80OV6XeL1i_oVQ" node="yqQyvuNAqkKw2TSC0FZwwQ"/>
+            </input>
+            <input parameter="old-suffix">
+               <source id="-JeNj6XZYE2RJCdK_fu2Hg"/>
+            </input>
+            <input parameter="new-suffix">
+               <source id="jGodBjnjvE6DwH23D7Ejww"/>
+            </input>
+         </inputs>
+      </change-column-suffixNode>
+      <columnRenameNode id="yqQyvuNAqkKw2TSC0FZwwQ"
+                        location="426,554"
+                        nodeClassId="wNGHn-V1w0WMcCcgbhUr1A"
+                        nodeName="ColumnRename">
+         <inputs>
+            <input parameter="Scope">
+               <source id="hMHTUE-HCUqJ0IVSLceUbQ" node="_mxSQzhmRESIS0uTHYTl2A"/>
+            </input>
+            <input parameter="Mode">
+               <source id="WJx1Vk_NO0utkX3VBW8-pw" value="Both"/>
+            </input>
+            <input parameter="Columns">
+               <source id="QChm_QoLnEW3dHkxCzZjvQ"/>
+            </input>
+            <input parameter="Names">
+               <source id="1k95sMScukqLdbdkAAkHzA"/>
+            </input>
+         </inputs>
+      </columnRenameNode>
+      <retarget-referenceNode id="_mxSQzhmRESIS0uTHYTl2A"
+                              location="665,603"
+                              nodeClassId="sWbYr11Bf0mxGPrlv7w0Cw"
+                              nodeName="retarget-reference">
+         <inputs>
+            <input parameter="source">
+               <source id="HzVbMuO4j0uIv1RxrxGn3g" node="2JiEsIN7NE2E0Cl2NETyXQ"/>
+            </input>
+            <input parameter="target">
+               <source id="Zv_NPN2VX0WfA2zz2oAEOw" node="ywHOAIvbNE25YfW0Nc5WEg"/>
+            </input>
+         </inputs>
+      </retarget-referenceNode>
+      <retarget-all-referencesNode id="2JiEsIN7NE2E0Cl2NETyXQ"
+                                   location="243,688"
+                                   nodeClassId="vkzTVQzR-k-4doas42tsVA"
+                                   nodeName="retarget-all-references">
+         <inputs>
+            <input parameter="table">
+               <source id="33fc1JfsZEOBS-U3ma7udw" node="3ASXeXM42UKoRf4mGjDHgw"/>
+            </input>
+            <input parameter="sources">
+               <source id="D6oYVrSjxkGuq03Z2CH2xQ"/>
+            </input>
+            <input parameter="targets">
+               <source id="M9BE0FPKQUql0aAm_SD-NQ"/>
+            </input>
+         </inputs>
+      </retarget-all-referencesNode>
+      <predecessor-valueNode id="ywHOAIvbNE25YfW0Nc5WEg"
+                             location="500,746"
+                             nodeClassId="iRzVMkwStU6dBLcHpkP0jg"
+                             nodeName="predecessor-value">
+         <inputs>
+            <input parameter="Column">
+               <source id="XoR0Rwzz0UCCohwlm0knMA" node="ewzVekYdoECBvmV4srXSaw"/>
+            </input>
+         </inputs>
+      </predecessor-valueNode>
+      <conditional-nullificationNode id="ewzVekYdoECBvmV4srXSaw"
+                                     location="723,754"
+                                     nodeClassId="qS1h16vgikCqi5UghMEiAA"
+                                     nodeName="conditional-nullification">
+         <inputs>
+            <input parameter="scope">
+               <source id="tlrqZ_iasEOSUM6DPTRZeQ" node="dg16epBbfk-eQZ7EKiFMgQ"/>
+            </input>
+            <input parameter="condition">
+               <source id="sKa9zBtFD0Cv914KI_BrJg"/>
+            </input>
+            <input parameter="columns">
+               <source id="PDi_vP_JS0ieyQ3gZ_oLzA"/>
+            </input>
+         </inputs>
+      </conditional-nullificationNode>
+      <namedClassificationNode id="3ASXeXM42UKoRf4mGjDHgw"
+                               location="232,849"
+                               nodeClassId="vMSgVJlxbkmVVfpx7LoT8A"
+                               nodeName="NamedClassification">
+         <inputs>
+            <input parameter="Column">
+               <source id="IlEi7uaRbEm3kCl3T21G7g" node="LHN3DNW4zUSShuGdE1lMMA"/>
+            </input>
+            <input parameter="Classes">
+               <source id="YFDrIEB-M0aW08eeevQ3KA"/>
+            </input>
+            <input parameter="Names">
+               <source id="xtyFXka-G0eH4n_-WGlg6w"/>
+            </input>
+         </inputs>
+      </namedClassificationNode>
+      <single-valueNode id="LHN3DNW4zUSShuGdE1lMMA"
+                        location="441,842"
+                        nodeClassId="jzZGKqUmBEGfJjgLPewdTg"
+                        nodeName="single-value">
+         <inputs>
+            <input parameter="column">
+               <source id="WyUPKwL39EOlvtSJf_JFcA" node="_H3cbNcK1Uqi2jbA1am3gw"/>
+            </input>
+         </inputs>
+      </single-valueNode>
+      <geocoordinate-from-latlongNode id="_H3cbNcK1Uqi2jbA1am3gw"
+                                      location="438,917"
+                                      nodeClassId="BljaLxieHUWv8koO7QSzGw"
+                                      nodeName="geocoordinate-from-latlong">
+         <inputs>
+            <input parameter="latitude">
+               <source id="pOrUZov2GE6NDkLD_5Zw1g" node="3X_buj8ywkqopzLBfydvQA"/>
+            </input>
+            <input parameter="longitude">
+               <source id="mF4jbzQTY0uBWDFxZYF2ZQ" node="u7dd8ngFr0K12Yw_SJC7zQ"/>
+            </input>
+         </inputs>
+      </geocoordinate-from-latlongNode>
+      <classifyNode id="3X_buj8ywkqopzLBfydvQA"
+                    location="655,918"
+                    nodeClassId="ZWU3tVTxeE6k0hgFpdy72A"
+                    nodeName="classify">
+         <inputs>
+            <input parameter="Column">
+               <source id="a4xNL2ystU6R145NmbmKSQ" node="V2ceOkIKZ0mPPX45JMUBfA"/>
+            </input>
+            <input parameter="DataType">
+               <source id="T9gaePbEAku_ll7lKNPYVA" value="Int32"/>
+            </input>
+            <input parameter="Classes">
+               <source id="9qPx_1pW90eyKLOklEB_JA"/>
+            </input>
+            <input parameter="ClassIndices">
+               <source id="hngH9q8ePEG6XFnd2-05zw" value="True"/>
+            </input>
+         </inputs>
+      </classifyNode>
+      <list-to-columnNode id="dg16epBbfk-eQZ7EKiFMgQ"
+                          location="247,1008"
+                          nodeClassId="8hMzJqnhbkW4evG_aN8yag"
+                          nodeName="list-to-column">
+         <inputs>
+            <input parameter="column">
+               <source id="0lg6l87pyk2sp8ibIOVlQg" node="To7ALg4V1kyM-q_4wCQ-rw"/>
+            </input>
+            <input parameter="count">
+               <source id="1z8x4h4cxkWvKS5mpGGj6A" value="5"/>
+            </input>
+         </inputs>
+      </list-to-columnNode>
+      <parseNode id="To7ALg4V1kyM-q_4wCQ-rw"
+                 location="443,1019"
+                 nodeClassId="UnpxsKWHiEKLCExw1TqRkw"
+                 nodeName="parse">
+         <inputs>
+            <input parameter="columns">
+               <source id="ECRxEMpl4k6a6Ug3mNvdzw" node="CRka4NP_T0GMa-NVPmk_iQ"/>
+            </input>
+            <input parameter="Culture">
+               <source id="5_U-imRm5kK2SICOFnX9hQ" value="de-DE"/>
+            </input>
+            <input parameter="TargetType">
+               <source id="E4GDamJndEWUCi8XGi33XQ" value="DateTime"/>
+            </input>
+         </inputs>
+      </parseNode>
+      <default-valueNode id="u7dd8ngFr0K12Yw_SJC7zQ"
+                         location="648,1042"
+                         nodeClassId="iX-_8BNPe0uRSqTutQQklQ"
+                         nodeName="default-value">
+         <inputs>
+            <input parameter="Value">
+               <source id="5vHy-ZnS4E2jeXYRKjtS6w" node="BUF2gT1P1kqDnFS7ErZzrg"/>
+            </input>
+            <input parameter="Default">
+               <source id="Q6EnG2WxKE23l-v-eP-YeQ" node="CRka4NP_T0GMa-NVPmk_iQ"/>
+            </input>
+         </inputs>
+      </default-valueNode>
+      <substringNode id="V2ceOkIKZ0mPPX45JMUBfA"
+                     location="230,1108"
+                     nodeClassId="dKlr8AWUGUGP7gqdKM8-9g"
+                     nodeName="substring">
+         <inputs>
+            <input parameter="Values">
+               <source id="qN173evjREW0hR6Ph8zz_Q" node="p2db0TWTq0Cwi_ETvobOqw"/>
+            </input>
+            <input parameter="Start">
+               <source id="xrXw91D-90qhgBdKhNJVKg"/>
+            </input>
+            <input parameter="Length">
+               <source id="Fy6mUB6wN0yCyc_vy7-fKw"/>
+            </input>
+         </inputs>
+      </substringNode>
+      <stringSplitterNode id="p2db0TWTq0Cwi_ETvobOqw"
+                          location="439,1138"
+                          nodeClassId="vPrqtKjEBUuS8mJRA2STyQ"
+                          nodeName="stringSplitter">
+         <inputs>
+            <input parameter="id">
+               <source id="YK_HVMdiWk6rOZEzF7jUXg" node="lZ-Rcmq4FkKspQ1c0QsXzg"/>
+            </input>
+            <input parameter="text">
+               <source id="6NOvEDUGkUSRTe6Lb3DftA" node="j-bVpXhhUUmc_CuDbR7-QQ"/>
+            </input>
+            <input parameter="separator">
+               <source id="6-pmiu4Vr0KSQvynBz7hgA" value="0"/>
+            </input>
+         </inputs>
+      </stringSplitterNode>
+      <convertNode id="CRka4NP_T0GMa-NVPmk_iQ"
+                   location="636,1148"
+                   nodeClassId="qOXXFhm4bEubpW53o5Hm_Q"
+                   nodeName="convert">
+         <inputs>
+            <input parameter="columns">
+               <source id="IaBRSklL7kCzaOsj3qUgpA" node="SX6veZn0l0GeAq0pjsW77w"/>
+            </input>
+            <input parameter="TargetType">
+               <source id="kMEo0wegrUSevU0yFXUGiA" value="Int32"/>
+            </input>
+         </inputs>
+      </convertNode>
+      <replace-valuesNode id="BUF2gT1P1kqDnFS7ErZzrg"
+                          location="236,1227"
+                          nodeClassId="MEm1KSvMb0SBCvPnX1S24A"
+                          nodeName="replace-values">
+         <inputs>
+            <input parameter="Column">
+               <source id="iJ769ZBzV0moWTuG5Jtv5Q" node="JEU5bHhd7USi9ld1V4TM6A"/>
+            </input>
+            <input parameter="SearchValues">
+               <source id="meIb4S-nyE-Gmm2XEUyh5g"/>
+            </input>
+            <input parameter="ReplacementValues">
+               <source id="_DRFob7fFEygVq8E31Nk-Q"/>
+            </input>
+         </inputs>
+      </replace-valuesNode>
+      <string-utilNode id="JEU5bHhd7USi9ld1V4TM6A"
+                       location="451,1268"
+                       nodeClassId="ptY41ieC0keY3SWZRi7GYQ"
+                       nodeName="String Util">
+         <inputs>
+            <input parameter="Operation">
+               <source id="ccqwu1EGBEOp_UdtUzwXVQ"/>
+            </input>
+            <input parameter="Value">
+               <source id="QCqEpAuq00Oa6ymbETnw3Q" node="7iPc9DCJjkWuQbBRvnlvLQ"/>
+            </input>
+         </inputs>
+      </string-utilNode>
+      <round-dateNode id="lZ-Rcmq4FkKspQ1c0QsXzg"
+                      location="669,1254"
+                      nodeClassId="mjdsKfERUE6FU-7yGeRWyg"
+                      nodeName="round-date">
+         <inputs>
+            <input parameter="Date">
+               <source id="SY3y9_w_pUGef3046kau2g" node="SX6veZn0l0GeAq0pjsW77w"/>
+            </input>
+            <input parameter="Precision">
+               <source id="SoWBxPVGbEe9cQMqj7Aalw" value="00:15:00"/>
+            </input>
+            <input parameter="Mode">
+               <source id="-iwWzA4r50W-Mjj3-lSZZA" value="Ceiling"/>
+            </input>
+         </inputs>
+      </round-dateNode>
+      <timeSpanConversionNode id="j-bVpXhhUUmc_CuDbR7-QQ"
+                              location="230,1389"
+                              nodeClassId="K9sdqDTJW027gEoLW5A8hA"
+                              nodeName="TimeSpanConversion">
+         <inputs>
+            <input parameter="ColumnName">
+               <source id="UVgnfB9QO0Wk2xwKRPoFtA"/>
+            </input>
+            <input parameter="TimeSpan">
+               <source id="5CMOMIU-Fk-EwTBhxcYgTA" node="_XVMIQ4wu0a7kkDv9rxP-Q"/>
+            </input>
+            <input parameter="Conversion">
+               <source id="NuRnH3IpHk6dw4YjEdRCjQ"/>
+            </input>
+         </inputs>
+      </timeSpanConversionNode>
+      <convert-dateNode id="SX6veZn0l0GeAq0pjsW77w"
+                        location="436,1377"
+                        nodeClassId="5mBZsHIg30-Z0b_X-zRe-w"
+                        nodeName="convert-date">
+         <inputs>
+            <input parameter="Conversion">
+               <source id="ptso-SNDtUuwOJ-vf8gPVw"/>
+            </input>
+            <input parameter="Date">
+               <source id="rNeulr-TOE23ySkHBhjxDQ" node="7iPc9DCJjkWuQbBRvnlvLQ"/>
+            </input>
+         </inputs>
+      </convert-dateNode>
+      <date-offsetNode id="7iPc9DCJjkWuQbBRvnlvLQ"
+                       location="662,1375"
+                       nodeClassId="MIBo4j_-vUCEKBDype0yGQ"
+                       nodeName="date-offset">
+         <inputs>
+            <input parameter="Date">
+               <source id="WWbnL6-ALUCndFTfMJu2Qg" node="_vXxVBVLak6PJFVqDQiwUQ"/>
+            </input>
+            <input parameter="Attribute">
+               <source id="CM1uLEn610a72PgkwRteDg"/>
+            </input>
+            <input parameter="Value">
+               <source id="mWZ5AiPBJUqvWeGHLgnhOA"/>
+            </input>
+         </inputs>
+      </date-offsetNode>
+      <conditionNode id="_XVMIQ4wu0a7kkDv9rxP-Q"
+                     location="221,1508"
+                     nodeClassId="zzbBj-mL1EGhm0xQy-YQ1A"
+                     nodeName="condition">
+         <inputs>
+            <input parameter="Scope">
+               <source id="2YiD3sPlZ0a9gbB-nFWEXg" node="mDgXSjnXW0-1im4f78Qh1g"/>
+            </input>
+            <input parameter="conditions">
+               <source id="qi-ltm6v30GJhyN8eqnMog"
+                       node="mDgXSjnXW0-1im4f78Qh1g"
+                       value="'4' in Undefiniert"/>
+            </input>
+         </inputs>
+      </conditionNode>
+      <existenceNode id="tzk_CjKAk0OomITB47AYGA"
+                     location="435,1476"
+                     nodeClassId="5ispippprE69uLROfTm6og"
+                     nodeName="existence">
+         <inputs>
+            <input parameter="Column">
+               <source id="7ITV-ton_USSiDOBflvayA" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+            <input parameter="Values">
+               <source id="nO0IXmZNhkC1Q4KFH3gTnw" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+         </inputs>
+      </existenceNode>
+      <equalityNode id="5XaWwmJLekadY1W9V1zQ0A"
+                    location="644,1494"
+                    nodeClassId="8Nk6Yg_G5EeR25FIhyWCNw"
+                    nodeName="Equality">
+         <inputs>
+            <input parameter="First">
+               <source id="cAjGqNELXEe4v6ZNrzofAA" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+            <input parameter="Second">
+               <source id="71p_VF7jbkKf9CJTD6bpNw" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+         </inputs>
+      </equalityNode>
+      <lookupNode id="_vXxVBVLak6PJFVqDQiwUQ"
+                  location="221,1594"
+                  nodeClassId="_gKX18gn70KjpgdUed9aTw"
+                  nodeName="lookup">
+         <inputs>
+            <input parameter="Source">
+               <source id="5oGqc-cb6E6ZS4DKMiF4eg" node="mDgXSjnXW0-1im4f78Qh1g"/>
+            </input>
+            <input parameter="Target">
+               <source id="c8HddLLu702v-yXHkRsv_w" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+            <input parameter="mode">
+               <source id="D8uUYUZwT0uaW_QcQ5tGRQ" value="first"/>
+            </input>
+            <input parameter="SourceKeys">
+               <source id="O4VIQmX8GkOQ-BXQ-VLaeA" node="mDgXSjnXW0-1im4f78Qh1g"/>
+            </input>
+            <input parameter="TargetKeys">
+               <source id="ofDLlynKGki5_-W5eTLqFg"/>
+            </input>
+         </inputs>
+      </lookupNode>
+      <find-columnNode id="mDgXSjnXW0-1im4f78Qh1g"
+                       location="426,1568"
+                       nodeClassId="3VPuxEhCXkKl7wkx71wPWg"
+                       nodeName="find-column">
+         <inputs>
+            <input parameter="table">
+               <source id="DZbhFhBYVE6lUOLK5G6CnQ" node="NrUvKO0JNUSHgDJpS1Rq8A"/>
+            </input>
+            <input parameter="name">
+               <source id="eDrziReXh0C-rGIe9I8Pkw" value="4"/>
+            </input>
+         </inputs>
+      </find-columnNode>
+      <comparisonNode id="NrUvKO0JNUSHgDJpS1Rq8A"
+                      location="639,1593"
+                      nodeClassId="KKNu49bY4USzt57NhHxdvA"
+                      nodeName="comparison">
+         <inputs>
+            <input parameter="Variable">
+               <source id="t0xO-c1I80ybSuH-4eACMg" node="0T2u9M4dk0uimLZpEzHM4w"/>
+            </input>
+            <input parameter="Mode">
+               <source id="pkyzrSx_kkWi7GQuIf9VQg" value="Equal"/>
+            </input>
+            <input parameter="ValueA"/>
+            <input parameter="ValueB"/>
+         </inputs>
+      </comparisonNode>
+      <union-allNode id="0T2u9M4dk0uimLZpEzHM4w"
+                     location="432,1665"
+                     nodeClassId="Vri-HfxXrEGoEESsrtUh-g"
+                     nodeName="union-all">
+         <inputs>
+            <input parameter="sources">
+               <source id="6tzqphind0-mrZD3rkQeuw" node="_KYofku17EOF_HFThxRJhQ"/>
+            </input>
+            <input parameter="discriminator-name">
+               <source id="PqDzSFS_vUqj_w1g0pjDiw"/>
+            </input>
+         </inputs>
+      </union-allNode>
+      <augmentNode id="_KYofku17EOF_HFThxRJhQ"
+                   location="645,1720"
+                   nodeClassId="3z8DY1_dU0aTkeHdrkCD0g"
+                   nodeName="augment">
+         <inputs>
+            <input parameter="Scope">
+               <source id="h-3OV4JHMUWq9HfmPNQBAQ" node="QR9UZOyNW0qJTPlim75ZgQ"/>
+            </input>
+            <input parameter="AdditionalSymbols"/>
+            <input parameter="ColumnNames">
+               <source id="V3g0WjsyrU-aXyq1UsVofQ"/>
+            </input>
+            <input parameter="Expressions">
+               <source id="wzocbgASxEGaiQDGTqU0Fg"/>
+            </input>
+            <input parameter="DataTypes">
+               <source id="1L7_CP3WU0iXaYHlf0xsfg"/>
+            </input>
+         </inputs>
+      </augmentNode>
+      <augmentNode id="_KYofku17EOF_HFThxRJhQ"
+                   location="645,1720"
+                   nodeClassId="3z8DY1_dU0aTkeHdrkCD0g"
+                   nodeName="augment">
+         <inputs>
+            <input parameter="Scope">
+               <source id="h-3OV4JHMUWq9HfmPNQBAQ" node="QR9UZOyNW0qJTPlim75ZgQ"/>
+            </input>
+            <input parameter="AdditionalSymbols"/>
+            <input parameter="ColumnNames">
+               <source id="V3g0WjsyrU-aXyq1UsVofQ"/>
+            </input>
+            <input parameter="Expressions">
+               <source id="wzocbgASxEGaiQDGTqU0Fg"/>
+            </input>
+            <input parameter="DataTypes">
+               <source id="1L7_CP3WU0iXaYHlf0xsfg"/>
+            </input>
+         </inputs>
+      </augmentNode>
+      <take-whileNode id="QR9UZOyNW0qJTPlim75ZgQ"
+                      location="223,1791"
+                      nodeClassId="TuhXnlaJ90KXsfY8CJkQLg"
+                      nodeName="take-while">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="condition">
+               <source id="-OH5NlPxG0WLme3PilyMtA"/>
+            </input>
+         </inputs>
+      </take-whileNode>
+      <bool-filterNode id="wAJBR3UF7EyskVi_GBR7Cg"
+                       location="423,1803"
+                       nodeClassId="L5lbbAJU20-VuiHBJmhmYw"
+                       nodeName="bool-filter">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="predicate"/>
+            <input parameter="invert-predicate">
+               <source id="tu6cynsjc0SYqLiDb-ysBQ"/>
+            </input>
+         </inputs>
+      </bool-filterNode>
+      <demultiplexerNode id="Y3IBogdgnE-IZs8uQNbKfg"
+                         location="229,1892"
+                         nodeClassId="mktRh0ScAk-nwC_awR8xVw"
+                         nodeName="demultiplexer">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="selector"/>
+            <input parameter="values">
+               <source id="JX_NzmDI9k6al05h-IHw5A"/>
+            </input>
+            <input parameter="remainder">
+               <source id="rFbgFnHWx0KlM2egNYZFpg"/>
+            </input>
+         </inputs>
+      </demultiplexerNode>
+      <domain-mappingNode id="0ocpzVrUYkShDblGfGn0hw"
+                          location="429,1921"
+                          nodeClassId="22sWpLIJ0ESIqtdHwc8rgQ"
+                          nodeName="domain-mapping">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="target-domain"/>
+         </inputs>
+      </domain-mappingNode>
+      <single-rowNode id="261c_IceTEWUh0VwCZS9kg"
+                      location="701,1950"
+                      nodeClassId="H7xcnMaWD0OyTc6IdlcA7A"
+                      nodeName="single-row">
+         <inputs>
+            <input parameter="source"/>
+         </inputs>
+      </single-rowNode>
+      <unpivotNode id="jEYwckLKSEeE-Ce3522Cbw"
+                   location="271,2109"
+                   nodeClassId="z9-iLbQrZ0GVjor47qG3PQ"
+                   nodeName="Unpivot">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="KeyColumn"/>
+            <input parameter="ArgColumnName">
+               <source id="iqya4JLbCEa1QyqkwyO3ng"/>
+            </input>
+            <input parameter="ValueColumName">
+               <source id="2ae4Zc3h20uQe14rwLwzRQ"/>
+            </input>
+            <input parameter="ArgumentValueColumns"/>
+         </inputs>
+      </unpivotNode>
+      <existence-filterNode id="oFikeJj9OEqmqhVPxkXmwA"
+                            location="517,2045"
+                            nodeClassId="3FGyDa73NEebvAWlpBLAwA"
+                            nodeName="existence-filter">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="search-values"/>
+            <input parameter="set-values"/>
+            <input parameter="negated">
+               <source id="NS4V7HeEE0GyvrywWxJkZQ"/>
+            </input>
+         </inputs>
+      </existence-filterNode>
+      <filterNode id="y2g_U3MK3EqXUr1MYUYteQ"
+                  location="752,2100"
+                  nodeClassId="zAp6lWOy00GMge_dmBFKfQ"
+                  nodeName="filter">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="condition">
+               <source id="m6xp2dfd0k-ax7l-rfY2YA"/>
+            </input>
+         </inputs>
+      </filterNode>
+      <groupNode id="_57L7UvYtkmw8ARZaUoYAg"
+                 location="299,2350"
+                 nodeClassId="pAFzDGoRG06LustM4ZXCAw"
+                 nodeName="group">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="columns"/>
+         </inputs>
+      </groupNode>
+      <group-intoNode id="4_shP_T-pEqsU3eIcdovRQ"
+                      location="567,2271"
+                      nodeClassId="p5vpJA8sq0WmE4FWVLBreQ"
+                      nodeName="group-into">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="grouping-criteria"/>
+            <input parameter="detail-column-name">
+               <source id="JFXVfmaJqk-NZrlQr05EaA"/>
+            </input>
+         </inputs>
+      </group-intoNode>
+      <complementNode id="yIPTSGJVxUicTnfCmJRf8w"
+                      location="528,2242"
+                      nodeClassId="uTEMvJZSRUGwV4rtUkHZnA"
+                      nodeName="Complement">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="Exclude"/>
+         </inputs>
+      </complementNode>
+      <expand-valuesNode id="-_W4yKMEVkmxR1tE6wJMtA"
+                         location="715,2411"
+                         nodeClassId="XPadEFyD9ki6369dj9gfDw"
+                         nodeName="expand-values">
+         <inputs>
+            <input parameter="values"/>
+            <input parameter="keys">
+               <source id="lkZXAY9_sE-v9wJ0HeJMvA"/>
+            </input>
+         </inputs>
+      </expand-valuesNode>
+      <neighborNode id="Dm1j2VJCd06qMevRcnWhiw"
+                    location="250,2295"
+                    nodeClassId="P0agyQx2Ek2rXnTwvG85Sg"
+                    nodeName="neighbor">
+         <inputs>
+            <input parameter="Column"/>
+            <input parameter="Offset">
+               <source id="UpJBGuSfT0SL-LCDO6PFfA" value="1"/>
+            </input>
+         </inputs>
+      </neighborNode>
+      <pivotNode id="4tP2BLN44k679V3WK-y1tw"
+                 location="338,2496"
+                 nodeClassId="EQuUDcmWM0SOBJ4HSxmfiw"
+                 nodeName="pivot">
+         <inputs>
+            <input parameter="row-keys"/>
+            <input parameter="column-key"/>
+            <input parameter="column-name-expression">
+               <source id="xJPD__nxwkGtB3OwyaPXMw"/>
+            </input>
+            <input parameter="cell-value"/>
+            <input parameter="cell-aggregate">
+               <source id="GDfSX1mI0EW6ymPgJ61uZw" value="sum"/>
+            </input>
+            <input parameter="keys">
+               <source id="XcWYKEpWDk-UZMnaWpxu7g"/>
+            </input>
+            <input parameter="remainder-name">
+               <source id="JfS_YhJI8UCCNdalBBSBYw"/>
+            </input>
+         </inputs>
+      </pivotNode>
+      <sortNode id="5fPXdY-KsE6SZ1hZZTCLxQ"
+                location="155,2460"
+                nodeClassId="PCFQ_v5mNUGmM4N8lhyu9A"
+                nodeName="sort">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="Column">
+               <source id="-vzE4WpWEkSH7TPwBgkPNQ"/>
+            </input>
+            <input parameter="Direction">
+               <source id="QCdgQUX-mEyUg3AFOFpEbg" value="asc"/>
+            </input>
+         </inputs>
+      </sortNode>
+      <batch-column-conversionNode id="drYnP7tV5U2JidsQ228nwA"
+                                   location="585,2475"
+                                   nodeClassId="d_LuyPehy06-QFCVkrlF7g"
+                                   nodeName="batch-column-conversion">
+         <inputs>
+            <input parameter="scope"/>
+            <input parameter="additional-symbols"/>
+            <input parameter="variable-name">
+               <source id="_v_HVgZSL0S3vQTwk8bDDg" value="x"/>
+            </input>
+            <input parameter="column-predicate">
+               <source id="UQYfT4zCD0mUGBuAEsNL1w"/>
+            </input>
+            <input parameter="conversion">
+               <source id="rI97G2lqYEy-zbNaESHGyg"/>
+            </input>
+         </inputs>
+      </batch-column-conversionNode>
+      <structure-castNode id="hupJrGM34ESq7PC7qA5B4Q"
+                          location="221,2660"
+                          nodeClassId="et5AWgfBPk-z520YEvhFww"
+                          nodeName="structure-cast">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="ColumnNames">
+               <source id="P2n-GikoSkyO4Uw1ID8CVg"/>
+            </input>
+            <input parameter="ColumnTypes">
+               <source id="wPRZX3xPIUOoEXdMncToaw"/>
+            </input>
+         </inputs>
+      </structure-castNode>
+      <expand-nested-tablesNode id="4ktz1n5wE0m4qg7O8ISTJA"
+                                location="535,2664"
+                                nodeClassId="s4mwvrGDo0ugUt5uSDpZ1Q"
+                                nodeName="expand-nested-tables">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="Column"/>
+            <input parameter="keep-empty-rows">
+               <source id="yftRpx3lREyBxwiRbSmSfQ"/>
+            </input>
+         </inputs>
+      </expand-nested-tablesNode>
+      <outer-joinNode id="RzNS726xgUejY5hnTZa9bg"
+                      location="239,2836"
+                      nodeClassId="APAoXzy7xE-u0zErzkbVmw"
+                      nodeName="outer-join">
+         <inputs>
+            <input parameter="Master"/>
+            <input parameter="Detail"/>
+            <input parameter="Key">
+               <source id="97i1XClaJkGVlrJi0bUt2w"/>
+            </input>
+            <input parameter="ForeignKey">
+               <source id="YjP1c3DOEEig8TSc2954jg"/>
+            </input>
+         </inputs>
+      </outer-joinNode>
+      <inner-joinNode id="636BryqSl0O4s6vinCd4hA"
+                      location="473,2848"
+                      nodeClassId="C7Yp5YvLGUWFk257N-YRZQ"
+                      nodeName="inner-join">
+         <inputs>
+            <input parameter="left"/>
+            <input parameter="right"/>
+            <input parameter="constraint">
+               <source id="mIfA3k5YQ06w1Lcpc29VBg"/>
+            </input>
+         </inputs>
+      </inner-joinNode>
+      <inner-equi-joinNode id="ksWXroh5xki-2MPG3qpweQ"
+                           location="496,3067"
+                           nodeClassId="sHG29pn9V0SoZLl9IzWXZg"
+                           nodeName="inner-equi-join">
+         <inputs>
+            <input parameter="Master"/>
+            <input parameter="Detail"/>
+            <input parameter="Key">
+               <source id="pV_AQkSvdU6k7UGrzS1nFg"/>
+            </input>
+            <input parameter="ForeignKey">
+               <source id="Dz507LRUA02EsN6nnUzrMA"/>
+            </input>
+            <input parameter="column-collision-handling">
+               <source id="0SWQ7Tm5uUG_99tlXq8rNw" value="default"/>
+            </input>
+            <input parameter="reduce-key-columns">
+               <source id="G3P_oecVC02m-afXuNsk_g" value="False"/>
+            </input>
+         </inputs>
+      </inner-equi-joinNode>
+      <nested-joinNode id="5BasRQIUvkqCUEd3SS5WPg"
+                       location="233,3120"
+                       nodeClassId="MxoRiXgAikOHFA32Zlxu-A"
+                       nodeName="nested-join">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="target"/>
+            <input parameter="multiplicity">
+               <source id="GHsK369JFk-vzxYl_eMwCw" value="OneToMany"/>
+            </input>
+            <input parameter="result-column-name">
+               <source id="OUsx3ghz1kq6VaSqurA0hg"/>
+            </input>
+            <input parameter="source-keys">
+               <source id="TgitnAVpJEm2WWqEo1GjuA"/>
+            </input>
+            <input parameter="target-keys">
+               <source id="55ETkIa6FkWP4k02UIzcgw"/>
+            </input>
+         </inputs>
+      </nested-joinNode>
+      <cross-joinNode id="6EIx_4atxUC74PISFZ_fcQ"
+                      location="371,3059"
+                      nodeClassId="rao-4h8Em0ikrnxfPLOyXw"
+                      nodeName="cross-join">
+         <inputs>
+            <input parameter="left"/>
+            <input parameter="right"/>
+         </inputs>
+      </cross-joinNode>
+      <referenceNode id="FoV4DGtoZUyRHgzKqbGdgQ"
+                     location="630,2980"
+                     nodeClassId="0LMX5t304k2YBPHJ2518bQ"
+                     nodeName="reference">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="target"/>
+            <input parameter="constraint">
+               <source id="JcvMKDYjf0u6p3k0oyBTyg"/>
+            </input>
+            <input parameter="mode">
+               <source id="YI0_iWE1wEC_V0NuwdsUEg"/>
+            </input>
+         </inputs>
+      </referenceNode>
+      <full-outer-joinNode id="13iVQkgDP0yP2Hy5cG-vUg"
+                           location="768,3249"
+                           nodeClassId="4dhfE4LnKk6530nvQ8gMQA"
+                           nodeName="full-outer-join">
+         <inputs>
+            <input parameter="left-side"/>
+            <input parameter="right-side"/>
+            <input parameter="left-keys">
+               <source id="tNRKNgZ0c0yXrrVzgNffSQ"/>
+            </input>
+            <input parameter="right-keys">
+               <source id="rdvoUIUoPEGGTqbj5kJBMg"/>
+            </input>
+            <input parameter="column-collision-handling">
+               <source id="xR_9OjHq-0mzUXxNpyDlhA"/>
+            </input>
+         </inputs>
+      </full-outer-joinNode>
+      <multiply-rowsNode id="agVoohWcakGOfKMl3j7q6g"
+                         location="735,2791"
+                         nodeClassId="zUKFgl5hFUKsf2kp5Bwa6w"
+                         nodeName="multiply-rows">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="multipliers"/>
+         </inputs>
+      </multiply-rowsNode>
+      <mergeNode id="OiSb8qSDqEKtguCMap9tQQ"
+                 location="555,3307"
+                 nodeClassId="nuhIAu6i90i5yTJ6w-k75Q"
+                 nodeName="merge">
+         <inputs>
+            <input parameter="sources">
+               <source id="GSUCsl40kkihIuE4L2EPwQ"/>
+            </input>
+            <input parameter="column-collision-handling">
+               <source id="4cr3Rr9Ww0uNMXDcqHzC8A" value="default"/>
+            </input>
+         </inputs>
+      </mergeNode>
+      <successor-as-neighborNode id="4hjRk58FekGOxsY7fSvkFw"
+                                 location="243,3398"
+                                 nodeClassId="8GOx-NN8DkCzHhkEcrPaYA"
+                                 nodeName="successor-as-neighbor">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="Columns"/>
+         </inputs>
+      </successor-as-neighborNode>
+      <overlayNode id="Y8E-gdUdPUWEg_drpjcXVQ"
+                   location="493,3403"
+                   nodeClassId="wdBjC0qsYU2ZNh5qvld4PA"
+                   nodeName="overlay">
+         <inputs>
+            <input parameter="target"/>
+            <input parameter="overlay"/>
+            <input parameter="null-only">
+               <source id="ojhoJ95P_0On3M2srrVUug"/>
+            </input>
+            <input parameter="target-key">
+               <source id="kd7sSosZiUqrL4re47-kKQ"/>
+            </input>
+            <input parameter="overlay-key">
+               <source id="6rwNfH7uE0SnrlCIzVoHCA"/>
+            </input>
+         </inputs>
+      </overlayNode>
+      <summaryNode id="uimSL3bky0G__ZIDzwnl0Q"
+                   location="777,3521"
+                   nodeClassId="uD-SF2MlxUCWl5waRepJfg"
+                   nodeName="Summary">
+         <inputs>
+            <input parameter="Groups"/>
+            <input parameter="Columns"/>
+         </inputs>
+      </summaryNode>
+    
+    
+    
+    
+    
+    
+      <arithmeticNode id="NMKX8B-FEkCxzFyHF3B-Lw"
+                      location="276,3772"
+                      nodeClassId="t16jfnmt1U2ASWA9hmMvVQ"
+                      nodeName="arithmetic">
+         <inputs>
+            <input parameter="operator">
+               <source id="Mf6viQu3NE-VchVzx8oS9w"/>
+            </input>
+            <input parameter="left">
+               <source id="MoOcvMMafUqGOG5LUVkUgQ"/>
+            </input>
+            <input parameter="right">
+               <source id="E0zkWttPQU-PX1IsQThNkg"/>
+            </input>
+            <input parameter="ColumnName">
+               <source id="30j70CxdP0Cl0T0Ej0IEBQ"/>
+            </input>
+         </inputs>
+      </arithmeticNode>
+      <imageNode id="WqimnmAvh02CAJBVJvOKKA"
+                 location="529,3867"
+                 nodeClassId="zZO3se-0WEuUHviaGxzCdg"
+                 nodeName="image">
+         <inputs>
+            <input parameter="scope"/>
+            <input parameter="script">
+               <source id="lnot2OWTvEOGuScIvGDs-A"
+                       value="doc.circle(100, 100, 50).fill = 'red'"/>
+            </input>
+         </inputs>
+      </imageNode>
+      <expressionNode id="mEZvRbn8AUyMt2fxcIf7Tw"
+                      location="555,3831"
+                      nodeClassId="QrdOqQQuC0uE3rC1bYTlXQ"
+                      nodeName="expression">
+         <inputs>
+            <input parameter="Scope"/>
+            <input parameter="Expression">
+               <source id="ov8Piby_bk6UBFQ77kE2PQ"/>
+            </input>
+         </inputs>
+      </expressionNode>
+      <imageNode id="4N3aPRhgKUO30osxqUr22A"
+                 location="279,3938"
+                 nodeClassId="zZO3se-0WEuUHviaGxzCdg"
+                 nodeName="image">
+         <inputs>
+            <input parameter="scope"/>
+            <input parameter="script">
+               <source id="ZGM0Q40JyEWiZeLKW9SMeA"
+                       value="doc.circle(100, 100, 50).fill = 'red'"/>
+            </input>
+         </inputs>
+      </imageNode>
+      <costFunctionNode id="0owHehTSzUSbFxYxUiW7Tg"
+                        location="607,3963"
+                        nodeClassId="eTHmcg2rjEWzuJfmuvsWVg"
+                        nodeName="CostFunction">
+         <inputs>
+            <input parameter="CostFunction">
+               <source id="AlWkNZOR-0Ox1x0y3v7hWw"/>
+            </input>
+            <input parameter="Exponent">
+               <source id="YmlC5nB4cEC6lZY-fEZb3w"/>
+            </input>
+            <input parameter="Factor">
+               <source id="4bw2M5TbGUm8s7yToNdgSg"/>
+            </input>
+            <input parameter="Constant">
+               <source id="dMY1PJjauE-lgGBnFp8ivw"/>
+            </input>
+            <input parameter="Amount"/>
+         </inputs>
+      </costFunctionNode>
+      <logicNode id="OFxbk1j7WE-9iN2dHSu-Vg"
+                 location="402,4070"
+                 nodeClassId="Yr0eDchm6kmcA30HyB_rWw"
+                 nodeName="logic">
+         <inputs>
+            <input parameter="Invert">
+               <source id="A4BY2R6obEyhQRh9Q0I9Mg"/>
+            </input>
+            <input parameter="Operation">
+               <source id="lrltGHhGmkKJ7PvdPDnClg"/>
+            </input>
+            <input parameter="Left"/>
+            <input parameter="Right"/>
+         </inputs>
+      </logicNode>
+      <negateNode id="HI-yC5LyE06WlIYJrH3_GQ"
+                  location="542,3984"
+                  nodeClassId="uPQEqucYcUqx97eXsIxCyw"
+                  nodeName="negate">
+         <inputs>
+            <input parameter="value"/>
+         </inputs>
+      </negateNode>
+      <orNode id="KmAcgkh-OE2jPG9KFYlmpQ"
+              location="739,4155"
+              nodeClassId="2UAPeVVAWkKMeriscqNWJA"
+              nodeName="or">
+         <inputs>
+            <input parameter="Arguments"/>
+         </inputs>
+      </orNode>
+      <productNode id="q6idPFJWiU-V1eolvPWcMw"
+                   location="301,4139"
+                   nodeClassId="osh4BzuGvUW8qxrbPCaJlQ"
+                   nodeName="product">
+         <inputs>
+            <input parameter="Factors"/>
+         </inputs>
+      </productNode>
+      <roundNode id="xXvl3RJkU0m5bX_hH_VDaQ"
+                 location="312,4094"
+                 nodeClassId="iB9bwAKaakWMRPwyafyQnw"
+                 nodeName="round">
+         <inputs>
+            <input parameter="value"/>
+            <input parameter="mode">
+               <source id="TpiDMbmFXkqnYSvwjhTkvw" value="BankersRound"/>
+            </input>
+            <input parameter="decimal-places">
+               <source id="FZ9mXIooWkymmMRWgRSHUw" value="0"/>
+            </input>
+         </inputs>
+      </roundNode>
+    
+      <sumNode id="AtWpFDoIzk-9cw7_1RcAvg"
+               location="645,4207"
+               nodeClassId="2ELNdwyckkGpKP47d1cR5Q"
+               nodeName="sum">
+         <inputs>
+            <input parameter="Values"/>
+         </inputs>
+      </sumNode>
+      <bin-packingNode id="9xXY9WYGLEei4halG76gOw"
+                       location="255,4227"
+                       nodeClassId="07sPELX4QkW0yg8hlOSMWw"
+                       nodeName="bin-packing">
+         <inputs>
+            <input parameter="Values">
+               <source id="l28fH2wAAkuO-bEQvlPvwQ"/>
+            </input>
+            <input parameter="Limits">
+               <source id="ef2C46qNwU6aXLcW08U9Hg"/>
+            </input>
+         </inputs>
+      </bin-packingNode>
+      <hierarchical-clusteringNode id="vpEhNbG1Vk--IOQvG_LJEg"
+                                   location="532,4260"
+                                   nodeClassId="eujFdztSbky1bABPoO_hkw"
+                                   nodeName="hierarchical-clustering">
+         <inputs>
+            <input parameter="coordinates"/>
+            <input parameter="weights"/>
+            <input parameter="distance"/>
+            <input parameter="linkage">
+               <source id="LFtrsHryhUOa79EG7gGClw"/>
+            </input>
+            <input parameter="max-distance">
+               <source id="PApg059_YEyhlzJRLb6W7g"/>
+            </input>
+         </inputs>
+      </hierarchical-clusteringNode>
+      <packagingNode id="Rf-i-Up4YEuuComm5vzjQg"
+                     location="336,4363"
+                     nodeClassId="LJBBGSPSyEW0KkNfSx1J1w"
+                     nodeName="packaging">
+         <inputs>
+            <input parameter="line-quantity"/>
+            <input parameter="line-article-id"/>
+            <input parameter="package-article-id"/>
+            <input parameter="package-size"/>
+            <input parameter="strategy">
+               <source id="OQOyBWje3U6oihJMRHwVjA"/>
+            </input>
+            <input parameter="remainder-as-loose">
+               <source id="118lJXNNKkC7b4TWxmsKlQ"/>
+            </input>
+         </inputs>
+      </packagingNode>
+      <geocoderNode id="itBJKYZMH0eKJ7gjmFX4QQ"
+                    location="593,4422"
+                    nodeClassId="8jUsCwrOaES3iKo8Qq5DrQ"
+                    nodeName="geocoder">
+         <inputs>
+            <input parameter="Engine">
+               <source id="MPR3sLVav0OcMqi3sQjiHA"/>
+            </input>
+            <input parameter="country"/>
+            <input parameter="postalcode"/>
+            <input parameter="city"/>
+            <input parameter="district"/>
+            <input parameter="street"/>
+            <input parameter="housenumber"/>
+         </inputs>
+      </geocoderNode>
+      <georouterNode id="qi_QwanSb06hckHZRZAGjQ"
+                     location="791,4337"
+                     nodeClassId="HOKuhqT2Z0etlmyFDE76ow"
+                     nodeName="georouter">
+         <inputs>
+            <input parameter="Engine">
+               <source id="RF_1vAzZSEOOYqCOJjwAhQ"/>
+            </input>
+            <input parameter="Option">
+               <source id="3fXyzhUIeUCgawNPAwZyKA"/>
+            </input>
+            <input parameter="origin"/>
+            <input parameter="destination"/>
+         </inputs>
+      </georouterNode>
+      <graph-clusterNode id="-7UP3V_HpkuEUMueZmkmOg"
+                         location="271,4575"
+                         nodeClassId="CnkDDNRoVkaDswtmBPtlLQ"
+                         nodeName="graph-cluster">
+         <inputs>
+            <input parameter="gamma">
+               <source id="B14I8QxG1Uev-nwBL4ui4g" value="1"/>
+            </input>
+            <input parameter="edge-source"/>
+            <input parameter="edge-target"/>
+            <input parameter="edge-weight"/>
+         </inputs>
+      </graph-clusterNode>
+      <limitFilterNode id="F8lgNZrb1k-03HDWb2SsUA"
+                       location="557,4663"
+                       nodeClassId="vusNCI6xYU2DTw86ePJ1Qw"
+                       nodeName="LimitFilter">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="Included"/>
+            <input parameter="Addend"/>
+            <input parameter="Minimum">
+               <source id="Kx9pVOHv9UKkgq2C2F1Y6w"/>
+            </input>
+            <input parameter="Maximum">
+               <source id="rvso8Xjy1kGg7BDB68oSyQ"/>
+            </input>
+         </inputs>
+      </limitFilterNode>
+      <reverse-geocoderNode id="5hzBanyw20mWMeY12ODvnw"
+                            location="489,4654"
+                            nodeClassId="aGrYRlJ6bESYbOrr27WFMA"
+                            nodeName="reverse-geocoder">
+         <inputs>
+            <input parameter="Engine">
+               <source id="F_tTPPiBHku1mkUHwKn4QA"/>
+            </input>
+            <input parameter="geocoordinate"/>
+         </inputs>
+      </reverse-geocoderNode>
+      <consolidationNode id="h8eJm7DPp06dnXXWOxydzQ"
+                         location="295,4722"
+                         nodeClassId="uqCwcmiA5UW2DbXQvOD55g"
+                         nodeName="consolidation">
+         <inputs>
+            <input parameter="date"/>
+            <input parameter="time-limit">
+               <source id="dEkh4UZ760mbXq24FrWl8Q"/>
+            </input>
+            <input parameter="values">
+               <source id="twUOt4PXXU-UVG4eOdlCng"/>
+            </input>
+            <input parameter="minima">
+               <source id="0dLluHAflEey22BZVtxilQ"/>
+            </input>
+         </inputs>
+      </consolidationNode>
+      <shortest-pathNode id="CZzraXN570S65se86hrvgg"
+                         location="668,4850"
+                         nodeClassId="1nDTvjV0EEaQKRfvU_vGyg"
+                         nodeName="shortest-path">
+         <inputs>
+            <input parameter="edge-source"/>
+            <input parameter="edge-target"/>
+            <input parameter="edge-length"/>
+            <input parameter="query-source"/>
+            <input parameter="query-target"/>
+            <input parameter="max-distance">
+               <source id="5uyIAcNhJU2Pf43DDX_pLA"/>
+            </input>
+         </inputs>
+      </shortest-pathNode>
+      <redistributionNode id="boXV71n-UEuenAhxQsfnEw"
+                          location="202,4948"
+                          nodeClassId="zreEWzHOekGRaAQH6vI7tQ"
+                          nodeName="redistribution">
+         <inputs>
+            <input parameter="total"/>
+            <input parameter="quotas"/>
+            <input parameter="decimal-places">
+               <source id="_ZYfyHND-0O8hrgE1VRs5w"/>
+            </input>
+         </inputs>
+      </redistributionNode>
+    
+      <parse-conditionNode id="A8hJL3vNikqxESkxwYJB6g"
+                           location="218,4811"
+                           nodeClassId="kFzxej80e0CFOp52De-mtw"
+                           nodeName="parse-condition">
+         <inputs>
+            <input parameter="source"/>
+            <input parameter="condition-language">
+               <source id="U4R-7Nfajk-zg61H646gOg" value="String"/>
+            </input>
+         </inputs>
+      </parse-conditionNode>
+      <finitesequenceNode id="DE_7C-mZ00WaBdZh7Y1MUA"
+                          location="448,4958"
+                          nodeClassId="9zkS0UP02EiJQ6TjNrDjjQ"
+                          nodeName="finitesequence">
+         <inputs>
+            <input parameter="First">
+               <source id="WFoKySeYX0mdJGWoO7xLbA"/>
+            </input>
+            <input parameter="Count">
+               <source id="mQU1-9Po-kWOBS-83LJJAQ" value="10"/>
+            </input>
+            <input parameter="Step">
+               <source id="-0E30CQBzUOqAyEujtpdpQ" value="1"/>
+            </input>
+         </inputs>
+      </finitesequenceNode>
+      <group-indexNode id="8rHcFTk8NUi7bgRJXilkuA"
+                       location="327,5079"
+                       nodeClassId="jpdsBxqAXU6MqzX1wL3_hQ"
+                       nodeName="group-index">
+         <inputs>
+            <input parameter="Table"/>
+         </inputs>
+      </group-indexNode>
+      <group-row-indexNode id="6Z01g12XA0Wt-bYllyRU2w"
+                           location="192,5089"
+                           nodeClassId="kEnAAsrqI0WdEadNT5MNAA"
+                           nodeName="group-row-index">
+         <inputs>
+            <input parameter="DataSet"/>
+         </inputs>
+      </group-row-indexNode>
+      <constantNode id="ugAJj3pwpE63QjiTf6Ghuw"
+                    location="647,5130"
+                    nodeClassId="PGddLuF_V0SXQYZLwpZthQ"
+                    nodeName="constant">
+         <inputs>
+            <input parameter="Name">
+               <source id="tsZM6ATzZU-0WRFHAFhWbw"/>
+            </input>
+            <input parameter="Value">
+               <source id="i_w4qMGO7UeyToJS_7zFMQ"/>
+            </input>
+            <input parameter="DataType">
+               <source id="YAo25ruq30OIiJo485yTVA" value="String"/>
+            </input>
+         </inputs>
+      </constantNode>
+      <arrayNode id="FX1sP02MvEifD37mNja_mA"
+                 location="575,5118"
+                 nodeClassId="gNE-St3CdEqlcLXLb1OvDA"
+                 nodeName="array">
+         <inputs>
+            <input parameter="DataType">
+               <source id="1Gew8Ga8LkGHh1_hHRSgRQ" value="Int32"/>
+            </input>
+            <input parameter="Values">
+               <source id="nqmtk7_jk0qRYVVYim8xwQ"/>
+            </input>
+         </inputs>
+      </arrayNode>
+      <nullNode id="QZCUZv9h-kSi-VNrVl1O3A"
+                location="242,5174"
+                nodeClassId="t64UL7OQQUyzvdEScazPhQ"
+                nodeName="null"/>
+      <parameterNode id="wEFle-HjlEijpdkVDn_IbQ"
+                     location="499,5170"
+                     nodeClassId="XPLY81hjtkiOEnzgtyMK5Q"
+                     nodeName="parameter">
+         <inputs>
+            <input parameter="name">
+               <source id="WsrSu4Qan0OmGyAsuIOtZQ"/>
+            </input>
+         </inputs>
+      </parameterNode>
+      <noiseNode id="qv8_x3VAi0yTG9g6z4RPng"
+                 location="247,5223"
+                 nodeClassId="WMVhxEDgn0Swg3-0zmckXA"
+                 nodeName="noise">
+         <inputs>
+            <input parameter="lower-bound">
+               <source id="nFr5w6gaLUqRLp_vY6NvCg" value="0"/>
+            </input>
+            <input parameter="upper-bound">
+               <source id="PXyIHij_bEiFt722mQ7b8Q" value="1"/>
+            </input>
+            <input parameter="random-seed">
+               <source id="SsdIwY7R-USd3k1XpKYfDg" value="8318B3A4"/>
+            </input>
+         </inputs>
+      </noiseNode>
+      <sequenceNode id="h6kfzJTiR0C7DeuhN4P95w"
+                    location="522,5282"
+                    nodeClassId="NHKLUoutLEqI01Z5S-h0Ew"
+                    nodeName="sequence">
+         <inputs>
+            <input parameter="First">
+               <source id="OHGneppy40iwQrv1GD-awg" value="0"/>
+            </input>
+            <input parameter="Step">
+               <source id="Sh4BPxUX_0eXCa5g1aY1VQ" value="1"/>
+            </input>
+         </inputs>
+      </sequenceNode>
+      <row-indexNode id="BJWz2rhqqUC-KKLjQrLS4w"
+                     location="774,5269"
+                     nodeClassId="e_jItwDpwki932PMALyBPg"
+                     nodeName="row-index">
+         <inputs>
+            <input parameter="DataSet"/>
+         </inputs>
+      </row-indexNode>
+      <timeNode id="-C6uGc9Hh0SR6Tf5LpekzA"
+                location="513,5253"
+                nodeClassId="uTU4B5Cv4kKo6DkNIodfRg"
+                nodeName="time"/>
+      <debugNode id="dNpV7Xt8REyEegodoNDJZw"
+                 location="447,5352"
+                 nodeClassId="HRxvWg3rzkWKlqJ7Bf64DA"
+                 nodeName="debug">
+         <inputs>
+            <input parameter="source"/>
+         </inputs>
+      </debugNode>
+      <duplicatRowsNode id="uERRJXcq_kyj8K5OpUTWeQ"
+                        location="258,5368"
+                        nodeClassId="0uv5T0BOXUW3uYJdDbGmfQ"
+                        nodeName="duplicate-rows">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="keys"/>
+         </inputs>
+      </duplicatRowsNode>
+      <duplicate-rowsNode id="uERRJXcq_kyj8K5OpUTWeQ"
+                          location="258,5368"
+                          nodeClassId="0uv5T0BOXUW3uYJdDbGmfQ"
+                          nodeName="duplicate-rows">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="keys"/>
+         </inputs>
+      </duplicate-rowsNode>
+      <profileNode id="3bpCOBAR0EOCxdGK3QgjkA"
+                   location="397,5493"
+                   nodeClassId="QLm-3FcFSU-ibZpgkDZhBA"
+                   nodeName="profile">
+         <inputs>
+            <input parameter="source"/>
+         </inputs>
+      </profileNode>
+      <column-analysisNode id="aIEBPiMvVkK1ENTajqrdtA"
+                           location="676,5451"
+                           nodeClassId="olnl4KcKTUams_DWgAQH1w"
+                           nodeName="column-analysis">
+         <inputs>
+            <input parameter="source"/>
+         </inputs>
+      </column-analysisNode>
+      <column-profileNode id="JQby8Gg3Ak-gDSDW7KPEtw"
+                          location="125,5493"
+                          nodeClassId="reGCLYXokE2Ld9mGiAznvw"
+                          nodeName="column-profile">
+         <inputs>
+            <input parameter="source">
+               <source id="5hN0LkkpeUqx3hW0xu8AWA" node="3bpCOBAR0EOCxdGK3QgjkA"/>
+            </input>
+         </inputs>
+      </column-profileNode>
+      <formatNode id="jxWmCsrqbkGSvyGX0PYLug"
+                  location="481,5586"
+                  nodeClassId="nQHn_rp_sk-dPQmY24ZYCg"
+                  nodeName="format">
+         <inputs>
+            <input parameter="Template">
+               <source id="loVhtbkUGkeWAm07zo8W8Q"/>
+            </input>
+            <input parameter="Culture">
+               <source id="paoQGtjHV0qx57ragiPu8A"/>
+            </input>
+            <input parameter="Value">
+               <source id="IMk2lebm5EWkhQGcnW4_7w"/>
+            </input>
+         </inputs>
+      </formatNode>
+      <multiplexNode id="lZ_RoBlJvUuWZlU4rPZJfQ"
+                     location="301,5611"
+                     nodeClassId="HDTwUgp_mUuTGAbFyz3dpQ"
+                     nodeName="multiplex">
+         <inputs>
+            <input parameter="State"/>
+            <input parameter="OnTrue"/>
+            <input parameter="OnFalse"/>
+         </inputs>
+      </multiplexNode>
+      <checksumNode id="yYxxCAl4E0Wxg4uGL0w2iQ"
+                    location="235,5648"
+                    nodeClassId="Xtj01G-Ti0OEltcPrMfdyg"
+                    nodeName="checksum">
+         <inputs>
+            <input parameter="DataSet"/>
+         </inputs>
+      </checksumNode>
+      <surrogateNode id="XDW2VxLSak2IpqXEcy3seg"
+                     location="738,5567"
+                     nodeClassId="M0YLbEvHO0uazFE3jI47VA"
+                     nodeName="surrogate">
+         <inputs>
+            <input parameter="Columns"/>
+         </inputs>
+      </surrogateNode>
+      <tupleNode id="f1JHCnRM7EODFtHVO40ZEQ"
+                 location="813,5657"
+                 nodeClassId="hf_cYBY1IEGWcf9YOL2aNQ"
+                 nodeName="tuple">
+         <inputs>
+            <input parameter="Components"/>
+         </inputs>
+      </tupleNode>
+      <count-occurrencesNode id="aKhZ2KXR1ky12UAwRbrLXQ"
+                             location="718,5712"
+                             nodeClassId="LRxv-JvGL0G6FsgtmSjZ9A"
+                             nodeName="count-occurrences">
+         <inputs>
+            <input parameter="Values"/>
+         </inputs>
+      </count-occurrencesNode>
+      <timeSpanNode id="quCfT0ztAUaU-9ZU7TjVcw"
+                    location="422,5739"
+                    nodeClassId="4poQfe2470moTEmhU0VqEw"
+                    nodeName="TimeSpan">
+         <inputs>
+            <input parameter="From"/>
+            <input parameter="To"/>
+            <input parameter="Absolute">
+               <source id="FgCT23MlQUKr1wMEPzZ_8w"/>
+            </input>
+         </inputs>
+      </timeSpanNode>
+      <aggregationNode id="lFLwgnxhpkuRSgn0cuIH2Q"
+                       location="533,5429"
+                       nodeClassId="4LRxwlzbG0WwxoKhl3OJyg"
+                       nodeName="aggregation">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="Function">
+               <source id="kWi00UtuaUiH2HgNeb6_SA" value="sum"/>
+            </input>
+            <input parameter="Column"/>
+         </inputs>
+      </aggregationNode>
+      <analysisNode id="fDAzY1Uj7UW4_VM1z2VV7w"
+                    location="241,5746"
+                    nodeClassId="HX5FNMyZIE-hQ-rPbVhdeQ"
+                    nodeName="analysis">
+         <inputs>
+            <input parameter="table"/>
+            <input parameter="grouping-criteria"/>
+            <input parameter="aggregate-columns">
+               <source id="o-PRRR8S6E6ST4eY7I8fNg"/>
+            </input>
+            <input parameter="aggregate-functions">
+               <source id="M7qILue9eki_nVrJ6DUcvQ" value="sum"/>
+            </input>
+            <input parameter="aggregate-names">
+               <source id="9o_hIs9urEmEhIrCBVx-JA"/>
+            </input>
+         </inputs>
+      </analysisNode>
+      <arg-quantileNode id="tEVzT1LSqUm2OxRod3A4ug"
+                        location="626,5896"
+                        nodeClassId="ST6I1YWdYUGJgCbdffDigA"
+                        nodeName="arg-quantile">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="Values"/>
+            <input parameter="FractionalRank">
+               <source id="LNjVMKApUUmje6iPXqGAWQ" value="0.5"/>
+            </input>
+            <input parameter="Arguments"/>
+         </inputs>
+      </arg-quantileNode>
+      <distinct-valuesNode id="dKiKex7TpkSf8uQVXQEC0w"
+                           location="719,5825"
+                           nodeClassId="D-3wh05BSEaNveBvZsiBvg"
+                           nodeName="distinct-values">
+         <inputs>
+            <input parameter="Column"/>
+         </inputs>
+      </distinct-valuesNode>
+      <distinct-rowsNode id="mjKfiwGMvEGL9NjPF9vFMA"
+                         location="475,5962"
+                         nodeClassId="PVTOVUhxYEWWtVDhyu58Mg"
+                         nodeName="distinct-rows">
+         <inputs>
+            <input parameter="Source"/>
+            <input parameter="Columns"/>
+         </inputs>
+      </distinct-rowsNode>
+      <combinationsNode id="0wEYbW0ldk6kVatZa-Bc_Q"
+                        location="304,5980"
+                        nodeClassId="43eXyXgshEuXyKzxIZgpjQ"
+                        nodeName="combinations">
+         <inputs>
+            <input parameter="values"/>
+            <input parameter="component-names">
+               <source id="2FfiblVPh0CZKSQG5MeIHA"/>
+            </input>
+         </inputs>
+      </combinationsNode>
+      <top-of-groupsNode id="ged3nb4Cz0-h4j8_rVt_OA"
+                         location="578,5910"
+                         nodeClassId="ZgFKYBH-1U2gZ8hqIAGNRg"
+                         nodeName="top-of-groups">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="GroupByColumns"/>
+            <input parameter="TopRowCount">
+               <source id="g2JAMqT5_UC_86vLcYLoxg" value="1"/>
+            </input>
+            <input parameter="SortColumns">
+               <source id="3-BmRV7D10SAW5LypA_q6A"/>
+            </input>
+            <input parameter="SortDirections">
+               <source id="0r7qcDANrE2SNqJH0GKW1g" value="none"/>
+            </input>
+         </inputs>
+      </top-of-groupsNode>
+      <running-totalNode id="edfMyiNo3UWwOsahHGyAmw"
+                         location="243,5995"
+                         nodeClassId="dSj3vxkltUag5KOGvvgW9A"
+                         nodeName="running-total">
+         <inputs>
+            <input parameter="values"/>
+         </inputs>
+      </running-totalNode>
+      <topNode id="VPniAPfYsU-OG9twUAsUhw"
+               location="628,6137"
+               nodeClassId="baRjr1raUESMc6X-_5esvw"
+               nodeName="Top">
+         <inputs>
+            <input parameter="DataSet"/>
+            <input parameter="RowCount">
+               <source id="TIyhT7xOCU25tlNB96xoZg" value="10"/>
+            </input>
+         </inputs>
+      </topNode>
+      <pareto-frontiersNode id="39_JojSICkuIsA-iueTjNg"
+                            location="483,6128"
+                            nodeClassId="ccQoTd4aFU-aggdunXNApQ"
+                            nodeName="pareto-frontiers">
+         <inputs>
+            <input parameter="arguments"/>
+            <input parameter="frontiers-count">
+               <source id="OJO4wZT570qCkxtRrQN0kA"/>
+            </input>
+         </inputs>
+      </pareto-frontiersNode>
+  </nodes>
+  <functionResults>
+      <functionResult id="YNCzzOzsZk-NqQSWq40ewA" location="-14,118">
+         <functionResult>
+            <functionResultColumn id="gNaJrxttRkGk0cgIFOt7RA" resultRank="1"/>
+         </functionResult>
+      </functionResult>
+  </functionResults>
+  <results>
+      <result id="ob6RgHrTK0m3sgc43tZAiQ" location="100,-86"/>
+  </results>
+</nodeSystem>

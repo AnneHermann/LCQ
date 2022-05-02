@@ -1,0 +1,1256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:com.microsoft.schemas.xml.msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ecore:nsPrefix="AlleKnotenFormartiert" ecore:package="AlleKnotenFormartiert">
+  <xsd:element name="functionResult" type="functionResult_._type" />
+  <xsd:element name="inputs" type="inputs_._type" />
+  <xsd:element com.microsoft.schemas.xml.msdata:IsDataSet="true" com.microsoft.schemas.xml.msdata:UseCurrentLocale="true" name="NewDataSet" type="NewDataSet_._type" />
+  <xsd:element name="nodeSystem" type="nodeSystem_._type" />
+  <xsd:element name="source" type="source_._type" />
+  <xsd:complexType ecore:name="AggregationNodeType" name="aggregationNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="AnalysisNodeType" name="analysisNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ArgQuantileNodeType" name="arg-quantileNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ArithmeticNodeType" name="arithmeticNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ArrayNodeType" name="arrayNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="AugmentNodeType" name="augmentNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="BatchColumnConversionNodeType" name="batch-column-conversionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="BinPackingNodeType" name="bin-packingNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="BoolFilterNodeType" name="bool-filterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="CacheNodeType" name="cacheNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ChangeColumnPrefixNodeType" name="change-column-prefixNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ChangeColumnSuffixNodeType" name="change-column-suffixNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ChecksumNodeType" name="checksumNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ClassifyNodeType" name="classifyNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ClearDecorationsNodeType" name="clear-decorationsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ColumnAnalysisNodeType" name="column-analysisNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ColumnNameReductionNodeType" name="column-name-reductionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ColumnPrefixNodeType" name="column-prefixNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ColumnProfileNodeType" name="column-profileNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ColumnRenameNodeType" name="columnRenameNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="CombinationsNodeType" name="combinationsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ComparisonNodeType" name="comparisonNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ComplementNodeType" name="complementNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConditionalNullificationNodeType" name="conditional-nullificationNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConditionalStyleNodeType" name="conditional-styleNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConditionNodeType" name="conditionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConsolidationNodeType" name="consolidationNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConstantNodeType" name="constantNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConvertDateNodeType" name="convert-dateNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ConvertNodeType" name="convertNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="CostFunctionNodeType" name="costFunctionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="CountOccurrencesNodeType" name="count-occurrencesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="CrossJoinNodeType" name="cross-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DateOffsetNodeType" name="date-offsetNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DebugNodeType" name="debugNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DecomposeColumnNodeType" name="decompose-columnNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DecomposeColumnsNodeType" name="decompose-columnsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DefaultValueNodeType" name="default-valueNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DemultiplexerNodeType" name="demultiplexerNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DistinctRowsNodeType" name="distinct-rowsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DistinctValuesNodeType" name="distinct-valuesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DomainMappingNodeType" name="domain-mappingNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DuplicateRowsNodeType" name="duplicate-rowsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="DuplicatRowsNodeType" name="duplicatRowsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="EqualityNodeType" name="equalityNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ErrorFilterNodeType" name="error-filterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ErrorHandlingNodeType" name="error-handlingNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ErrorMessagesNodeType" name="error-messagesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ExistenceFilterNodeType" name="existence-filterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ExistenceNodeType" name="existenceNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ExpandNestedTablesNodeType" name="expand-nested-tablesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ExpandValuesNodeType" name="expand-valuesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ExpressionNodeType" name="expressionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FilterNodeType" name="filterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FindColumnNodeType" name="find-columnNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FinitesequenceNodeType" name="finitesequenceNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FormatNodeType" name="formatNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FullOuterJoinNodeType" name="full-outer-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FunctionResultColumnType" name="functionResultColumn_._type">
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="resultRank" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FunctionResultsType" name="functionResults_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" ref="functionResult" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="FunctionResultType" name="functionResult_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="functionResultColumn" type="functionResultColumn_._type" />
+      <xsd:element maxOccurs="unbounded" minOccurs="0" ref="functionResult" />
+    </xsd:sequence>
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="location" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GeocoderNodeType" name="geocoderNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GeocoordinateFromLatlongNodeType" name="geocoordinate-from-latlongNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GeorouterNodeType" name="georouterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GraphClusterNodeType" name="graph-clusterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GroupIndexNodeType" name="group-indexNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GroupIntoNodeType" name="group-intoNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GroupNodeType" name="groupNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="GroupRowIndexNodeType" name="group-row-indexNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="HierarchicalClusteringNodeType" name="hierarchical-clusteringNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ImageNodeType" name="imageNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="IndexNodeType" name="indexNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="InnerEquiJoinNodeType" name="inner-equi-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="InnerJoinNodeType" name="inner-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="InputsType" name="inputs_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="input" type="input_._type" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="InputType" name="input_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" ref="source" />
+    </xsd:sequence>
+    <xsd:attribute name="parameter" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="LimitFilterNodeType" name="limitFilterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ListToColumnNodeType" name="list-to-columnNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="LogicNodeType" name="logicNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="LookupNodeType" name="lookupNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="MergeNodeType" name="mergeNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="MultiplexNodeType" name="multiplexNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="MultiplyRowsNodeType" name="multiply-rowsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NamedClassificationNodeType" name="namedClassificationNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NamingNodeType" name="namingNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NegateNodeType" name="negateNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NeighborNodeType" name="neighborNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NestedJoinNodeType" name="nested-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NewDataSetType" name="NewDataSet_._type">
+    <xsd:sequence>
+      <xsd:choice ecore:featureMap="group" maxOccurs="unbounded">
+        <xsd:element ecore:upperBound="-1" minOccurs="0" ref="source" />
+        <xsd:element ecore:upperBound="-1" minOccurs="0" ref="inputs" />
+        <xsd:element ecore:upperBound="-1" minOccurs="0" ref="functionResult" />
+        <xsd:element ecore:upperBound="-1" minOccurs="0" ref="nodeSystem" />
+      </xsd:choice>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NodesType" name="nodes_._type">
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="location" type="xsd:string" />
+    <xsd:attribute name="nodeClassId" type="xsd:string" />
+    <xsd:attribute name="nodeName" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NodeSystemType" name="nodeSystem_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="sources" type="sources_._type" />
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="nodes" type="nodes_._type" />
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="functionResults" type="functionResults_._type" />
+      <xsd:element maxOccurs="unbounded" minOccurs="0" name="results" type="results_._type" />
+    </xsd:sequence>
+    <xsd:attribute name="expressionLanguageName" type="xsd:string" />
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="runtimeVersion" type="xsd:string" />
+    <xsd:attribute name="version" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NoiseNodeType" name="noiseNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="NullNodeType" name="nullNode_._type">
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="location" type="xsd:string" />
+    <xsd:attribute name="nodeClassId" type="xsd:string" />
+    <xsd:attribute name="nodeName" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="OrNodeType" name="orNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="OuterJoinNodeType" name="outer-joinNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="OverlayNodeType" name="overlayNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="PackagingNodeType" name="packagingNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ParameterNodeType" name="parameterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ParetoFrontiersNodeType" name="pareto-frontiersNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ParseConditionNodeType" name="parse-conditionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ParseNodeType" name="parseNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="PivotNodeType" name="pivotNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="PredecessorValueNodeType" name="predecessor-valueNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ProductNodeType" name="productNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ProfileNodeType" name="profileNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RedistributionNodeType" name="redistributionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ReferenceNodeType" name="referenceNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ReplaceColumnNodeType" name="replaceColumnNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ReplaceValuesNodeType" name="replace-valuesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ResultsType" name="results_._type">
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="location" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RetargetAllReferencesNodeType" name="retarget-all-referencesNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RetargetReferenceNodeType" name="retarget-referenceNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ReverseGeocoderNodeType" name="reverse-geocoderNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RoundDateNodeType" name="round-dateNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RoundNodeType" name="roundNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RowIndexNodeType" name="row-indexNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="RunningTotalNodeType" name="running-totalNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ScanNodeType" name="scanNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SequenceNodeType" name="sequenceNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="ShortestPathNodeType" name="shortest-pathNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SingleRowNodeType" name="single-rowNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SingleValueNodeType" name="single-valueNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SortNodeType" name="sortNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SourcesType" name="sources_._type">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" minOccurs="0" ref="source" />
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SourceType" name="source_._type">
+    <xsd:attribute name="description" type="xsd:string" />
+    <xsd:attribute name="id" type="xsd:string" />
+    <xsd:attribute name="location" type="xsd:string" />
+    <xsd:attribute name="node" type="xsd:string" />
+    <xsd:attribute name="value" type="xsd:string" />
+  </xsd:complexType>
+  <xsd:complexType ecore:name="StringSplitterNodeType" name="stringSplitterNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="StringUtilNodeType" name="string-utilNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="StructureCastNodeType" name="structure-castNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SubstringNodeType" name="substringNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SuccessorAsNeighborNodeType" name="successor-as-neighborNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SummaryNodeType" name="summaryNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SumNodeType" name="sumNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="SurrogateNodeType" name="surrogateNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TakeWhileNodeType" name="take-whileNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TimeNodeType" name="timeNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TimeSpanConversionNodeType" name="timeSpanConversionNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TimeSpanNodeType" name="timeSpanNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TopNodeType" name="topNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TopOfGroupsNodeType" name="top-of-groupsNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="TupleNodeType" name="tupleNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="UnionAllNodeType" name="union-allNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:complexType ecore:name="UnpivotNodeType" name="unpivotNode_._type">
+    <xsd:complexContent>
+      <xsd:extension base="nodes_._type">
+        <xsd:sequence>
+          <xsd:element maxOccurs="unbounded" minOccurs="0" ref="inputs" />
+        </xsd:sequence>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>
