@@ -20,21 +20,23 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 
-import BspKnotensystem.BspKnotensystemPackage;
-import BspKnotensystem.DocumentRoot;
-import BspKnotensystem.impl.BspKnotensystemPackageImpl;
+import AlleKnotenFormartiert.AlleKnotenFormartiertPackage;
+import AlleKnotenFormartiert.DocumentRoot;
+import AlleKnotenFormartiert.impl.AlleKnotenFormartiertPackageImpl;
 
 public class XMLConverter {
 
-	private static final String RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML = "transformedNodeSystem.xml";
-	private static final String RELATIVE_PATH_TO_TRANSFORM_NODES_XSL = "TransformNodes.xsl";
+	private static final String RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML = "transformedInput.xml";
+	private static final String RELATIVE_PATH_TO_TRANSFORM_NODES_XSL = "transformNodes.xsl";
 	private static final String RELATIVE_PATH_LOWER_CASE_XSL = "lowerCase.xsl";
+	private static final String RELATIVE_PATH_TRANSFORMED_NODES_XML = "transformedNodes.xml";
+	private static Object lock = new Object();
 
-	public static DocumentRoot convertLowCodeXML(URI sourceUri) {
+	public static DocumentRoot ConvertLowCodeXML(URI sourceUri) {
 
-		prepareXML(sourceUri.path());
+		PrepareXML(sourceUri.path());
 
-		BspKnotensystemPackage pack = BspKnotensystemPackageImpl.init();
+		AlleKnotenFormartiertPackage pack = AlleKnotenFormartiertPackageImpl.init();
 
 		ResourceSet resourceSet = new ResourceSetImpl();
 		resourceSet.getPackageRegistry().put(pack.getNsURI(), pack);
@@ -57,20 +59,26 @@ public class XMLConverter {
 
 	}
 
-	private static void prepareXML(String sourceUri) {
-		Source nodeSystemXml = new StreamSource(new File(sourceUri));
-		Source lowerCaseXsl = new StreamSource(new File(RELATIVE_PATH_LOWER_CASE_XSL).getAbsolutePath());
-		Source transformNodesXsl = new StreamSource(new File(RELATIVE_PATH_TO_TRANSFORM_NODES_XSL).getAbsolutePath());
-		Result transformedXml = new StreamResult(new File(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML));
+	private static void PrepareXML(String sourceUri) {
+		var inputXml = new StreamSource(new File(sourceUri));
+		var lowerCaseXsl = new StreamSource(new File(RELATIVE_PATH_LOWER_CASE_XSL).getAbsolutePath());
+		var transformNodesXsl = new StreamSource(new File(RELATIVE_PATH_TO_TRANSFORM_NODES_XSL).getAbsolutePath());
+		var transformedNodesXml = new StreamResult(new File(RELATIVE_PATH_TRANSFORMED_NODES_XML));
 
-		tryTransformXML(lowerCaseXsl, nodeSystemXml, transformedXml);
-		tryTransformXML(transformNodesXsl, nodeSystemXml, transformedXml);
+		synchronized (lock) {
+			TryTransformXML(transformNodesXsl, inputXml, transformedNodesXml);
+		}
+
+		var tempTransformedXml = new StreamSource(new File(RELATIVE_PATH_TRANSFORMED_NODES_XML).getAbsolutePath());
+		var transformedXml = new StreamResult(new File(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML));
+
+		TryTransformXML(lowerCaseXsl, tempTransformedXml, transformedXml);
 
 	}
 
-	private static void tryTransformXML(Source xsl, Source xmlInput, Result xmlOutput) {
+	private static void TryTransformXML(Source xsl, Source xmlInput, Result xmlOutput) {
 		try {
-			Transformer transformer = TransformerFactory.newInstance().newTransformer(xsl);
+			var transformer = TransformerFactory.newInstance().newTransformer(xsl);
 			transformer.transform(xmlInput, xmlOutput);
 		} catch (TransformerException e) {
 			System.out.println("Die Knotensystem-XML konnte nicht ins richtige Format transformiert werden.");

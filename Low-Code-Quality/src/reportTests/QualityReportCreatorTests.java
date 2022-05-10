@@ -16,8 +16,8 @@ public class QualityReportCreatorTests {
 	private void BuildData() {
 		var exmapleMetricResponse = new MetricResponse("Anzahl der Knoten", "4");
 		var examplePatternResponse = new PatternResponse("Augment-Knoten", true, 1);
-		qualityReportResponse.addMetricResponse(exmapleMetricResponse);
-		qualityReportResponse.addPatternResponse(examplePatternResponse);
+		qualityReportResponse.AddMetricResponse(exmapleMetricResponse);
+		qualityReportResponse.AddPatternResponse(examplePatternResponse);
 	}
 	
 	@Test

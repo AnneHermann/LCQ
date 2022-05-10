@@ -1,10 +1,10 @@
 package patterns;
 
-import BspKnotensystem.DocumentRoot;
+import AlleKnotenFormartiert.DocumentRoot;
 import report.QualityReportResponse;
 
 public interface IPattern {
 	
-	public void findPattern(DocumentRoot root, QualityReportResponse response);
+	public void FindPattern(DocumentRoot root, QualityReportResponse response);
 
 }

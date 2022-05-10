@@ -3,7 +3,7 @@ package metrics;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import BspKnotensystem.DocumentRoot;
+import AlleKnotenFormartiert.DocumentRoot;
 import report.QualityReportResponse;
 
 public class MetricCalculator {
@@ -13,7 +13,7 @@ public class MetricCalculator {
 	
 	public static void CalculateAll(DocumentRoot root, QualityReportResponse response) {
 		for(var metric : metrics) {
-			metric.calculate(root, response);
+			metric.Calculate(root, response);
 		}
 	}
 	

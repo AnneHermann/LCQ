@@ -1,10 +1,10 @@
 package metrics;
 
-import BspKnotensystem.DocumentRoot;
+import AlleKnotenFormartiert.DocumentRoot;
 import report.QualityReportResponse;
 
 public interface IMetric {
 
-	public void calculate(DocumentRoot documentRoot, QualityReportResponse response);
+	public void Calculate(DocumentRoot documentRoot, QualityReportResponse response);
 
 }

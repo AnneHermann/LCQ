@@ -17,33 +17,33 @@ public class QualityReportCreator {
 	private static final String MUSTER = "Muster";
 	private static final String METRIKEN = "Metriken";
 
-	public static void outputResponseToConsole(QualityReportResponse response) {
+	public static void OutputResponseToConsole(QualityReportResponse response) {
 		System.out.println(METRIKEN);
 		for (var metric : response.getMetrics()) {
-			System.out.println(buildMetricOutput(metric));
+			System.out.println(BuildMetricOutput(metric));
 		}
 		System.out.println(MUSTER);
 		for (var pattern : response.getPatterns()) {
-			System.out.println(buildPatternOutput(pattern));
+			System.out.println(BuildPatternOutput(pattern));
 		}
 	}
 
 	public static void OutputResponseToCSV(QualityReportResponse response) {
-		writeCSVOutputToConsole(buildMetricCSVOutput(response.getMetrics()), new File("QualityReportMetrics.csv"));
-		writeCSVOutputToConsole(buildPatternCSVOutput(response.getPatterns()), new File("QualityReportAntiPattern.csv"));
+		WriteCSVOutputToConsole(BuildMetricCSVOutput(response.getMetrics()));
+		WriteCSVOutputToConsole(BuildPatternCSVOutput(response.getPatterns()));
 		
 	}
 
-	private static void writeCSVOutputToConsole(ArrayList<String[]> input, File csvOutput) {		
-			input.stream().map(item -> convertToCSV(item)).forEach(System.out::println);
+	private static void WriteCSVOutputToConsole(ArrayList<String[]> input) {		
+			input.stream().map(item -> ConvertToCSV(item)).forEach(System.out::println);
 		
 	}
 
-	private static String convertToCSV(String[] data) {
+	private static String ConvertToCSV(String[] data) {
 		return Stream.of(data).collect(Collectors.joining(","));
 	}
 
-	private static ArrayList<String[]> buildMetricCSVOutput(ArrayList<MetricResponse> metrics) {
+	private static ArrayList<String[]> BuildMetricCSVOutput(ArrayList<MetricResponse> metrics) {
 		var metricDataLines = new ArrayList<String[]>();
 		for (var metric : metrics) {
 			metricDataLines.add(new String[] { metric.getName(), metric.getResult() });
@@ -51,7 +51,7 @@ public class QualityReportCreator {
 		return metricDataLines;
 	}
 
-	private static ArrayList<String[]> buildPatternCSVOutput(ArrayList<PatternResponse> patterns) {
+	private static ArrayList<String[]> BuildPatternCSVOutput(ArrayList<PatternResponse> patterns) {
 		var patternDataLines = new ArrayList<String[]>();
 		for (var pattern : patterns) {
 			patternDataLines.add(new String[] { pattern.getName(), Boolean.toString(pattern.isFound()),
@@ -60,11 +60,11 @@ public class QualityReportCreator {
 		return patternDataLines;
 	}
 
-	private static String buildMetricOutput(MetricResponse metric) {
+	private static String BuildMetricOutput(MetricResponse metric) {
 		return metric.getName() + COLON + metric.getResult();
 	}
 
-	private static String buildPatternOutput(PatternResponse pattern) {
+	private static String BuildPatternOutput(PatternResponse pattern) {
 		var begin = pattern.getName() + KOMMT_VOR;
 		if (pattern.isFound()) {
 			return begin + JA + pattern.getNumberOfOccurrences() + MAL;

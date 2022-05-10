@@ -3,7 +3,7 @@ package patterns;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import BspKnotensystem.DocumentRoot;
+import AlleKnotenFormartiert.DocumentRoot;
 import report.QualityReportResponse;
 
 public class PatternMatcher {
@@ -13,7 +13,7 @@ public class PatternMatcher {
 	
 	public static void MatchAll(DocumentRoot root, QualityReportResponse response) {
 		for(var pattern : patterns) {
-			pattern.findPattern(root, response);
+			pattern.FindPattern(root, response);
 		}
 	}
 }

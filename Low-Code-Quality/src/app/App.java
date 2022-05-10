@@ -9,25 +9,31 @@ import report.QualityReportResponse;
 public class App {
 
 	public static void main(String[] args) {
-		// TODO: String uri = System.console().readLine();
 		// TODO: Exceptions hier behandeln
-		var documentRoot = XMLConverter.convertLowCodeXML(createURI(args[0]));
+		var documentRoot = XMLConverter.ConvertLowCodeXML(CreateURI(args[0]));
 		var response = new QualityReportResponse();
 		MetricCalculator.CalculateAll(documentRoot, response);
 		PatternMatcher.MatchAll(documentRoot, response);
-		QualityReportCreator.outputResponseToConsole(response);
-		QualityReportCreator.OutputResponseToCSV(response);
+		OutputReport(args[1], response);
 	}
 
-	private static URI createURI(String uri) {
+	private static URI CreateURI(String uri) {
 		try {
-
 			return URI.createFileURI(uri);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
+			System.exit(-1); // TODO: nix gut oder?
+		}
+		return null;
+	}
+
+	private static void OutputReport(String csvOption, QualityReportResponse response) {
+		if (csvOption == "-csv") {
+			QualityReportCreator.OutputResponseToCSV(response);
+			return;
 		}
 
-		return URI.createFileURI(""); // TODO: wie soll es danach weiter gehen
+		QualityReportCreator.OutputResponseToConsole(response);
 	}
 
 }
