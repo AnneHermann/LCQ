@@ -51,7 +51,7 @@ public class XMLConverter {
 			System.out.println("Datei konnte nicht gefunden werden.");
 			e1.printStackTrace();
 		} catch (IOException e1) {
-			System.out.println("Datei konnte nicht gelesen werden.");
+			System.out.println("Datei konnte nicht eingelesen werden.");
 			e1.printStackTrace();
 		}
 

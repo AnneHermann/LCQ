@@ -20,19 +20,19 @@
                 <scanNode><xsl:apply-templates select="@*|node()"/></scanNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'HyydmMdCAE6xoRdlTdAqoA'">
-                <conditional-styleNode><xsl:apply-templates select="@*|node()"/></conditional-styleNode>
+                <conditionalStyleNode><xsl:apply-templates select="@*|node()"/></conditionalStyleNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'PXeUHj_LXESV3Hi1oXhjZQ'">
-                <clear-decorationsNode><xsl:apply-templates select="@*|node()"/></clear-decorationsNode>
+                <clearDecorationsNode><xsl:apply-templates select="@*|node()"/></clearDecorationsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '_p-y0QrPAkei1AHtLRVcTA'">
-                <error-filterNode><xsl:apply-templates select="@*|node()"/></error-filterNode>
+                <errorFilterNode><xsl:apply-templates select="@*|node()"/></errorFilterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '_orhVvEe80ONt5Qf40by7Q'">
-                <error-handlingNode><xsl:apply-templates select="@*|node()"/></error-handlingNode>
+                <errorHandlingNode><xsl:apply-templates select="@*|node()"/></errorHandlingNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'X0cJsvaPf06jYZSfuFqR6Q'">
-                <error-messagesNode><xsl:apply-templates select="@*|node()"/></error-messagesNode>
+                <errorMessagesNode><xsl:apply-templates select="@*|node()"/></errorMessagesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '29FkY9f_BEqD679wyvbY2Q'">
                 <indexNode><xsl:apply-templates select="@*|node()"/></indexNode>
@@ -44,61 +44,61 @@
                 <cacheNode><xsl:apply-templates select="@*|node()"/></cacheNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'qTfji8ICa0qv5X-zfkTXpg'">
-                <decompose-columnNode><xsl:apply-templates select="@*|node()"/></decompose-columnNode>
+                <decomposeColumnNode><xsl:apply-templates select="@*|node()"/></decomposeColumnNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'hNCmphGOCUSvH_tnTCza1A'">
-                <decompose-columnsNode><xsl:apply-templates select="@*|node()"/></decompose-columnsNode>
+                <decomposeColumnsNode><xsl:apply-templates select="@*|node()"/></decomposeColumnsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '9w2Yc84hx0GfG8txefDMig'">
                 <ReplaceColumnNode><xsl:apply-templates select="@*|node()"/></ReplaceColumnNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'CxUldxIziUGZcpROcelMrA'">
-                <column-name-reductionNode><xsl:apply-templates select="@*|node()"/></column-name-reductionNode>
+                <columnNameReductionNode><xsl:apply-templates select="@*|node()"/></columnNameReductionNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '1pQwQKs6lkOspGPAYIxfxw'">
-                <column-prefixNode><xsl:apply-templates select="@*|node()"/></column-prefixNode>
+                <columnPrefixNode><xsl:apply-templates select="@*|node()"/></columnPrefixNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '8ytXpTVs-kS0Cd3kJhB-aw'">
-                <change-column-prefixNode><xsl:apply-templates select="@*|node()"/></change-column-prefixNode>
+                <changeColumnPrefixNode><xsl:apply-templates select="@*|node()"/></changeColumnPrefixNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'U98HgCln00aTWqlK_VhCYw'">
-                <change-column-suffixNode><xsl:apply-templates select="@*|node()"/></change-column-suffixNode>
+                <changeColumnSuffixNode><xsl:apply-templates select="@*|node()"/></changeColumnSuffixNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'wNGHn-V1w0WMcCcgbhUr1A'">
                 <ColumnRenameNode><xsl:apply-templates select="@*|node()"/></ColumnRenameNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'sWbYr11Bf0mxGPrlv7w0Cw'">
-                <retarget-referenceNode><xsl:apply-templates select="@*|node()"/></retarget-referenceNode>
+                <retargetReferenceNode><xsl:apply-templates select="@*|node()"/></retargetReferenceNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'vkzTVQzR-k-4doas42tsVA'">
-                <retarget-all-referencesNode><xsl:apply-templates select="@*|node()"/></retarget-all-referencesNode>
+                <retargetAllReferencesNode><xsl:apply-templates select="@*|node()"/></retargetAllReferencesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'iRzVMkwStU6dBLcHpkP0jg'">
-                <predecessor-valueNode><xsl:apply-templates select="@*|node()"/></predecessor-valueNode>
+                <predecessorValueNode><xsl:apply-templates select="@*|node()"/></predecessorValueNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'qS1h16vgikCqi5UghMEiAA'">
-                <conditional-nullificationNode><xsl:apply-templates select="@*|node()"/></conditional-nullificationNode>
+                <conditionalNullificationNode><xsl:apply-templates select="@*|node()"/></conditionalNullificationNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'vMSgVJlxbkmVVfpx7LoT8A'">
                 <NamedClassificationNode><xsl:apply-templates select="@*|node()"/></NamedClassificationNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'jzZGKqUmBEGfJjgLPewdTg'">
-                <single-valueNode><xsl:apply-templates select="@*|node()"/></single-valueNode>
+                <singleValueNode><xsl:apply-templates select="@*|node()"/></singleValueNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'BljaLxieHUWv8koO7QSzGw'">
-                <geocoordinate-from-latlongNode><xsl:apply-templates select="@*|node()"/></geocoordinate-from-latlongNode>
+                <geocoordinateFromLatlongNode><xsl:apply-templates select="@*|node()"/></geocoordinateFromLatlongNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ZWU3tVTxeE6k0hgFpdy72A'">
                 <classifyNode><xsl:apply-templates select="@*|node()"/></classifyNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '8hMzJqnhbkW4evG_aN8yag'">
-                <list-to-columnNode><xsl:apply-templates select="@*|node()"/></list-to-columnNode>
+                <listToColumnNode><xsl:apply-templates select="@*|node()"/></listToColumnNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'UnpxsKWHiEKLCExw1TqRkw'">
                 <parseNode><xsl:apply-templates select="@*|node()"/></parseNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'iX-_8BNPe0uRSqTutQQklQ'">
-                <default-valueNode><xsl:apply-templates select="@*|node()"/></default-valueNode>
+                <defaultValueNode><xsl:apply-templates select="@*|node()"/></defaultValueNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'dKlr8AWUGUGP7gqdKM8-9g'">
                 <substringNode><xsl:apply-templates select="@*|node()"/></substringNode>
@@ -110,22 +110,22 @@
                 <convertNode><xsl:apply-templates select="@*|node()"/></convertNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'MEm1KSvMb0SBCvPnX1S24A'">
-                <replace-valuesNode><xsl:apply-templates select="@*|node()"/></replace-valuesNode>
+                <replaceValuesNode><xsl:apply-templates select="@*|node()"/></replaceValuesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ptY41ieC0keY3SWZRi7GYQ'">
-                <string-utilNode><xsl:apply-templates select="@*|node()"/></string-utilNode>
+                <stringUtilNode><xsl:apply-templates select="@*|node()"/></stringUtilNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'mjdsKfERUE6FU-7yGeRWyg'">
-                <round-dateNode><xsl:apply-templates select="@*|node()"/></round-dateNode>
+                <roundDateNode><xsl:apply-templates select="@*|node()"/></roundDateNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'K9sdqDTJW027gEoLW5A8hA'">
                 <TimeSpanConversionNode><xsl:apply-templates select="@*|node()"/></TimeSpanConversionNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '5mBZsHIg30-Z0b_X-zRe-w'">
-                <convert-dateNode><xsl:apply-templates select="@*|node()"/></convert-dateNode>
+                <convertDateNode><xsl:apply-templates select="@*|node()"/></convertDateNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'MIBo4j_-vUCEKBDype0yGQ'">
-                <date-offsetNode><xsl:apply-templates select="@*|node()"/></date-offsetNode>
+                <dateOffsetNode><xsl:apply-templates select="@*|node()"/></dateOffsetNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'zzbBj-mL1EGhm0xQy-YQ1A'">
                 <conditionNode><xsl:apply-templates select="@*|node()"/></conditionNode>
@@ -140,37 +140,37 @@
                 <lookupNode><xsl:apply-templates select="@*|node()"/></lookupNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '3VPuxEhCXkKl7wkx71wPWg'">
-                <find-columnNode><xsl:apply-templates select="@*|node()"/></find-columnNode>
+                <findColumnNode><xsl:apply-templates select="@*|node()"/></findColumnNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'KKNu49bY4USzt57NhHxdvA'">
                 <comparisonNode><xsl:apply-templates select="@*|node()"/></comparisonNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'Vri-HfxXrEGoEESsrtUh-g'">
-                <union-allNode><xsl:apply-templates select="@*|node()"/></union-allNode>
+                <unionAllNode><xsl:apply-templates select="@*|node()"/></unionAllNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '3z8DY1_dU0aTkeHdrkCD0g'">
                 <augmentNode><xsl:apply-templates select="@*|node()"/></augmentNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'TuhXnlaJ90KXsfY8CJkQLg'">
-                <take-whileNode><xsl:apply-templates select="@*|node()"/></take-whileNode>
+                <takeWhileNode><xsl:apply-templates select="@*|node()"/></takeWhileNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'L5lbbAJU20-VuiHBJmhmYw'">
-                <bool-filterNode><xsl:apply-templates select="@*|node()"/></bool-filterNode>
+                <boolFilterNode><xsl:apply-templates select="@*|node()"/></boolFilterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'mktRh0ScAk-nwC_awR8xVw'">
                 <demultiplexerNode><xsl:apply-templates select="@*|node()"/></demultiplexerNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '22sWpLIJ0ESIqtdHwc8rgQ'">
-                <domain-mappingNode><xsl:apply-templates select="@*|node()"/></domain-mappingNode>
+                <domainMappingNode><xsl:apply-templates select="@*|node()"/></domainMappingNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'H7xcnMaWD0OyTc6IdlcA7A'">
-                <single-rowNode><xsl:apply-templates select="@*|node()"/></single-rowNode>
+                <singleRowNode><xsl:apply-templates select="@*|node()"/></singleRowNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'z9-iLbQrZ0GVjor47qG3PQ'">
                 <UnpivotNode><xsl:apply-templates select="@*|node()"/></UnpivotNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '3FGyDa73NEebvAWlpBLAwA'">
-                <existence-filterNode><xsl:apply-templates select="@*|node()"/></existence-filterNode>
+                <existenceFilterNode><xsl:apply-templates select="@*|node()"/></existenceFilterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'zAp6lWOy00GMge_dmBFKfQ'">
                 <filterNode><xsl:apply-templates select="@*|node()"/></filterNode>
@@ -179,13 +179,13 @@
                 <groupNode><xsl:apply-templates select="@*|node()"/></groupNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'p5vpJA8sq0WmE4FWVLBreQ'">
-                <group-intoNode><xsl:apply-templates select="@*|node()"/></group-intoNode>
+                <groupIntoNode><xsl:apply-templates select="@*|node()"/></groupIntoNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'uTEMvJZSRUGwV4rtUkHZnA'">
                 <ComplementNode><xsl:apply-templates select="@*|node()"/></ComplementNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'XPadEFyD9ki6369dj9gfDw'">
-                <expand-valuesNode><xsl:apply-templates select="@*|node()"/></expand-valuesNode>
+                <expandValuesNode><xsl:apply-templates select="@*|node()"/></expandValuesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'P0agyQx2Ek2rXnTwvG85Sg'">
                 <neighborNode><xsl:apply-templates select="@*|node()"/></neighborNode>
@@ -197,43 +197,43 @@
                 <sortNode><xsl:apply-templates select="@*|node()"/></sortNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'd_LuyPehy06-QFCVkrlF7g'">
-                <batch-column-conversionNode><xsl:apply-templates select="@*|node()"/></batch-column-conversionNode>
+                <batchColumnConversionNode><xsl:apply-templates select="@*|node()"/></batchColumnConversionNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'et5AWgfBPk-z520YEvhFww'">
-                <structure-castNode><xsl:apply-templates select="@*|node()"/></structure-castNode>
+                <structureCastNode><xsl:apply-templates select="@*|node()"/></structureCastNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 's4mwvrGDo0ugUt5uSDpZ1Q'">
-                <expand-nested-tablesNode><xsl:apply-templates select="@*|node()"/></expand-nested-tablesNode>
+                <expandNestedTablesNode><xsl:apply-templates select="@*|node()"/></expandNestedTablesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'APAoXzy7xE-u0zErzkbVmw'">
-                <outer-joinNode><xsl:apply-templates select="@*|node()"/></outer-joinNode>
+                <outerJoinNode><xsl:apply-templates select="@*|node()"/></outerJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'C7Yp5YvLGUWFk257N-YRZQ'">
-                <inner-joinNode><xsl:apply-templates select="@*|node()"/></inner-joinNode>
+                <innerJoinNode><xsl:apply-templates select="@*|node()"/></innerJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'sHG29pn9V0SoZLl9IzWXZg'">
-                <inner-equi-joinNode><xsl:apply-templates select="@*|node()"/></inner-equi-joinNode>
+                <innerEquiJoinNode><xsl:apply-templates select="@*|node()"/></innerEquiJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'MxoRiXgAikOHFA32Zlxu-A'">
-                <nested-joinNode><xsl:apply-templates select="@*|node()"/></nested-joinNode>
+                <nestedJoinNode><xsl:apply-templates select="@*|node()"/></nestedJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'rao-4h8Em0ikrnxfPLOyXw'">
-                <cross-joinNode><xsl:apply-templates select="@*|node()"/></cross-joinNode>
+                <crossJoinNode><xsl:apply-templates select="@*|node()"/></crossJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '0LMX5t304k2YBPHJ2518bQ'">
                 <referenceNode><xsl:apply-templates select="@*|node()"/></referenceNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '4dhfE4LnKk6530nvQ8gMQA'">
-                <full-outer-joinNode><xsl:apply-templates select="@*|node()"/></full-outer-joinNode>
+                <fullOuterJoinNode><xsl:apply-templates select="@*|node()"/></fullOuterJoinNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'zUKFgl5hFUKsf2kp5Bwa6w'">
-                <multiply-rowsNode><xsl:apply-templates select="@*|node()"/></multiply-rowsNode>
+                <multiplyRowsNode><xsl:apply-templates select="@*|node()"/></multiplyRowsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'nuhIAu6i90i5yTJ6w-k75Q'">
                 <mergeNode><xsl:apply-templates select="@*|node()"/></mergeNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '8GOx-NN8DkCzHhkEcrPaYA'">
-                <successor-as-neighborNode><xsl:apply-templates select="@*|node()"/></successor-as-neighborNode>
+                <successorAsNeighborNode><xsl:apply-templates select="@*|node()"/></successorAsNeighborNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'wdBjC0qsYU2ZNh5qvld4PA'">
                 <overlayNode><xsl:apply-templates select="@*|node()"/></overlayNode>
@@ -272,10 +272,10 @@
                 <sumNode><xsl:apply-templates select="@*|node()"/></sumNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '07sPELX4QkW0yg8hlOSMWw'">
-                <bin-packingNode><xsl:apply-templates select="@*|node()"/></bin-packingNode>
+                <binPackingNode><xsl:apply-templates select="@*|node()"/></binPackingNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'eujFdztSbky1bABPoO_hkw'">
-                <hierarchical-clusteringNode><xsl:apply-templates select="@*|node()"/></hierarchical-clusteringNode>
+                <hierarchicalClusteringNode><xsl:apply-templates select="@*|node()"/></hierarchicalClusteringNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'LJBBGSPSyEW0KkNfSx1J1w'">
                 <packagingNode><xsl:apply-templates select="@*|node()"/></packagingNode>
@@ -287,13 +287,13 @@
                 <georouterNode><xsl:apply-templates select="@*|node()"/></georouterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'CnkDDNRoVkaDswtmBPtlLQ'">
-                <graph-clusterNode><xsl:apply-templates select="@*|node()"/></graph-clusterNode>
+                <graphClusterNode><xsl:apply-templates select="@*|node()"/></graphClusterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'vusNCI6xYU2DTw86ePJ1Qw'">
                 <LimitFilterNode><xsl:apply-templates select="@*|node()"/></LimitFilterNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'aGrYRlJ6bESYbOrr27WFMA'">
-                <reverse-geocoderNode><xsl:apply-templates select="@*|node()"/></reverse-geocoderNode>
+                <reverseGeocoderNode><xsl:apply-templates select="@*|node()"/></reverseGeocoderNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'uqCwcmiA5UW2DbXQvOD55g'">
                 <consolidationNode><xsl:apply-templates select="@*|node()"/></consolidationNode>
@@ -305,19 +305,19 @@
                 <redistributionNode><xsl:apply-templates select="@*|node()"/></redistributionNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'sRPgQtSvUO7n95-DjXJgw'">
-                <center-of-gravityNode><xsl:apply-templates select="@*|node()"/></center-of-gravityNode>
+                <centerOfGravityNode><xsl:apply-templates select="@*|node()"/></centerOfGravityNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'kFzxej80e0CFOp52De-mtw'">
-                <parse-conditionNode><xsl:apply-templates select="@*|node()"/></parse-conditionNode>
+                <parseConditionNode><xsl:apply-templates select="@*|node()"/></parseConditionNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '9zkS0UP02EiJQ6TjNrDjjQ'">
                 <finitesequenceNode><xsl:apply-templates select="@*|node()"/></finitesequenceNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'jpdsBxqAXU6MqzX1wL3_hQ'">
-                <group-indexNode><xsl:apply-templates select="@*|node()"/></group-indexNode>
+                <groupIndexNode><xsl:apply-templates select="@*|node()"/></groupIndexNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'kEnAAsrqI0WdEadNT5MNAA'">
-                <group-row-indexNode><xsl:apply-templates select="@*|node()"/></group-row-indexNode>
+                <groupRowIndexNode><xsl:apply-templates select="@*|node()"/></groupRowIndexNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'PGddLuF_V0SXQYZLwpZthQ'">
                 <constantNode><xsl:apply-templates select="@*|node()"/></constantNode>
@@ -338,7 +338,7 @@
                 <sequenceNode><xsl:apply-templates select="@*|node()"/></sequenceNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'e_jItwDpwki932PMALyBPg'">
-                <row-indexNode><xsl:apply-templates select="@*|node()"/></row-indexNode>
+                <rowIndexNode><xsl:apply-templates select="@*|node()"/></rowIndexNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'uTU4B5Cv4kKo6DkNIodfRg'">
                 <timeNode><xsl:apply-templates select="@*|node()"/></timeNode>
@@ -347,16 +347,16 @@
                 <debugNode><xsl:apply-templates select="@*|node()"/></debugNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '0uv5T0BOXUW3uYJdDbGmfQ'">
-                <duplicate-rowsNode><xsl:apply-templates select="@*|node()"/></duplicate-rowsNode>
+                <duplicateRowsNode><xsl:apply-templates select="@*|node()"/></duplicateRowsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'QLm-3FcFSU-ibZpgkDZhBA'">
                 <profileNode><xsl:apply-templates select="@*|node()"/></profileNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'olnl4KcKTUams_DWgAQH1w'">
-                <column-analysisNode><xsl:apply-templates select="@*|node()"/></column-analysisNode>
+                <columnAnalysisNode><xsl:apply-templates select="@*|node()"/></columnAnalysisNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'reGCLYXokE2Ld9mGiAznvw'">
-                <column-profileNode><xsl:apply-templates select="@*|node()"/></column-profileNode>
+                <columnProfileNode><xsl:apply-templates select="@*|node()"/></columnProfileNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'nQHn_rp_sk-dPQmY24ZYCg'">
                 <formatNode><xsl:apply-templates select="@*|node()"/></formatNode>
@@ -374,7 +374,7 @@
                 <tupleNode><xsl:apply-templates select="@*|node()"/></tupleNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'LRxv-JvGL0G6FsgtmSjZ9A'">
-                <count-occurrencesNode><xsl:apply-templates select="@*|node()"/></count-occurrencesNode>
+                <countOccurrencesNode><xsl:apply-templates select="@*|node()"/></countOccurrencesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '4poQfe2470moTEmhU0VqEw'">
                 <TimeSpanNode><xsl:apply-templates select="@*|node()"/></TimeSpanNode>
@@ -386,28 +386,28 @@
                 <analysisNode><xsl:apply-templates select="@*|node()"/></analysisNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ST6I1YWdYUGJgCbdffDigA'">
-                <arg-quantileNode><xsl:apply-templates select="@*|node()"/></arg-quantileNode>
+                <argQuantileNode><xsl:apply-templates select="@*|node()"/></argQuantileNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'D-3wh05BSEaNveBvZsiBvg'">
-                <distinct-valuesNode><xsl:apply-templates select="@*|node()"/></distinct-valuesNode>
+                <distinctValuesNode><xsl:apply-templates select="@*|node()"/></distinctValuesNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'PVTOVUhxYEWWtVDhyu58Mg'">
-                <distinct-rowsNode><xsl:apply-templates select="@*|node()"/></distinct-rowsNode>
+                <DistinctRowsNode><xsl:apply-templates select="@*|node()"/></DistinctRowsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = '43eXyXgshEuXyKzxIZgpjQ'">
                 <combinationsNode><xsl:apply-templates select="@*|node()"/></combinationsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ZgFKYBH-1U2gZ8hqIAGNRg'">
-                <top-of-groupsNode><xsl:apply-templates select="@*|node()"/></top-of-groupsNode>
+                <topOfGroupsNode><xsl:apply-templates select="@*|node()"/></topOfGoupsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'dSj3vxkltUag5KOGvvgW9A'">
-                <running-totalNode><xsl:apply-templates select="@*|node()"/></running-totalNode>
+                <runningTotalNode><xsl:apply-templates select="@*|node()"/></runningTotalNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'baRjr1raUESMc6X-_5esvw'">
                 <TopNode><xsl:apply-templates select="@*|node()"/></TopNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ccQoTd4aFU-aggdunXNApQ'">
-                <pareto-frontiersNode><xsl:apply-templates select="@*|node()"/></pareto-frontiersNode>
+                <paretoFrontiersNode><xsl:apply-templates select="@*|node()"/></paretoFrontiersNode>
                 </xsl:if>
 
 </xsl:template>
