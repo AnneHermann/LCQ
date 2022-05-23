@@ -398,7 +398,7 @@
                 <combinationsNode><xsl:apply-templates select="@*|node()"/></combinationsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'ZgFKYBH-1U2gZ8hqIAGNRg'">
-                <topOfGroupsNode><xsl:apply-templates select="@*|node()"/></topOfGoupsNode>
+                <topOfGroupsNode><xsl:apply-templates select="@*|node()"/></topOfGroupsNode>
                 </xsl:if>
 <xsl:if test="@NodeClassId = 'dSj3vxkltUag5KOGvvgW9A'">
                 <runningTotalNode><xsl:apply-templates select="@*|node()"/></runningTotalNode>

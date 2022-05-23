@@ -7,15 +7,15 @@
 <plugin>
 
    <extension point="org.eclipse.emf.ecore.generated_package">
-      <!-- @generated nodeSystem -->
+      <!-- @generated alleKnotenFormartiert -->
       <package
             uri="file:/C:/Users/hermanne/eclipse-workspace%20-%20Kopie/alleKnotenFormartiert.xsd"
             class="AlleKnotenFormartiert.AlleKnotenFormartiertPackage"
-            genModel="model/nodeSystem.genmodel"/>
+            genModel="model/alleKnotenFormartiert.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
-      <!-- @generated nodeSystem -->
+      <!-- @generated alleKnotenFormartiert -->
       <parser
             type="alleknotenformartiert"
             class="AlleKnotenFormartiert.util.AlleKnotenFormartiertResourceFactoryImpl"/>

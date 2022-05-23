@@ -6,7 +6,7 @@ Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: Low-Code-Quality
 Require-Bundle: org.junit,
  org.junit.jupiter.api,
- NodeSystem;bundle-version="0.1.0"
+ NodeSystem;bundle-version="1.0.0"
 Import-Package: org.eclipse.ocl,
  org.eclipse.ocl.helper,
  org.eclipse.ocl.utilities

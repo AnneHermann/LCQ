@@ -14,7 +14,7 @@ public class App {
 		var response = new QualityReportResponse();
 		MetricCalculator.CalculateAll(documentRoot, response);
 		PatternMatcher.MatchAll(documentRoot, response);
-		OutputReport(args[1], response);
+		OutputReport("-csv", response); //TODO: args[1]
 	}
 
 	private static URI CreateURI(String uri) {

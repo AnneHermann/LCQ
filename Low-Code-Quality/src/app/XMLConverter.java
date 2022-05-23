@@ -14,15 +14,20 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
+import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceFactoryImpl;
 import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
 
 import AlleKnotenFormartiert.AlleKnotenFormartiertPackage;
 import AlleKnotenFormartiert.DocumentRoot;
 import AlleKnotenFormartiert.impl.AlleKnotenFormartiertPackageImpl;
+import AlleKnotenFormartiert.util.AlleKnotenFormartiertResourceFactoryImpl;
 
 public class XMLConverter {
 
@@ -37,25 +42,59 @@ public class XMLConverter {
 		PrepareXML(sourceUri.path());
 
 		AlleKnotenFormartiertPackage pack = AlleKnotenFormartiertPackageImpl.init();
+		
+		// Create a resource set to hold the resources.
+				//
+				ResourceSet resourceSet = new ResourceSetImpl();
+				
+				// Register the appropriate resource factory to handle all file extensions.
+				//
+				resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put
+					(Resource.Factory.Registry.DEFAULT_EXTENSION, 
+					 new AlleKnotenFormartiertResourceFactoryImpl());
 
-		ResourceSet resourceSet = new ResourceSetImpl();
-		resourceSet.getPackageRegistry().put(pack.getNsURI(), pack);
-		resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", new XMLResourceFactoryImpl());
+				// Register the package to ensure it is available during loading.
+				//
+				resourceSet.getPackageRegistry().put
+					(AlleKnotenFormartiertPackage.eNS_URI, 
+					 AlleKnotenFormartiertPackage.eINSTANCE);
+				
+				File file = new File(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML);
+				URI uri = file.isFile() ? URI.createFileURI(file.getAbsolutePath()): URI.createURI(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML);
 
-		XMLResourceImpl resource = new XMLResourceImpl();
+				
+				try {
+					// Demand load resource for this file.
+					//
+					Resource resource = resourceSet.getResource(uri, true);
+					System.out.println("Loaded " + uri);
+					return (DocumentRoot) resource.getContents().get(0);
 
-		try {
-			resource.load(new FileInputStream(new File(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML).getAbsolutePath()),
-					Collections.EMPTY_MAP);
-		} catch (FileNotFoundException e1) {
-			System.out.println("Datei konnte nicht gefunden werden.");
-			e1.printStackTrace();
-		} catch (IOException e1) {
-			System.out.println("Datei konnte nicht eingelesen werden.");
-			e1.printStackTrace();
-		}
+				}
+				catch (RuntimeException exception) {
+					System.out.println("Problem loading " + uri);
+					exception.printStackTrace();
+				}
 
-		return (DocumentRoot) resource.getContents().get(0);
+				return null;
+	//	ResourceSet resourceSet = new ResourceSetImpl();
+	//	resourceSet.getPackageRegistry().put(pack.getNsURI(), pack);
+	//	resourceSet.getResourceFactoryRegistry().getExtensionToFactoryMap().put("xml", new XMLResourceFactoryImpl());
+
+	//	XMLResourceImpl resource = new XMLResourceImpl();
+
+	//	try {
+	//		resource.load(new FileInputStream(new File(RELATIVE_PATH_TO_TRANSFORMED_NODE_SYSTEM_XML).getAbsolutePath()),
+	//				Collections.EMPTY_MAP);
+	//	} catch (FileNotFoundException e1) {
+	//		System.out.println("Datei konnte nicht gefunden werden.");
+	//		e1.printStackTrace();
+	//	} catch (IOException e1) {
+	//		System.out.println("Datei konnte nicht eingelesen werden.");
+	//		e1.printStackTrace();
+	//	}
+
+	//	return (DocumentRoot) resource.getContents().get(0);
 
 	}
 
