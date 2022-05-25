@@ -8,7 +8,7 @@ import report.QualityReportResponse;
 
 public class PatternMatcher {
 
-	private static final ArrayList<IPattern> patterns = new ArrayList<IPattern>(Arrays.asList(new AugmentNode())); 
+	private static final ArrayList<IPattern> patterns = new ArrayList<IPattern>(Arrays.asList()); 
 
 	
 	public static void MatchAll(DocumentRoot root, QualityReportResponse response) {
