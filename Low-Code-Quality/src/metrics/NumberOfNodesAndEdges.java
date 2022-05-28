@@ -18,7 +18,7 @@ public class NumberOfNodesAndEdges implements IMetric {
 				new MetricResponse(ANZAHL_DER_KNOTEN_UND_KANTEN, Integer.toString(numberOfNodesAndEdges)));
 	}
 
-	public int getNumberOfNodes(NodeSystemType nodeSystem) {
+	public static int getNumberOfNodes(NodeSystemType nodeSystem) {
 		var numberOfFunctionalNodes = nodeSystem.getNodes().get(0).getNode().size();
 		var numberOfSources = nodeSystem.getSources().get(0).getSource().size();
 		var numberOfFunctionResult = nodeSystem.getFunctionResults().get(0).getFunctionResult().size();
@@ -27,14 +27,14 @@ public class NumberOfNodesAndEdges implements IMetric {
 
 	}
 
-	public int getNumberOfEdges(NodeSystemType nodeSystem) {
+	public static int getNumberOfEdges(NodeSystemType nodeSystem) {
 
 		return countEdgesOfAllNodes(nodeSystem) + countEdgesOfAllFunctionResults(nodeSystem) + countEdgesOfAllResults(nodeSystem);
 
 
 	}
 	
-	private int countEdgesOfAllResults(NodeSystemType nodeSystem) {
+	private static int countEdgesOfAllResults(NodeSystemType nodeSystem) {
 		var counter = 0;
 		
 		for (var result : nodeSystem.getResults().get(0).getResult()) {
@@ -44,7 +44,7 @@ public class NumberOfNodesAndEdges implements IMetric {
 		return counter;
 	}
 	
-	private int countEdgesOfAllFunctionResults(NodeSystemType nodeSystem) {
+	private static int countEdgesOfAllFunctionResults(NodeSystemType nodeSystem) {
 		var counter = 0;
 		
 		for (var functionResult : nodeSystem.getFunctionResults().get(0).getFunctionResult()) {
@@ -54,7 +54,7 @@ public class NumberOfNodesAndEdges implements IMetric {
 		return counter;
 	}
 
-	private int countEdgesOfAllNodes(NodeSystemType nodeSystem) {
+	private static int countEdgesOfAllNodes(NodeSystemType nodeSystem) {
 		var counter = 0;
 		for (var node : nodeSystem.getNodes().get(0).getNode()) {
 			for (var input : node.getInputs().get(0).getInput()) {
@@ -64,7 +64,7 @@ public class NumberOfNodesAndEdges implements IMetric {
 		return counter;
 	}
 
-	private int countEdgesOfAllSources(int counter, InputType input) {
+	private static int countEdgesOfAllSources(int counter, InputType input) {
 		for (var source : input.getSource()) {
 			if (source.getNode() != null) {
 				counter++;

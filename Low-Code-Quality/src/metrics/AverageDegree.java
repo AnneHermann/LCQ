@@ -2,7 +2,6 @@ package metrics;
 
 import AlleKnotenFormartiert.DocumentRoot;
 import AlleKnotenFormartiert.InputType;
-import AlleKnotenFormartiert.NodeType;
 import report.QualityReportResponse;
 import report.MetricResponse;
 

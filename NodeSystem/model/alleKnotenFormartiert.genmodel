@@ -35,13 +35,8 @@
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//FunctionResultType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/functionResultColumn"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/functionResult"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/location"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/input"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/showUsedColumnsOnly"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/name"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/collapsed"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//FunctionResultType/description"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//FunctionResultType/outputs"/>
     </genClasses>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//InputsType">
@@ -59,13 +54,9 @@
       <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NewDataSetType/nodeSystem"/>
     </genClasses>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NodeType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/location"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/nodeClassId"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/nodeName"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/description"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/collapsed"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//NodeType/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeType/inputs"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NodeType/outputs"/>
     </genClasses>
@@ -95,9 +86,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//SourcesType/source"/>
     </genClasses>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//SourceType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/location"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/node"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/value"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/tableName"/>
@@ -106,7 +94,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//SourceType/visibleColumns"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/collapsed"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/expanded"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceType/name"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//SourceType/outputs"/>
     </genClasses>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ColumnDecorationsType">
@@ -127,13 +114,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceColumnType/nullable"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//SourceColumnType/rank"/>
     </genClasses>
-    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ResultType">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultType/id"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultType/location"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultType/name"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//ResultType/input"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ResultType/description"/>
-    </genClasses>
+    <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//ResultType"/>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//NewEClass148"/>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//VisibleColumnsType">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//VisibleColumnsType/item"/>
@@ -149,6 +130,16 @@
     </genClasses>
     <genClasses ecoreClass="AlleKnotenFormartiert.ecore#//OutputType">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//OutputType/nodeId"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="AlleKnotenFormartiert.ecore#//ANodeType">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ANodeType/adjacencyList"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ANodeType/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ANodeType/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ANodeType/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute AlleKnotenFormartiert.ecore#//ANodeType/location"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="AlleKnotenFormartiert.ecore#//NotFunctionalNodeType">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference AlleKnotenFormartiert.ecore#//NotFunctionalNodeType/input"/>
     </genClasses>
   </genPackages>
 </genmodel:GenModel>

@@ -17,7 +17,9 @@ public class App {
 	public static void main(String[] args) {
 		// TODO: Exceptions hier behandeln
 		var documentRoot = XMLConverter.ConvertLowCodeXML(CreateURI(args[0]));
-		LowCodeProgramPreprocessor.FillOutputs(documentRoot.getNodeSystem());
+		var nodeSystem = documentRoot.getNodeSystem();
+		LowCodeProgramPreprocessor.FillOutputs(nodeSystem);
+		LowCodeProgramPreprocessor.FillAdjacencyLists(nodeSystem);
 		var response = new QualityReportResponse();
 		MetricCalculator.CalculateAll(documentRoot, response);
 		PatternMatcher.MatchAll(documentRoot, response);

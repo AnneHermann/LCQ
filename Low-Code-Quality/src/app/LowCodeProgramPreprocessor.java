@@ -1,11 +1,19 @@
 package app;
 
+import java.util.ArrayList;
+import java.util.stream.Collectors;
+
+import org.eclipse.emf.common.util.EList;
+
+import AlleKnotenFormartiert.ANodeType;
 import AlleKnotenFormartiert.AlleKnotenFormartiertFactory;
 import AlleKnotenFormartiert.InputType;
 import AlleKnotenFormartiert.NodeSystemType;
+import AlleKnotenFormartiert.NodeType;
+import AlleKnotenFormartiert.NotFunctionalNodeType;
 
 public class LowCodeProgramPreprocessor {
-	
+
 	public static void FillOutputs(NodeSystemType nodeSystem) {
 		for (var result : nodeSystem.getResults().get(0).getResult()) {
 			fillOutputsForSources(result.getInput().get(0), nodeSystem, result.getId());
@@ -21,6 +29,82 @@ public class LowCodeProgramPreprocessor {
 			}
 		}
 
+	}
+
+	public static void FillAdjacencyLists(NodeSystemType nodeSystem) {
+		for (var node : nodeSystem.getNodes().get(0).getNode()) {
+			addAllEdgesToAdjacencyList(node);
+			resolveEdgesToColumns(node, nodeSystem);
+		}
+
+		for (var functionResult : nodeSystem.getFunctionResults().get(0).getFunctionResult()) {
+			addAllEdgesToAdjacencyList(functionResult);
+			resolveEdgesToColumns(functionResult, nodeSystem);
+		}
+
+		for (var result : nodeSystem.getResults().get(0).getResult()) {
+			addAllEdgesToAdjacencyList(result);
+			resolveEdgesToColumns(result, nodeSystem);
+		}
+
+	}
+
+	private static void addAllEdgesToAdjacencyList(NodeType node) {
+		for (var input : node.getInputs().get(0).getInput()) {
+			for (var source : input.getSource()) {
+				addNeighbourNodeIfExists(node, source.getNode());
+			}
+		}
+
+	}
+
+	private static void addAllEdgesToAdjacencyList(NotFunctionalNodeType node) {
+		for (var source : node.getInput().get(0).getSource()) {
+			addNeighbourNodeIfExists(node, source.getNode());
+		}
+
+	}
+
+	private static void addNeighbourNodeIfExists(ANodeType node, String neighbourNode) {
+		if (neighbourNode != null) {
+			node.getAdjacencyList().add(neighbourNode);
+		}
+	}
+
+	private static void resolveEdgesToColumns(ANodeType node, NodeSystemType nodeSystem) {
+		var adjacencyList = node.getAdjacencyList();
+		var toRemove = new ArrayList<String>();
+		var toAdd = new ArrayList<String>();
+
+		for (var neighbour : adjacencyList) {
+			for (var source : nodeSystem.getSources().get(0).getSource()) {
+				for (var sourceColumn : source.getSourceColumns().get(0).getSourceColumn()) {
+					if (neighbour.equals(sourceColumn.getId())) {
+						toRemove.add(neighbour);
+						toAdd.add(source.getId());
+					}
+				}
+			}
+
+			for (var functionResult : nodeSystem.getFunctionResults().get(0).getFunctionResult()) {
+				for (var functionResultColumn : functionResult.getFunctionResult().get(0).getFunctionResultColumn()) {
+					if (neighbour.equals(functionResultColumn.getId())) {
+						toRemove.add(neighbour);
+						toAdd.add(functionResult.getId());
+					}
+				}
+			}
+		}
+
+		replaceColumnIdsToNodeIds(toRemove, toAdd, adjacencyList);
+		adjacencyList.stream().distinct();
+
+	}
+
+	private static void replaceColumnIdsToNodeIds(ArrayList<String> toRemove, ArrayList<String> toAdd,
+			EList<String> adjacencyList) {
+		toRemove.stream().forEach(columnIdToRemove -> adjacencyList.remove(columnIdToRemove));
+		toAdd.stream().forEach(nodeIdFromColumnToAdd -> adjacencyList.add(nodeIdFromColumnToAdd));
 	}
 
 	private static void fillOutputsForSources(InputType input, NodeSystemType nodeSystem, String sourceNodeId) {
@@ -52,8 +136,8 @@ public class LowCodeProgramPreprocessor {
 		if (isInSourceColumns(id, sourceId, nodeSystem)) {
 			return;
 		}
-		
-		if(isInNodeInputs(id, sourceId, nodeSystem)) {
+
+		if (isInNodeInputs(id, sourceId, nodeSystem)) {
 			return;
 		}
 
@@ -76,7 +160,7 @@ public class LowCodeProgramPreprocessor {
 				}
 			}
 		}
-		
+
 		return false;
 	}
 
