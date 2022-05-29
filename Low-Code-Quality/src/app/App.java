@@ -8,7 +8,6 @@ import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
 import org.eclipse.emf.common.util.URI;
 import metrics.MetricCalculator;
-import patterns.PatternMatcher;
 import report.QualityReportCreator;
 import report.QualityReportResponse;
 
@@ -21,8 +20,7 @@ public class App {
 		LowCodeProgramPreprocessor.FillOutputs(nodeSystem);
 		LowCodeProgramPreprocessor.FillAdjacencyLists(nodeSystem);
 		var response = new QualityReportResponse();
-		MetricCalculator.CalculateAll(documentRoot, response);
-		PatternMatcher.MatchAll(documentRoot, response);
+		MetricCalculator.CalculateAll(nodeSystem, response);
 		OutputReport(args, response);
 	}
 
@@ -38,7 +36,6 @@ public class App {
 	}
 
 	private static void OutputReport(String[] args, QualityReportResponse response) {
-
 		Options options = new Options();
 		options.addOption("csv", false, "Output report in csv format");
 		CommandLineParser parser = new DefaultParser();

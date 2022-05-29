@@ -1,6 +1,5 @@
 package metrics;
 
-import AlleKnotenFormartiert.DocumentRoot;
 import AlleKnotenFormartiert.InputType;
 import AlleKnotenFormartiert.NodeSystemType;
 import report.MetricResponse;
@@ -10,8 +9,7 @@ public class NumberOfNodesAndEdges implements IMetric {
 
 	private static final String ANZAHL_DER_KNOTEN_UND_KANTEN = "Anzahl der Knoten und Kanten";
 
-	public void Calculate(DocumentRoot documentRoot, QualityReportResponse response) {
-		var nodeSystem = documentRoot.getNodeSystem();
+	public void Calculate(NodeSystemType nodeSystem, QualityReportResponse response) {
 		var numberOfNodesAndEdges = getNumberOfNodes(nodeSystem) + getNumberOfEdges(nodeSystem);
 
 		response.AddMetricResponse(
@@ -29,28 +27,28 @@ public class NumberOfNodesAndEdges implements IMetric {
 
 	public static int getNumberOfEdges(NodeSystemType nodeSystem) {
 
-		return countEdgesOfAllNodes(nodeSystem) + countEdgesOfAllFunctionResults(nodeSystem) + countEdgesOfAllResults(nodeSystem);
-
+		return countEdgesOfAllNodes(nodeSystem) + countEdgesOfAllFunctionResults(nodeSystem)
+				+ countEdgesOfAllResults(nodeSystem);
 
 	}
-	
+
 	private static int countEdgesOfAllResults(NodeSystemType nodeSystem) {
 		var counter = 0;
-		
+
 		for (var result : nodeSystem.getResults().get(0).getResult()) {
 			counter = countEdgesOfAllSources(counter, result.getInput().get(0));
 		}
-		
+
 		return counter;
 	}
-	
+
 	private static int countEdgesOfAllFunctionResults(NodeSystemType nodeSystem) {
 		var counter = 0;
-		
+
 		for (var functionResult : nodeSystem.getFunctionResults().get(0).getFunctionResult()) {
 			counter = countEdgesOfAllSources(counter, functionResult.getInput().get(0));
 		}
-		
+
 		return counter;
 	}
 
@@ -72,6 +70,5 @@ public class NumberOfNodesAndEdges implements IMetric {
 		}
 		return counter;
 	}
-	
-	
+
 }

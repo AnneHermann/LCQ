@@ -1,8 +1,6 @@
 package app;
 
 import java.util.ArrayList;
-import java.util.stream.Collectors;
-
 import org.eclipse.emf.common.util.EList;
 
 import AlleKnotenFormartiert.ANodeType;
@@ -71,8 +69,8 @@ public class LowCodeProgramPreprocessor {
 		}
 	}
 
-	private static void resolveEdgesToColumns(ANodeType node, NodeSystemType nodeSystem) {
-		var adjacencyList = node.getAdjacencyList();
+	private static void resolveEdgesToColumns(ANodeType nodeToCheck, NodeSystemType nodeSystem) {
+		var adjacencyList = nodeToCheck.getAdjacencyList();
 		var toRemove = new ArrayList<String>();
 		var toAdd = new ArrayList<String>();
 
@@ -91,6 +89,17 @@ public class LowCodeProgramPreprocessor {
 					if (neighbour.equals(functionResultColumn.getId())) {
 						toRemove.add(neighbour);
 						toAdd.add(functionResult.getId());
+					}
+				}
+			}
+			
+			for(var node : nodeSystem.getNodes().get(0).getNode()) {
+				for(var input : node.getInputs().get(0).getInput()) {
+					for (var source : input.getSource())  {
+						if(neighbour.equals(source.getId())) {
+							toRemove.add(neighbour);
+							toAdd.add(node.getId());
+						}
 					}
 				}
 			}

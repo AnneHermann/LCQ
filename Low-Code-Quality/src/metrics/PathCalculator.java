@@ -5,7 +5,6 @@ import java.util.NoSuchElementException;
 
 import AlleKnotenFormartiert.ANodeType;
 import AlleKnotenFormartiert.NodeSystemType;
-import AlleKnotenFormartiert.SourceType;
 
 public class PathCalculator {
 
@@ -61,7 +60,7 @@ public class PathCalculator {
 		for (var neighbour : node.getAdjacencyList()) {
 			if (!isVisited.contains(neighbour)) {
 				localPathList.add(neighbour);
-				//System.out.println(neighbour);
+				// System.out.println(neighbour);
 				findAllPathsUtil(getNode(neighbour), source, isVisited, localPathList);
 				localPathList.remove(neighbour);
 			}
