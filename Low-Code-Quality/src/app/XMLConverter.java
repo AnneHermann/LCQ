@@ -30,7 +30,7 @@ public class XMLConverter {
 		try {
 
 			Resource resource = resourceSet.getResource(uri, true);
-			System.out.println("Loaded " + uri);
+			//System.out.println("Loaded " + uri);
 			return (DocumentRoot) resource.getContents().get(0);
 
 		} catch (RuntimeException exception) {

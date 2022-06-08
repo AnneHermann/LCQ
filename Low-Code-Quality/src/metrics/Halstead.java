@@ -19,7 +19,7 @@ public class Halstead implements IMetric {
 		var volume = calculateVolume(programLength, programVocabulary);
 		var difficulty = calcualteDifficulty(calculateNumberOfDistinctOperators(nodeSystem),
 				(int) calculateNumberOfDistinctOperands(nodeSystem),
-				(int) calculateNumberOfDistinctOperands(nodeSystem)); // TODO
+				(int) calculateNumberOfDistinctOperands(nodeSystem));
 		var effort = calculateEffort(difficulty, volume);
 
 		var output = buildOutput(programVocabulary, programLength, volume, difficulty, effort);

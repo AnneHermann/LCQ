@@ -60,7 +60,6 @@ public class PathCalculator {
 		for (var neighbour : node.getAdjacencyList()) {
 			if (!isVisited.contains(neighbour)) {
 				localPathList.add(neighbour);
-				// System.out.println(neighbour);
 				findAllPathsUtil(getNode(neighbour), source, isVisited, localPathList);
 				localPathList.remove(neighbour);
 			}

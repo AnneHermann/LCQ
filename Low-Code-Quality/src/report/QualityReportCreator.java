@@ -26,18 +26,34 @@ public class QualityReportCreator {
 	}
 
 	public static void OutputResponseToCSV(QualityReportResponse response) {
-		WriteCSVOutputToConsole(BuildMetricCSVOutput(response.getMetrics()));
-		WriteCSVOutputToConsole(BuildPatternCSVOutput(response.getPatterns()));
+		String[] nameOfMetrics = new String[response.getMetrics().size()];
+
+		for (var i = 0; i < response.getMetrics().size(); i++) {
+			nameOfMetrics[i] = response.getMetrics().get(i).getName();
+		}
+
+		System.out.println(ConvertToCSV(nameOfMetrics));
+
+		String[] valueOfMetrics = new String[response.getMetrics().size()];
+
+		for (var i = 0; i < response.getMetrics().size(); i++) {
+			valueOfMetrics[i] = response.getMetrics().get(i).getResult();
+		}
 		
+		System.out.println(ConvertToCSV(valueOfMetrics));
+
+		// WriteCSVOutputToConsole(BuildMetricCSVOutput(response.getMetrics()));
+		// WriteCSVOutputToConsole(BuildPatternCSVOutput(response.getPatterns()));
+
 	}
 
-	private static void WriteCSVOutputToConsole(ArrayList<String[]> input) {		
-			input.stream().map(item -> ConvertToCSV(item)).forEach(System.out::println);
-		
+	private static void WriteCSVOutputToConsole(ArrayList<String[]> input) {
+		input.stream().map(item -> ConvertToCSV(item)).forEach(System.out::println);
+
 	}
 
 	private static String ConvertToCSV(String[] data) {
-		return Stream.of(data).collect(Collectors.joining(","));
+		return Stream.of(data).collect(Collectors.joining(";"));
 	}
 
 	private static ArrayList<String[]> BuildMetricCSVOutput(ArrayList<MetricResponse> metrics) {
