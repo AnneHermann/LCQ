@@ -1,0 +1,1645 @@
+<?xml version="1.0" encoding="UTF-8"?><nodeSystem id="KjRgjcnSjkOaLKCMePjlRQ" expressionLanguageName="type-python" version="">
+      
+    <sources>
+            
+        <source id="gAppDIp-lU-7tNfWBP009Q" tableName="KON_Strecke" location="1572,13">
+                  
+            <sourceColumns>
+                        
+                <sourceColumn id="w5tLJVK0uEyX3lIy60vGTA" column="KON_AO_AVGPalTauschGeb" valueType="Boolean" nullable="True"/>
+                        
+                <sourceColumn id="exDypW9nAkOQr6_mJirLfQ" column="KON_AO_Abgangsort" valueType="String" nullable="True" rank="1"/>
+                        
+                <sourceColumn id="uybPGu-uYUK3Q1rw2EbpSg" column="KON_AO_IDLogistiktyp" valueType="Decimal" nullable="True" rank="2"/>
+                        
+                <sourceColumn id="Tk4WYwHWqUKzokrHrtnjSg" column="KON_EO_Fahrzeugart_Transportmittel" valueType="String" nullable="True" rank="3"/>
+                        
+                <sourceColumn id="lmSZzma8xk-pMbsp5d6dEQ" column="KON_EO_Empfaenger_Land" valueType="String" nullable="True" rank="4"/>
+                        
+                <sourceColumn id="J-KGFssTlEaU8C10jdx4ow" column="KON_EO_NettoPAL" valueType="Decimal" nullable="True" rank="5"/>
+                        
+                <sourceColumn id="M0y3IJ6L20KCmHZ0ZlOdSw" column="KON_EO_Mindestverladung" valueType="Decimal" nullable="True" rank="6"/>
+                        
+                <sourceColumn id="_lLLNh6hr0yJWjPl7mn8Ow" column="KON_EO_Empfaenger_Plz" valueType="String" nullable="True" rank="7"/>
+                        
+                <sourceColumn id="MBxjZ455TU6hGzP0zWckkw" column="KON_EO_Empfaenger_Ort" valueType="String" nullable="True" rank="8"/>
+                        
+                <sourceColumn id="a52bvKPWxkKsoyM3nRdcyQ" column="KON_EO_Empfaenger_PartnerName" valueType="String" nullable="True" rank="9"/>
+                        
+                <sourceColumn id="x4OOg13e0ESSm63RJoGrrQ" column="KON_EO_Fahrzeugart_Bezeichnung" valueType="String" nullable="True" rank="10"/>
+                        
+                <sourceColumn id="ThqP5otvikqNWz3i-LchTQ" column="KON_EO_Abgangsort_AVGTrMArt" valueType="String" nullable="True" rank="11"/>
+                        
+                <sourceColumn id="orcd1lzrk02HOYySahv0bw" column="KON_EO_GueltigVon" valueType="DateTime" nullable="True" rank="12"/>
+                        
+                <sourceColumn id="d5oZQtsLGESeomFIKFTmqw" column="KON_EO_GueltigBis" valueType="DateTime" nullable="True" rank="13"/>
+                        
+                <sourceColumn id="lprJ9JEhykuCt2xm2w8uWA" column="KON_EO_ROW_ID" valueType="String" nullable="True" rank="14"/>
+                        
+                <sourceColumn id="b_E6g595H02s3tbKGc38xg" column="KON_EO_ROW_ID_Empfaenger" valueType="String" nullable="True" rank="15"/>
+                        
+                <sourceColumn id="XrK6Yze6c06ttSKzjliG4w" column="KON_EO_Abgangsort" valueType="String" nullable="True" rank="16"/>
+                        
+                <sourceColumn id="En_czBmbX0yJwHrlnGC5fg" column="KON_EO_IDKontrakt" valueType="Decimal" nullable="True" rank="17"/>
+                        
+                <sourceColumn id="IlzvlhsDsUO1W2gkqwhHUg" column="KON_EO_Abgangsort_IDAbgangsort" valueType="Int64" nullable="True" rank="18"/>
+                        
+                <sourceColumn id="o3klKVBqakmWbK0B99WUDg" column="KON_LT_ROW_ID" valueType="String" nullable="True" rank="19"/>
+                        
+                <sourceColumn id="1CnN9X3zUEO9ZYfFinfXyA" column="KON_LT_IDKontrakt" valueType="Decimal" nullable="True" rank="20"/>
+                        
+                <sourceColumn id="IaUKSYE5xEiNoetx09dFMg" column="KON_LT_IDLogistiktyp" valueType="Int64" nullable="True" rank="21"/>
+                        
+                <sourceColumn id="7EMhyruurkaqw8ljyZheXw" column="KON_Land_ROW_ID" valueType="String" nullable="True" rank="22"/>
+                        
+                <sourceColumn id="2tlWZaHD0Ueq9NswytbF-g" column="KON_Land_IDLand" valueType="Int64" nullable="True" rank="23"/>
+                        
+                <sourceColumn id="I2tymGKToU2dZbHX0hItrQ" column="KON_Land_IDKontrakt" valueType="Decimal" nullable="True" rank="24"/>
+                        
+                <sourceColumn id="vBWYD8XBQ0WhASP845JpGQ" column="KON_Land_Land_ISO2" valueType="String" nullable="True" rank="25"/>
+                        
+                <sourceColumn id="2wr-BPBzAkKKtgzQEge7Mw" column="KON_Land_Land_Bezeichnung" valueType="String" nullable="True" rank="26"/>
+                        
+                <sourceColumn id="vKIFrzl_j06dQNhJqQXMnQ" column="KON_Land_Land_Sortingorder" valueType="Decimal" nullable="True" rank="27"/>
+                        
+                <sourceColumn id="v88frxpyw0SV9WII8vxg8A" column="KON_ROW_ID" valueType="String" nullable="True" rank="28"/>
+                        
+                <sourceColumn id="nz6VQzdFRUSOQifUQ9Plbw" column="KON_IDKontrakt" valueType="Int64" nullable="True" rank="29"/>
+                        
+                <sourceColumn id="cFSFoE85pU-wX34DkQ9EtQ" column="KON_Nummer" valueType="String" nullable="True" rank="30"/>
+                        
+                <sourceColumn id="NPUKMokVc0myNE8AwTOlMQ" column="KON_GueltigVon" valueType="DateTime" nullable="True" rank="31"/>
+                        
+                <sourceColumn id="eWtVpFdC_EiPkeuPp7prPg" column="KON_GueltigBis" valueType="DateTime" nullable="True" rank="32"/>
+                        
+                <sourceColumn id="2Vs99WqxOkWh6Mcva0Awvw" column="KON_ROW_ID_Spediteur" valueType="String" nullable="True" rank="33"/>
+                        
+                <sourceColumn id="4j6cOt8eHkmHDsxZSDS-TQ" column="KON_USchriftLegende_Unterschriftenkuerzel" valueType="String" nullable="True" rank="34"/>
+                        
+                <sourceColumn id="Q6xbDj5hxE2BEX-oLv10xQ" column="KON_ZweiteUSchriftPreisblatt_Unterschriftenkuerzel" valueType="String" nullable="True" rank="35"/>
+                        
+                <sourceColumn id="vxdDWFzczkScC9Bu3St3NA" column="KON_ErsteUSchriftPreisblatt_Unterschriftenkuerzel" valueType="String" nullable="True" rank="36"/>
+                        
+                <sourceColumn id="HpC9L5GfQ0G-zQ5YsjMCow" column="KON_USchriftAnschreiben_Unterschriftenkuerzel" valueType="String" nullable="True" rank="37"/>
+                        
+                <sourceColumn id="2nNm_cV7CUGdo78zhDXXOw" column="KON_ErstelltVon_Nachname" valueType="String" nullable="True" rank="38"/>
+                        
+                <sourceColumn id="byUgcElvUE-d0Lz4hYmknw" column="KON_ErstelltVon_Vorname" valueType="String" nullable="True" rank="39"/>
+                        
+                <sourceColumn id="WrAJIuNUk0OEb-ra5yIXyQ" column="KON_USchriftAnschreiben_Nachname" valueType="String" nullable="True" rank="40"/>
+                        
+                <sourceColumn id="pS5955LGYkO8qMvzJD09jQ" column="KON_USchriftAnschreiben_Vorname" valueType="String" nullable="True" rank="41"/>
+                        
+                <sourceColumn id="U6amv0LyxkaJ8oQgr9hwoQ" column="KON_ErsteUSchriftPreisblatt_Nachname" valueType="String" nullable="True" rank="42"/>
+                        
+                <sourceColumn id="tYDwJkzgKU2ECYJ_K7OL7A" column="KON_ErsteUSchriftPreisblatt_Vorname" valueType="String" nullable="True" rank="43"/>
+                        
+                <sourceColumn id="kq1YclWmFUOTaEPNCS9WKw" column="KON_ZweiteUSchriftPreisblatt_Nachname" valueType="String" nullable="True" rank="44"/>
+                        
+                <sourceColumn id="RFnMC6k_sU2_gFBH1k7_jw" column="KON_ZweiteUSchriftPreisblatt_Vorname" valueType="String" nullable="True" rank="45"/>
+                        
+                <sourceColumn id="5w8Y9GYSHEKzweRXdEL6Ng" column="KON_ErstelltVon_Unternehmen" valueType="String" nullable="True" rank="46"/>
+                        
+                <sourceColumn id="d9eLuTvA5E-FtDe-_2mg4w" column="KON_ErstelltVon_Plz" valueType="String" nullable="True" rank="47"/>
+                        
+                <sourceColumn id="LNOa5SRMV06rcgWvJEfP1Q" column="KON_ErstelltVon_Ort" valueType="String" nullable="True" rank="48"/>
+                        
+                <sourceColumn id="-fsDbmo8Bk6Cw5fA0J4iZA" column="KON_ErstelltVon_Strasse" valueType="String" nullable="True" rank="49"/>
+                        
+                <sourceColumn id="Gn6ypNZbfUKyC4fGnOqTRw" column="KON_ErstelltVon_Kuerzel" valueType="String" nullable="True" rank="50"/>
+                        
+                <sourceColumn id="3scpwALrl0mdD1XK9GqOyQ" column="KON_USchriftAnschreiben_Kuerzel" valueType="String" nullable="True" rank="51"/>
+                        
+                <sourceColumn id="khq6VCbedEmjjlHTRZGihg" column="KON_LT_IDLand" valueType="Decimal" nullable="True" rank="52"/>
+                        
+                <sourceColumn id="-bQ4BJv-EEGyUUUIFcBaZw" column="KON_LT_LogTyp" valueType="String" nullable="True" rank="53"/>
+                        
+                <sourceColumn id="jz38_W_kikGj2ofzYWlkOw" column="KON_AO_Absender_PartnerName" valueType="String" nullable="True" rank="54"/>
+                        
+                <sourceColumn id="7Ah8URrSEk2zZ2dKtHy-Aw" column="KON_LT_LogTyp_TranspTyp" valueType="String" nullable="True" rank="55"/>
+                        
+                <sourceColumn id="MVFoC6rma0-nlWxvq47agg" column="KON_LT_LogTyp_Nummer" valueType="String" nullable="True" rank="56"/>
+                        
+                <sourceColumn id="kNcdH_OsdUObEnEEI3r9fw" column="KON_LT_LogTyp_Code" valueType="String" nullable="True" rank="57"/>
+                        
+                <sourceColumn id="xmWS47LXNka1CisSTuUkMg" column="KON_LT_LogTyp_Bezeichnung" valueType="String" nullable="True" rank="58"/>
+                        
+                <sourceColumn id="KNJQ3klO2UOdUvkcPIrJiA" column="KON_LT_LogTyp_LogTyp" valueType="String" nullable="True" rank="59"/>
+                        
+                <sourceColumn id="oU_3Pgi46EioK6wcqf70tQ" column="SORTIERUNG_Abgangsort" valueType="String" nullable="True" rank="60"/>
+                        
+                <sourceColumn id="REqb3ubrMkCWRoSIyz2GjA" column="SORTIERUNG_Logistiktyp" valueType="String" nullable="True" rank="61"/>
+                        
+                <sourceColumn id="RbA8b6Fb9Um0BSSuYkVK1A" column="SORTIERUNG_Land" valueType="String" nullable="True" rank="62"/>
+                        
+                <sourceColumn id="CbmkRBOMyUusIkJO-w23xQ" column="SORTIERUNG_Empfangsort" valueType="String" nullable="True" rank="63"/>
+                        
+                <sourceColumn id="JY68AvyExE-_lozudbyNKQ" column="KON_EO_PreisProPAL" valueType="Boolean" nullable="True" rank="64"/>
+                        
+                <sourceColumn id="AWCNyEjA7EGRO-ANQ7FQFQ" column="KON_EO_Empfaenger_Sortingorder" valueType="Decimal" nullable="True" rank="65"/>
+                        
+                <sourceColumn id="iEFacvVEzkOxDSRyPIFRhg" column="KON_EO_IDEmpfangsort" valueType="Int64" nullable="True" rank="66"/>
+                        
+                <sourceColumn id="CPQCvvvah0OcFA_dSKzFhg" column="KON_EO_PalTauschGeb" valueType="Boolean" nullable="True" rank="67"/>
+                        
+                <sourceColumn id="gOGkGXTvPkCxvJS0lyvc9Q" column="KON_EO_Fahrzeugart" valueType="String" nullable="True" rank="68"/>
+                        
+                <sourceColumn id="mpKcAbBjYESSbd9faEW9uw" column="KON_EO_PalTyp" valueType="String" nullable="True" rank="69"/>
+                        
+                <sourceColumn id="3oYHj-MZHkWF6nDQBIhsSg" column="KON_EO_Empfaenger_LokationsID" valueType="String" nullable="True" rank="70"/>
+                        
+                <sourceColumn id="0ZK1yeanYUCVQMk4HZ_tGA" column="SORTIERUNG_Kontrakt" valueType="String" nullable="True" rank="71"/>
+                        
+                <sourceColumn id="LleLUb7fKEerkJRfAt_JhQ" column="KON_Spediteur_NrV2" valueType="Decimal" nullable="True" rank="72"/>
+                        
+                <sourceColumn id="u_PCXIdrX02R7t_1sWfozQ" column="KON_Spediteur_Kuerzel" valueType="String" nullable="True" rank="73"/>
+                        
+                <sourceColumn id="1A0ro_6g1U6SG2oyC0xkBQ" column="KON_Spediteur_Kurzbezeichnung" valueType="String" nullable="True" rank="74"/>
+                        
+                <sourceColumn id="Q5HsYLyEnU-uUe7KMZgUwA" column="KON_Spediteur_Name" valueType="String" nullable="True" rank="75"/>
+                        
+                <sourceColumn id="300nMm-rIkiwLH0dufVM-g" column="KON_Unternehmen_NrV2" valueType="Decimal" nullable="True" rank="76"/>
+                        
+                <sourceColumn id="2DFb6FpzRUeYt1POyjhRAA" column="KON_Unternehmen_Kuerzel" valueType="String" nullable="True" rank="77"/>
+                        
+                <sourceColumn id="H04UXdhR9k24pwhknwzWeg" column="KON_Unternehmen_Kurzbezeichnung" valueType="String" nullable="True" rank="78"/>
+                        
+                <sourceColumn id="gqnqomACCUmvC7LwxDdDyA" column="KON_Unternehmen_Name" valueType="String" nullable="True" rank="79"/>
+                        
+                <sourceColumn id="ieofmGQE6UKi00CJuUMJ4g" column="KON_ROW_ID_Unternehmen" valueType="String" nullable="True" rank="80"/>
+                        
+                <sourceColumn id="V-L-NZa9PU6Z7JPx5fgAMQ" column="KON_USchriftAnschreiben_Tel" valueType="String" nullable="True" rank="81"/>
+                        
+                <sourceColumn id="jpLQiAQcF0OUWyAmLQF2aw" column="KON_ROW_ID_USchriftAnschreiben" valueType="String" nullable="True" rank="82"/>
+                        
+                <sourceColumn id="l6prwO38ukqYIEG31FZ3aQ" column="KON_ErstelltVon_Tel" valueType="String" nullable="True" rank="83"/>
+                        
+                <sourceColumn id="mKLGfEhG9kO4z4qOYojcEQ" column="KON_LT_LogTyp_TranspTyp_Bezeichnung" valueType="String" nullable="True" rank="84"/>
+                        
+                <sourceColumn id="LNOKkM4D30mP0A229cBgrA" column="KON_LT_LogTyp_TranspTyp_Nummer" valueType="String" nullable="True" rank="85"/>
+                        
+                <sourceColumn id="I24IqdntA0-E2xZgMr1AJQ" column="KON_LT_LogTyp_TranspTyp_Code" valueType="String" nullable="True" rank="86"/>
+                        
+                <sourceColumn id="g15_zyghaUiILjmMxGv1qQ" column="KON_AO_AVGTrMArt" valueType="String" nullable="True" rank="87"/>
+                        
+                <sourceColumn id="HrcxMwyx6EyAa2XlDB7huw" column="KON_EO_Empfaenger_Adresse" valueType="String" nullable="True" rank="88"/>
+                        
+                <sourceColumn id="mUWRGy6kX06B0x-b1NgXRQ" column="KON_EO_NettoLKWBerechnet" valueType="Decimal" nullable="True" rank="89"/>
+                        
+                <sourceColumn id="EWduavb8ikmwvq5yY5vo9A" column="KON_EO_NettoLKW" valueType="Decimal" nullable="True" rank="90"/>
+                        
+                <sourceColumn id="ICuR_ZeiXkGvhXiFn1Qzew" column="KON_LT_LogTyp_ROW_ID" valueType="String" nullable="True" rank="91"/>
+                        
+                <sourceColumn id="5SgIJdrQeEuFwe21B4yS1Q" column="KON_EO_AnzPalProLKW" valueType="Decimal" nullable="True" rank="92"/>
+                        
+                <sourceColumn id="FtIre4sDgkOepasLM5VPlA" column="KON_EO_Entfernung" valueType="Decimal" nullable="True" rank="93"/>
+                        
+                <sourceColumn id="sP9ZU9--eUa7ZSv3gA3Yyw" column="KON_USchriftLegende_Kuerzel" valueType="String" nullable="True" rank="94"/>
+                        
+                <sourceColumn id="ilIeesFA9ESX1-ANbPpNNw" column="KON_USchriftLegende_Nachname" valueType="String" nullable="True" rank="95"/>
+                        
+                <sourceColumn id="FXyeOcC-0kGauobXG32c0g" column="KON_USchriftLegende_Vorname" valueType="String" nullable="True" rank="96"/>
+                        
+                <sourceColumn id="pvv7J8Nh6EeGcqoz8uLSkA" column="KON_AO_GedrucktAm" valueType="DateTime" nullable="True" rank="97"/>
+                        
+                <sourceColumn id="k0Wh9bTciE-PzegWexkhWA" column="KON_AO_VersionLetzterDruck" valueType="Decimal" nullable="True" rank="98"/>
+                        
+                <sourceColumn id="u2lQVtsof06pgSXhJhWacw" column="KON_AO_VersionLetzterDruckAll" valueType="Decimal" nullable="True" rank="99"/>
+                        
+                <sourceColumn id="XG7wojGPjE6Z9ZbsFREjnw" column="KON_LT_GedrucktAm" valueType="DateTime" nullable="True" rank="100"/>
+                        
+                <sourceColumn id="6RYQRGx030iwbuv3B-6bnQ" column="KON_LT_VersionLetzterDruck" valueType="Decimal" nullable="True" rank="101"/>
+                        
+                <sourceColumn id="tKpEcxK53Ee7xRJ6-IBtxg" column="KON_LT_VersionLetzterDruckAll" valueType="Decimal" nullable="True" rank="102"/>
+                        
+                <sourceColumn id="ivVOnwSVo0OUfmgTeg0Iww" column="KON_Land_GedrucktAm" valueType="DateTime" nullable="True" rank="103"/>
+                        
+                <sourceColumn id="vaHRigaZeUm7gSWf3xhRDA" column="KON_Land_VersionLetzterDruckAll" valueType="Decimal" nullable="True" rank="104"/>
+                        
+                <sourceColumn id="O7iZ03k7lEuhGYnuPqXhhQ" column="KON_Land_VersionLetzterDruck" valueType="Decimal" nullable="True" rank="105"/>
+                        
+                <sourceColumn id="vb_xnMxUs0qWHHenYvJ3ug" column="KON_NummerDruckversion" valueType="String" nullable="True" rank="106"/>
+                        
+                <sourceColumn id="apQPU1XfUEa_yqS6INPsQQ" column="KON_VersionLetzterDruck" valueType="Decimal" nullable="True" rank="107"/>
+                        
+                <sourceColumn id="BGo4P0tdBUmTGq7Vtrn9GQ" column="KON_VersionLetzterDruckAll" valueType="Decimal" nullable="True" rank="108"/>
+                        
+                <sourceColumn id="OpKs5pJTokidO0_sylTjKw" column="KON_Version" valueType="Decimal" nullable="True" rank="109"/>
+                        
+                <sourceColumn id="3dPwKztqS0KuR2fwA-67jQ" column="KON_AO_Logistiktyp" valueType="String" nullable="True" rank="110"/>
+                        
+                <sourceColumn id="vdcZDuBPVEG9wM9bNaq_xg" column="KON_AO_AVGFZGArt" valueType="String" nullable="True" rank="111"/>
+                        
+                <sourceColumn id="C9qpoSmfSE2j3RTsXdKkNg" column="KON_AO_Absender_Land" valueType="String" nullable="True" rank="112"/>
+                        
+                <sourceColumn id="btf5F_ZP9UOqShr1d8gX3Q" column="KON_AO_Absender_Plz" valueType="String" nullable="True" rank="113"/>
+                        
+                <sourceColumn id="GRL8hFkkXUa2x8ZulTixWg" column="KON_AO_Absender_Ort" valueType="String" nullable="True" rank="114"/>
+                        
+                <sourceColumn id="k0J4u21V0ECtRB8_JWI6Tw" column="KON_AO_AVGPalTyp" valueType="String" nullable="True" rank="115"/>
+                        
+                <sourceColumn id="Kc0cXZqaJUSkK0OgPwUhRA" column="KON_AO_AVGAnzPalProLKW" valueType="Decimal" nullable="True" rank="116"/>
+                        
+                <sourceColumn id="A4Rg7EAsv0WwJ85NZNU5TQ" column="KON_AO_Waehrung_ISO" valueType="String" nullable="True" rank="117"/>
+                        
+                <sourceColumn id="U79N8eHQskamRyVo6JfLvA" column="KON_AO_IDAbgangsort" valueType="Int64" nullable="True" rank="118"/>
+                        
+                <sourceColumn id="FBUWcuMFj0iYQ7j5g796Tw" column="KON_AO_IDKontrakt" valueType="Decimal" nullable="True" rank="119"/>
+                        
+                <sourceColumn id="oVARmQJc5km9hrapsKYpSw" column="KON_AO_ROW_ID" valueType="String" nullable="True" rank="120"/>
+                        
+                <sourceColumn id="EEmb_lm0ZkGSoeBJMErFUw" column="KON_AO_AVGTPMaxBel" valueType="Decimal" nullable="True" rank="121"/>
+                        
+                <sourceColumn id="rCJ_zoFZ5UivmpvYLLNpJQ" column="KON_AO_AVGGewichtsdisposition" valueType="Boolean" nullable="True" rank="122"/>
+                        
+                <sourceColumn id="rzMb3NMn9E2RX4y8zT1zHA" column="KON_AO_Transporttyp" valueType="String" nullable="True" rank="123"/>
+                        
+                <sourceColumn id="pLm9ZzZW_k27zqw6zSHmFg" column="KON_EO_PalTyp_Bezeichnung" valueType="String" nullable="True" rank="124"/>
+                        
+                <sourceColumn id="tGZU_2c5nEK2zuzwXqaHrQ" column="KON_EO_MaxBelLKW" valueType="Decimal" nullable="True" rank="125"/>
+                        
+                <sourceColumn id="1OKFwT2lJUKdcNJ90k9Q9w" column="KON_EO_Gewichtsdisposition" valueType="Boolean" nullable="True" rank="126"/>
+                        
+                <sourceColumn id="ngjWUGPbg0agZHRJqQq3nA" column="KON_EO_Empfaenger_PartnerLokationRolle" valueType="String" nullable="True" rank="127"/>
+                        
+                <sourceColumn id="UilYHMLelkeoUnFsZ8QdQg" column="KON_EO_GedrucktAm" valueType="DateTime" nullable="True" rank="128"/>
+                        
+                <sourceColumn id="1D6dv-EG6EmIBB3E50FsnQ" column="KON_EO_VersionLetzterDruck" valueType="Decimal" nullable="True" rank="129"/>
+                        
+                <sourceColumn id="AkBeC_aeRkOE681j9TTwGw" column="KON_EO_VersionLetzterDruckAll" valueType="Decimal" nullable="True" rank="130"/>
+                        
+                <sourceColumn id="c-mRjeoY_EC3wNgl_264Ig" column="KON_EO_HasChanged" valueType="Boolean" nullable="True" rank="131"/>
+                        
+                <sourceColumn id="2FPffEkLFk6uqnluQduNcw" column="KON_LT_HasChanged" valueType="Boolean" nullable="True" rank="132"/>
+                        
+                <sourceColumn id="gNfTWI-SOEyswmFsV1RkAA" column="KON_Land_HasChanged" valueType="Boolean" nullable="True" rank="133"/>
+                        
+                <sourceColumn id="3V3BdlEk20qpCLOo3gRU2g" column="KON_AO_HasChanged" valueType="Boolean" nullable="True" rank="134"/>
+                        
+                <sourceColumn id="6_DhdJsDZEeO5bfQeiFiNQ" column="KON_AO_AVGMindestverladung" valueType="Decimal" nullable="True" rank="135"/>
+                        
+                <sourceColumn id="DwH66Fhr_02FfQznwgpO5g" column="KON_AO_Absender_LokationsID" valueType="String" nullable="True" rank="136"/>
+                        
+                <sourceColumn id="5F_zAbpu4UGtlQxefFdKjA" column="KON_EO_LaufzeitInTagen" valueType="Decimal" nullable="True" rank="137"/>
+                      
+            </sourceColumns>
+                  
+            <visibleColumns>
+                        
+                <item value="KON_ErstelltVon_Kuerzel"/>
+                        
+                <item value="KON_ErstelltVon_Nachname"/>
+                        
+                <item value="KON_ErstelltVon_Ort"/>
+                        
+                <item value="KON_ErstelltVon_Plz"/>
+                        
+                <item value="KON_ErstelltVon_Strasse"/>
+                        
+                <item value="KON_ErstelltVon_Tel"/>
+                        
+                <item value="KON_ErstelltVon_Unternehmen"/>
+                        
+                <item value="KON_ErstelltVon_Vorname"/>
+                        
+                <item value="KON_ErsteUSchriftPreisblatt_Nachname"/>
+                        
+                <item value="KON_ErsteUSchriftPreisblatt_Unterschriftenkuerzel"/>
+                        
+                <item value="KON_ErsteUSchriftPreisblatt_Vorname"/>
+                        
+                <item value="KON_ROW_ID_Unternehmen"/>
+                        
+                <item value="KON_ROW_ID_USchriftAnschreiben"/>
+                        
+                <item value="KON_Unternehmen_Kuerzel"/>
+                        
+                <item value="KON_Unternehmen_Kurzbezeichnung"/>
+                        
+                <item value="KON_Unternehmen_Name"/>
+                        
+                <item value="KON_Unternehmen_NrV2"/>
+                        
+                <item value="KON_USchriftAnschreiben_Kuerzel"/>
+                        
+                <item value="KON_USchriftAnschreiben_Nachname"/>
+                        
+                <item value="KON_USchriftAnschreiben_Tel"/>
+                        
+                <item value="KON_USchriftAnschreiben_Unterschriftenkuerzel"/>
+                        
+                <item value="KON_USchriftAnschreiben_Vorname"/>
+                        
+                <item value="KON_USchriftLegende_Kuerzel"/>
+                        
+                <item value="KON_USchriftLegende_Nachname"/>
+                        
+                <item value="KON_USchriftLegende_Unterschriftenkuerzel"/>
+                        
+                <item value="KON_USchriftLegende_Vorname"/>
+                        
+                <item value="KON_ZweiteUSchriftPreisblatt_Nachname"/>
+                        
+                <item value="KON_ZweiteUSchriftPreisblatt_Unterschriftenkuerzel"/>
+                        
+                <item value="KON_ZweiteUSchriftPreisblatt_Vorname"/>
+                        
+                <item value="KON_AO_IDKontrakt"/>
+                        
+                <item value="KON_EO_IDKontrakt"/>
+                        
+                <item value="KON_Land_IDKontrakt"/>
+                        
+                <item value="KON_LT_IDKontrakt"/>
+                        
+                <item value="KON_AO_ROW_ID"/>
+                        
+                <item value="KON_EO_ROW_ID"/>
+                        
+                <item value="KON_EO_ROW_ID_Empfaenger"/>
+                        
+                <item value="KON_Land_ROW_ID"/>
+                        
+                <item value="KON_LT_LogTyp_ROW_ID"/>
+                        
+                <item value="KON_LT_ROW_ID"/>
+                        
+                <item value="KON_ROW_ID_Spediteur"/>
+                      
+            </visibleColumns>
+                
+        </source>
+          
+    </sources>
+      
+    <nodes>
+            
+        <node id="2IqskWMXe0SEEzZA24oDkw" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,13" collapsed="True" name="KON_EO_GueltigVon_Text">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="_2sAKgNFmk2eSko-qth0dA" value="{0:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="SsB6bcMYSU2f_nv0GEeAXw"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="quhvPPXtTka3gRud6izFWw" node="WuNVYlbefE-ku9GYTVWUgA"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="rhPsy17l7kqKt01wOUpmUQ" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,85" collapsed="True" name="KON_EO_GueltigBis_Text">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="Yocq7BEuKUKMO1ovzJI6ZQ" value="{0:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="7oNLCYYK_EWN5eMZifPVaQ"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="qHrGEiia8UaKafkS-W2UTQ" node="ZJaPckzyEU-2okULKAUnbw"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="1IykY0DyEUKklIq05I4zjg" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,157" collapsed="True" name="KON_EO_Zeitraum">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="l8dZbCAkzEujcKenq0sMAA" value="{0:dd.MM.yyyy}-{1:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="aHlcOjPdK0SDb_s4jlDvfA"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="aPUH_k-4EE68kEAAnhdJiA" node="WuNVYlbefE-ku9GYTVWUgA"/>
+                              
+                    <source id="iDB91hPFok20F7k1s_98RQ" node="ZJaPckzyEU-2okULKAUnbw" rank="1"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="QRr4PDzuNUaz1Do3dL7Hkg" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,759" collapsed="True" name="KON_GueltigVon_Text">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="UzLYA2eqI0GgDlzsnCLrDQ" value="{0:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="T1EEmQY5wU63O9dCn9Io-A"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="JAdt11e0EE-V3P-RHJBlqQ" node="RXHR8bsqZ0eqelCnmOp78A"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="bYNq-c_WF06u4Qzjk1oUJQ" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,831" collapsed="True" name="KON_GueltigBis_Text">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="Nk7D-VhqF0G952KnMT4g_Q" value="{0:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="tTEUYzozsUCfC9FHncJLLw"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="Th8hD6-J406nmBJ_Z_SjXQ" node="Jft11LBeBEmhwrXkQ6vW2A"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="r63ZsQCOdE-JrIY0WNpI3Q" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,903" collapsed="True" name="KON_Zeitraum">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="FZc2Ad0Vxku58jLgPFrgtA" value="{0:dd.MM.yyyy}-{1:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="tuUfMIXxtkO1hAVEh9Uziw"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="jZBKr5mvBE6rGfJ30k3OCw" node="RXHR8bsqZ0eqelCnmOp78A"/>
+                              
+                    <source id="Jqk1Sx2haUKAOAiE3CLF0Q" node="Jft11LBeBEmhwrXkQ6vW2A" rank="1"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="6iGEl0HJkUC_Ob_Reni9yQ" nodeClassId="3z8DY1_dU0aTkeHdrkCD0g" nodeName="augment" location="262,13" description="Datenaufbereitung">
+                  
+            <inputs>
+                        
+                <input parameter="Scope">
+                              
+                    <source id="q2LC3oCRBkK0Al-MPBiGFw" node="LuFvK3niC0-wLQ1rIqEa_w"/>
+                            
+                </input>
+                        
+                <input parameter="AdditionalSymbols">
+                              
+                    <source id="RM9jySNZn0S3_6ZWQTEgQg"/>
+                            
+                </input>
+                        
+                <input parameter="ColumnNames">
+                              
+                    <source id="iiZWNjVBhUuNb4NsGCpb2A" value="KON_EO_IstVertragslaufzeit"/>
+                            
+                </input>
+                        
+                <input parameter="Expressions">
+                              
+                    <source id="2BrT6CdXYE2wEDoxF-lyqw" value="(KON_GueltigVon_Text == KON_EO_GueltigVon_Text) and (KON_GueltigBis_Text == KON_EO_GueltigBis_Text) \&#13;&#10;if KON_GueltigVon_Text &lt;&gt; None and KON_EO_GueltigVon_Text &lt;&gt; None and KON_GueltigBis_Text &lt;&gt; None and KON_EO_GueltigBis_Text &lt;&gt; None&#13;&#10;else None"/>
+                            
+                </input>
+                        
+                <input parameter="DataTypes">
+                              
+                    <source id="nGr4jWbbcE6N_ZRuGfZC-Q" value="Boolean"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="IvaZ1xtNM0C3L8_xEr2bUw" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,229" collapsed="True" name="KON_EO_GueltigVon_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="zlWQT9lJBUSox-9_06pjfg" value="{0:yyyyMMdd}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="m2DtJnLF9kmN0joxfI13zg"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="7Z6rDBEJwUSZo9CTboZs6Q" node="WuNVYlbefE-ku9GYTVWUgA"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="h3aBtb6hOUS4huWIeBadZw" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,301" collapsed="True" name="KON_EO_GueltigBis_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="GhrdVicNX0eSmZGY6YddSQ" value="{0:yyyyMMdd}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="D2WYmzDfp0y_xnnFqp2sSQ"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="i4DVWChxc0W85KqO832SgA" node="ZJaPckzyEU-2okULKAUnbw"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="N23J88jQxE-flLQAU9CqHw" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,373" collapsed="True" name="KON_EO_Zeitraum_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="92tGtZmqQUq-NZkFztFVlA" value="{0:yyyyMMdd}-{1:yyyyMMdd}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="c8bQw1ojVU6zvIlb21YV6A"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="uYfkbG9PH0upoa4a52zxoA" node="WuNVYlbefE-ku9GYTVWUgA"/>
+                              
+                    <source id="AXk1yMyp60Wh2DRZ0N5BUg" node="ZJaPckzyEU-2okULKAUnbw" rank="1"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="h1EnahUeZkKdT609J0CrWA" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,975" collapsed="True" name="KON_GueltigVon_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="aQBotSaJ4kiAf-QvLE__fA" value="{0:yyyyMMdd}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="hf6NAu4TvE6LKc_FLgEyYw"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="bZiqUN4TakWSLSEICmvoKQ" node="RXHR8bsqZ0eqelCnmOp78A"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="NustfW48N0S1P4QrMVnj_w" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,1047" collapsed="True" name="KON_GueltigBis_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="Rv2MT-e_K0qLVUXY7wLZEQ" value="{0:dd.MM.yyyy}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="_7lFDeSLtUmP-aNuRLTpVQ"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="hc-3zH0oHUyvwzmKnZU9cw" node="Jft11LBeBEmhwrXkQ6vW2A"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="C4512PSimUCJ3sDx0hV2Lg" nodeClassId="nQHn_rp_sk-dPQmY24ZYCg" nodeName="format" location="1048,1119" collapsed="True" name="KON_Zeitraum_SORT">
+                  
+            <inputs>
+                        
+                <input parameter="Template">
+                              
+                    <source id="LTQA4yrB5E-p6zWFlrrzGQ" value="{0:yyyyMMdd}-{1:yyyyMMdd}"/>
+                            
+                </input>
+                        
+                <input parameter="Culture">
+                              
+                    <source id="VZ3GJowAAkuIbH6AVBW8Gw"/>
+                            
+                </input>
+                        
+                <input parameter="Value">
+                              
+                    <source id="7k_mD_ujhkij1THL2dhMcw" node="RXHR8bsqZ0eqelCnmOp78A"/>
+                              
+                    <source id="C-seAp3lAEeDI6lUoi458g" node="Jft11LBeBEmhwrXkQ6vW2A" rank="1"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+            
+        <node id="9bjbC6i59EyCwbQSPxwrLg" nodeClassId="3z8DY1_dU0aTkeHdrkCD0g" nodeName="augment" location="1048,445">
+                  
+            <inputs>
+                        
+                <input parameter="Scope">
+                              
+                    <source id="oOd0dbUoxkW8EwA8cgbiZw" node="Hm6SoFmd6UuRTm7cKys-dw"/>
+                              
+                    <source id="5fgdjWAd60i7nutGnRfJrw" node="PR2dY5176keT3UcLNSWTng"/>
+                              
+                    <source id="2UFlsHHujk-Nan6pQWBkHA" node="MltHd7HxlEKDWlNFsJyvDg"/>
+                            
+                </input>
+                        
+                <input parameter="AdditionalSymbols">
+                              
+                    <source id="GlxkkWx-wUa7_0_6RpnlOQ"/>
+                            
+                </input>
+                        
+                <input parameter="ColumnNames">
+                              
+                    <source id="98tTauSw3EmVbPdqne6J5w" value="ACCESS_NettoPAL"/>
+                              
+                    <source id="JaZ_b42P7kWgrgGYZJHG5A" value="ACCESS_NettoLKW" rank="1"/>
+                            
+                </input>
+                        
+                <input parameter="Expressions">
+                              
+                    <source id="RYTLI6O3yE20HFn8-NDmoA" value="KON_EO_NettoPAL"/>
+                              
+                    <source id="vu3qGrHywEC5YmYraP3F3w" value="KON_EO_NettoLKWBerechnet" rank="1"/>
+                            
+                </input>
+                        
+                <input parameter="DataTypes">
+                              
+                    <source id="oAwLHFJr8UamCFb-UQ38jA" value="Decimal"/>
+                              
+                    <source id="yJPbXKQWnkSAzfhUdtCdDA" value="Decimal" rank="1"/>
+                            
+                </input>
+                      
+            </inputs>
+                
+        </node>
+          
+    </nodes>
+      
+    <functionResults>
+            
+        <functionResult id="sDslXSaBLEamVPp2yIAN_Q" location="786,13" name="Zeitraum_EO">
+                  
+            <input>
+                        
+                <source id="BKkoTTlAa0m8XUn2EJqYkw" node="2IqskWMXe0SEEzZA24oDkw"/>
+                        
+                <source id="84Vq5N4uxEiVXb870Zl6vg" node="rhPsy17l7kqKt01wOUpmUQ"/>
+                        
+                <source id="OsLDZIeW0EuBm3DAAEcokw" node="1IykY0DyEUKklIq05I4zjg"/>
+                        
+                <source id="BJojgYG-x0O2jI9ksIqDDw" node="IvaZ1xtNM0C3L8_xEr2bUw"/>
+                        
+                <source id="RM6P_f_VaUeiPmwVIp0GBw" node="h3aBtb6hOUS4huWIeBadZw"/>
+                        
+                <source id="CexZgjW-p06Kq6xrTa8Zvw" node="N23J88jQxE-flLQAU9CqHw"/>
+                      
+            </input>
+                  
+            <functionResult>
+                        
+                <functionResultColumn id="eBTb2JE9OkyE76R1caadag" resultRank="7"/>
+                        
+                <functionResultColumn id="-fl5If_5NEOU67547QAHmw" column="KON_EO_Zeitraum" valueType="String" nullable="True" resultRank="1">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="_ALEMtU54ky48eB7zWtM3A" column="KON_EO_GueltigVon_Text" valueType="String" nullable="True" resultRank="2">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="_cE_jsjDjk2X91BEMIDAOg" column="KON_EO_GueltigBis_Text" valueType="String" nullable="True" resultRank="3">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Ma5-ub1vt0yYavgDMh_Udg" column="KON_EO_GueltigVon_SORT" valueType="String" nullable="True" resultRank="4">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="rITl4i1edki3Ksqa0aNRtg" column="KON_EO_GueltigBis_SORT" valueType="String" nullable="True" resultRank="5">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="_K7zxZDFZUyGD9XESEfMGQ" column="KON_EO_Zeitraum_SORT" valueType="String" nullable="True" resultRank="6">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                      
+            </functionResult>
+                
+        </functionResult>
+            
+        <functionResult id="Eg_y5e1d60-udEtxPDpbIQ" location="786,759" name="Zeitraum_Kon">
+                  
+            <input>
+                        
+                <source id="co7uvjJVN0WpSxWSla8bdQ" node="QRr4PDzuNUaz1Do3dL7Hkg"/>
+                        
+                <source id="QIWXkkKj-0GU2-_rQmNxiA" node="bYNq-c_WF06u4Qzjk1oUJQ"/>
+                        
+                <source id="maPKzHHlE0SG5wM35jILXA" node="r63ZsQCOdE-JrIY0WNpI3Q"/>
+                        
+                <source id="qW6SC935BUWQVnx9dKIuDA" node="h1EnahUeZkKdT609J0CrWA"/>
+                        
+                <source id="jx1OkLZ_d0uONaJfcljB3Q" node="NustfW48N0S1P4QrMVnj_w"/>
+                        
+                <source id="X9V6xKSWQk2wntL85RvfLg" node="C4512PSimUCJ3sDx0hV2Lg"/>
+                      
+            </input>
+                  
+            <functionResult>
+                        
+                <functionResultColumn id="6eHawUwvhkmnWAsgmqPHFA" resultRank="7"/>
+                        
+                <functionResultColumn id="59C5lGN9wUeNyl2BAIZQsw" column="KON_Zeitraum" valueType="String" nullable="True" resultRank="1">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="wzDDeLcmEUmGFzN0lkWuag" column="KON_GueltigVon_Text" valueType="String" nullable="True" resultRank="2">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="XxbH4arSyk2qRjVtUcKOaA" column="KON_GueltigBis_Text" valueType="String" nullable="True" resultRank="3">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="-IJhmhbuLEGXRiv8PpBBAw" column="KON_GueltigVon_SORT" valueType="String" nullable="True" resultRank="4">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="gx6Mzq2pBUGIAYOVQtlviA" column="KON_GueltigBis_SORT" valueType="String" nullable="True" resultRank="5">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="oISjlDT4OUGoH-1hOc0tpQ" column="KON_Zeitraum_SORT" valueType="String" nullable="True" resultRank="6">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                      
+            </functionResult>
+                
+        </functionResult>
+            
+        <functionResult id="LuFvK3niC0-wLQ1rIqEa_w" location="524,13">
+                  
+            <input>
+                        
+                <source id="FjCsQDDx20Ki36Wsp99UeA" node="59C5lGN9wUeNyl2BAIZQsw"/>
+                        
+                <source id="HZ3Po_tA_EquOqwXV7v3bA" node="-fl5If_5NEOU67547QAHmw"/>
+                        
+                <source id="oZKDOOQWX0auQXGOdT9R8Q" node="_cE_jsjDjk2X91BEMIDAOg"/>
+                        
+                <source id="cY-DnMtKdESk7weieu3Ojw" node="_ALEMtU54ky48eB7zWtM3A"/>
+                        
+                <source id="P0_N_Qru6kqB3kAfTacpzA" node="XxbH4arSyk2qRjVtUcKOaA"/>
+                        
+                <source id="HpQBXCwcQkudS9EQIlvDzA" node="wzDDeLcmEUmGFzN0lkWuag"/>
+                        
+                <source id="r-RZqe6T2keNS_NAIhHJDw" node="Ma5-ub1vt0yYavgDMh_Udg"/>
+                        
+                <source id="2np77_-1IE6iYAcWh-85tg" node="rITl4i1edki3Ksqa0aNRtg"/>
+                        
+                <source id="DD9bc-VlNk-AHnIHNfgWgQ" node="_K7zxZDFZUyGD9XESEfMGQ"/>
+                        
+                <source id="r7fi-W3-sUWf5CiGzLXkfA" node="-IJhmhbuLEGXRiv8PpBBAw"/>
+                        
+                <source id="cANJe-DxfEucKSo4Lmh22A" node="gx6Mzq2pBUGIAYOVQtlviA"/>
+                        
+                <source id="CWyzbhOq0EGnDvwj-lTfsA" node="oISjlDT4OUGoH-1hOc0tpQ"/>
+                      
+            </input>
+                  
+            <functionResult>
+                        
+                <functionResultColumn id="22Roq8p5-k2ZP3jv7VAX2w" resultRank="13"/>
+                        
+                <functionResultColumn id="KxEQvzZuXk6WznA_hK0jAw" column="KON_Zeitraum" valueType="String" nullable="True" resultRank="1">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="bKXFyysrM0Sku98q2si2Vw" column="KON_EO_Zeitraum" valueType="String" nullable="True" resultRank="2">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="2Jvz8677oECuUNZRkADB-g" column="KON_EO_GueltigBis_Text" valueType="String" nullable="True" resultRank="3">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="T3V9pciSPEOo7JoEgQ0y3g" column="KON_EO_GueltigVon_Text" valueType="String" nullable="True" resultRank="4">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="_6n93wwdOEmWHFemxNT9zQ" column="KON_GueltigBis_Text" valueType="String" nullable="True" resultRank="5">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="O3kHu2vQ-E2pl-2p8PWt7A" column="KON_GueltigVon_Text" valueType="String" nullable="True" resultRank="6">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="2ZL1SDlpa0e8-dKqHcDTjg" column="KON_EO_GueltigVon_SORT" valueType="String" nullable="True" resultRank="7">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="YiP6tV_e6Ey4on4WkbIW3Q" column="KON_EO_GueltigBis_SORT" valueType="String" nullable="True" resultRank="8">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="eteHqWLIY0OLRO2n72BE0A" column="KON_EO_Zeitraum_SORT" valueType="String" nullable="True" resultRank="9">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="dc62887dn0K8K2R7OY-I-w" column="KON_GueltigVon_SORT" valueType="String" nullable="True" resultRank="10">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="fFrLAW9lFE60HrRMu60NtA" column="KON_GueltigBis_SORT" valueType="String" nullable="True" resultRank="11">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="RTYGxCG7cUmkbopNTp5ulw" column="KON_Zeitraum_SORT" valueType="String" nullable="True" resultRank="12">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                      
+            </functionResult>
+                
+        </functionResult>
+            
+        <functionResult id="Kz79XPIMBkutdzxOG2njPw" location="1310,13">
+                  
+            <input>
+                        
+                <source id="w5Km3mJpk06AaC_tDdoyZg" node="gAppDIp-lU-7tNfWBP009Q"/>
+                      
+            </input>
+                  
+            <functionResult>
+                        
+                <functionResultColumn id="xAiNLbNnjEG7-nC1IsANJQ" resultRank="99"/>
+                        
+                <functionResultColumn id="7-r_rUWm5UuZIjqRwmVdxQ" column="KON_AO_AVGPalTauschGeb" valueType="Boolean" nullable="True" resultRank="1">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="irtrHT2oiEGrg_6SvfcPUQ" column="KON_AO_Abgangsort" valueType="String" nullable="True" resultRank="2">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="E7Fx3Et_k0C87y-gu8N4bw" column="KON_AO_IDLogistiktyp" valueType="Decimal" nullable="True" resultRank="3">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Jd0c5NT8j0OPCginrJgSJg" column="KON_EO_Fahrzeugart_Transportmittel" columnDisplayName="KON_EO_Fahrzeugart-Transportmittel" valueType="String" nullable="True" resultRank="4">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="K1qdzp_L4UuCOqKbxUwmHQ" column="KON_EO_Empfaenger_Land" columnDisplayName="KON_EO_Empfänger-Land" valueType="String" nullable="True" resultRank="5">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="MltHd7HxlEKDWlNFsJyvDg" column="KON_EO_NettoPAL" columnDisplayName="KON_EO_Netto/Pal berechnet" valueType="Decimal" nullable="True" resultRank="6">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="lPmWN42LU06-mE6YjHrEzA" column="KON_EO_Mindestverladung" columnDisplayName="KON_EO_MinVerl" valueType="Decimal" nullable="True" resultRank="7">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="2Pp5uH64NU6m6ovGH8iYDw" column="KON_EO_Empfaenger_Plz" columnDisplayName="KON_EO_Empfänger-Postleitzahl" valueType="String" nullable="True" resultRank="8">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="VRuli04FuEWB9vJRfwl8vQ" column="KON_EO_Empfaenger_Ort" columnDisplayName="KON_EO_Empfänger-Ort" valueType="String" nullable="True" resultRank="9">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="-iRNQ7QjCk-zjAuqY2MHNQ" column="KON_EO_Empfaenger_PartnerName" columnDisplayName="KON_EO_Empfänger-Partner-Name" valueType="String" nullable="True" resultRank="10">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="zLMwGL4wW0-U87ANn9QB_g" column="KON_EO_Fahrzeugart_Bezeichnung" columnDisplayName="KON_EO_Fahrzeugart-Bezeichnung" valueType="String" nullable="True" resultRank="11">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="t2vz-J46bEyHrA_wkZnrOA" column="KON_EO_Abgangsort_AVGTrMArt" columnDisplayName="KON_EO_Abgangsort-Ø TrM Art" valueType="String" nullable="True" resultRank="12">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="WuNVYlbefE-ku9GYTVWUgA" column="KON_EO_GueltigVon" columnDisplayName="KON_EO_Gültig von" valueType="DateTime" nullable="True" resultRank="13">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="ZJaPckzyEU-2okULKAUnbw" column="KON_EO_GueltigBis" columnDisplayName="KON_EO_Gültig bis" valueType="DateTime" nullable="True" resultRank="14">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="s8nlWbtrhkKIqHT1gUrHEA" column="KON_EO_Abgangsort" columnDisplayName="KON_EO_Abgangsort" valueType="String" nullable="True" resultRank="15">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="iPKkxOe1NUG6sXwjzj9YSQ" column="KON_EO_Abgangsort_IDAbgangsort" columnDisplayName="KON_EO_Abgangsort-ID Abgangsort" valueType="Int64" nullable="True" resultRank="16">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="wRBNSsguaUuDqenplDJfRA" column="KON_LT_IDLogistiktyp" valueType="Int64" nullable="True" resultRank="17">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Wb2d6A-eoUu1jOJ50T7SPA" column="KON_Land_IDLand" valueType="Int64" nullable="True" resultRank="18">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="ExhA9RM2h0-wiKYhVf_ZtQ" column="KON_Land_Land_ISO2" valueType="String" nullable="True" resultRank="19">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="msb-9fWydUiLWxt02U1lnA" column="KON_Land_Land_Bezeichnung" valueType="String" nullable="True" resultRank="20">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="FnAOXEJ9Z06hGSvy2csVOQ" column="KON_Land_Land_Sortingorder" valueType="Decimal" nullable="True" resultRank="21">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="uctaB8mXUUSMP1-Xk8sO4Q" column="KON_ROW_ID" valueType="String" nullable="True" resultRank="22">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="S_hJ_dHoZUquL9VbSGWrHw" column="KON_IDKontrakt" valueType="Int64" nullable="True" resultRank="23">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="22gwkv90vUaz9y9DvoHo2g" column="KON_Nummer" valueType="String" nullable="True" resultRank="24">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="RXHR8bsqZ0eqelCnmOp78A" column="KON_GueltigVon" valueType="DateTime" nullable="True" resultRank="25">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Jft11LBeBEmhwrXkQ6vW2A" column="KON_GueltigBis" valueType="DateTime" nullable="True" resultRank="26">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="zRN-_uFwwk2DddWeBy8eGQ" column="KON_LT_IDLand" valueType="Decimal" nullable="True" resultRank="27">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="QXGs7bPaWkWlwsZKoX9jhw" column="KON_LT_LogTyp" valueType="String" nullable="True" resultRank="28">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="-a52L4xl10i-PU4gP9gXBA" column="KON_AO_Absender_PartnerName" valueType="String" nullable="True" resultRank="29">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="qtcH42uHzku-5HbdlXItkg" column="KON_LT_LogTyp_TranspTyp" valueType="String" nullable="True" resultRank="30">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="NW6EJmIRG0O4P2cBD_qitg" column="KON_LT_LogTyp_Nummer" valueType="String" nullable="True" resultRank="31">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="K27W86-u8UWGVRsiNAfe2g" column="KON_LT_LogTyp_Code" valueType="String" nullable="True" resultRank="32">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="KZ4Q3ZJtzU26PIHNpEsIbg" column="KON_LT_LogTyp_Bezeichnung" valueType="String" nullable="True" resultRank="33">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="UN11uAWmyEaZwjPP-7a1lw" column="KON_LT_LogTyp_LogTyp" valueType="String" nullable="True" resultRank="34">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="kX-kfun9q0GPDY8CSBwsZQ" column="SORTIERUNG_Abgangsort" valueType="String" nullable="True" resultRank="35">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="yb0oxyMxHEmRzq0ZYSJJHg" column="SORTIERUNG_Logistiktyp" valueType="String" nullable="True" resultRank="36">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="aZx0eEXfrUajnjHU_CZbOQ" column="SORTIERUNG_Land" valueType="String" nullable="True" resultRank="37">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="o4-9jo17wEWF5wEdzBzl9A" column="SORTIERUNG_Empfangsort" valueType="String" nullable="True" resultRank="38">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="1zcO0GM5gUKWHaaSBaO3Yw" column="KON_EO_PreisProPAL" columnDisplayName="KON_EO_ist Preis/PAL" valueType="Boolean" nullable="True" resultRank="39">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="9omJkZCdjUSOZlsbwtvOiA" column="KON_EO_Empfaenger_Sortingorder" columnDisplayName="KON_EO_Empfänger-Sortierreihenfolge" valueType="Decimal" nullable="True" resultRank="40">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="kOTN6wB1KUi1yWeusTvXww" column="KON_EO_IDEmpfangsort" columnDisplayName="KON_EO_ID Empfangsort" valueType="Int64" nullable="True" resultRank="41">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="OfaMqvemWEmdDdw3dBAltA" column="KON_EO_PalTauschGeb" columnDisplayName="KON_EO_Inkl. PalTausch" valueType="Boolean" nullable="True" resultRank="42">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="LnDmySVcREGxvCBzrJ2zEQ" column="KON_EO_Fahrzeugart" columnDisplayName="KON_EO_Fahrzeugart" valueType="String" nullable="True" resultRank="43">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="miSks0_e0Uu-2S86vhyZBQ" column="KON_EO_PalTyp" columnDisplayName="KON_EO_PalTyp" valueType="String" nullable="True" resultRank="44">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="C7ZmosCIn0-rZOAMmX-uwQ" column="KON_EO_Empfaenger_LokationsID" columnDisplayName="KON_EO_Empfänger-Lokation ID" valueType="String" nullable="True" resultRank="45">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="bLXeW26EOUOV9GNaMUo1IA" column="SORTIERUNG_Kontrakt" valueType="String" nullable="True" resultRank="46">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="9MDMPVPuZUeZFDWYMti1IQ" column="KON_Spediteur_NrV2" valueType="Decimal" nullable="True" resultRank="47">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="KSotXSTu20eH5lqhiwFTeg" column="KON_Spediteur_Kuerzel" valueType="String" nullable="True" resultRank="48">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="VgRX96-3E0WOs8WZKQImoQ" column="KON_Spediteur_Kurzbezeichnung" valueType="String" nullable="True" resultRank="49">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="PYCFedcX1kqFA09T7mCxzQ" column="KON_Spediteur_Name" valueType="String" nullable="True" resultRank="50">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="3NVCZwEKGE-wRRrNT1Q6og" column="KON_LT_LogTyp_TranspTyp_Bezeichnung" valueType="String" nullable="True" resultRank="51">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="WV4_aeFehUWmrwPZxrq7fw" column="KON_LT_LogTyp_TranspTyp_Nummer" valueType="String" nullable="True" resultRank="52">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="vKTzvDm5h0uIfUtLrtUiYQ" column="KON_LT_LogTyp_TranspTyp_Code" valueType="String" nullable="True" resultRank="53">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="63dQQqECv0y2yl5C1ppA2g" column="KON_AO_AVGTrMArt" valueType="String" nullable="True" resultRank="54">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="hXSSKViK50-8UxgRIVxFxw" column="KON_EO_Empfaenger_Adresse" columnDisplayName="KON_EO_Empfänger-Adresse" valueType="String" nullable="True" resultRank="55">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="PR2dY5176keT3UcLNSWTng" column="KON_EO_NettoLKWBerechnet" columnDisplayName="KON_EO_Netto/TrM berechnet" valueType="Decimal" nullable="True" resultRank="56">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Hm6SoFmd6UuRTm7cKys-dw" column="KON_EO_NettoLKW" columnDisplayName="KON_EO_Netto/TrM" valueType="Decimal" nullable="True" resultRank="57">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="N5KIjQcItEOtXqmQrbHdmA" column="KON_EO_AnzPalProLKW" columnDisplayName="KON_EO_AnzPal/TrM" valueType="Decimal" nullable="True" resultRank="58">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="1jpZ9eFM80S8uKPRkxpqDA" column="KON_EO_Entfernung" columnDisplayName="KON_EO_Entfernung" valueType="Decimal" nullable="True" resultRank="59">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="nCc_3jr1YkGjT3HEnCP3gA" column="KON_AO_GedrucktAm" valueType="DateTime" nullable="True" resultRank="60">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="O99ks8lT8ESUJ1fhqFAZMQ" column="KON_AO_VersionLetzterDruck" valueType="Decimal" nullable="True" resultRank="61">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="tPbUNpnFGESmaam4FvkhfQ" column="KON_AO_VersionLetzterDruckAll" valueType="Decimal" nullable="True" resultRank="62">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="F4gB0A-eyUmRIy_zSO8UWA" column="KON_LT_GedrucktAm" valueType="DateTime" nullable="True" resultRank="63">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="uwZfbpWt9USkt4aJiRNCIQ" column="KON_LT_VersionLetzterDruck" valueType="Decimal" nullable="True" resultRank="64">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="zwvQ9jbHF0mxIGpKjgGJBA" column="KON_LT_VersionLetzterDruckAll" valueType="Decimal" nullable="True" resultRank="65">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="AgnKPnjof0eQLPVhMzXtDA" column="KON_Land_GedrucktAm" valueType="DateTime" nullable="True" resultRank="66">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="rKI2rgAR9EuKEPKZR6PG_g" column="KON_Land_VersionLetzterDruckAll" valueType="Decimal" nullable="True" resultRank="67">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="EQvbgZlRmE2vbZH3Jg-y0A" column="KON_Land_VersionLetzterDruck" valueType="Decimal" nullable="True" resultRank="68">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="IX_GjNBBIUupTMy3TiLzHw" column="KON_NummerDruckversion" valueType="String" nullable="True" resultRank="69">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="ny3Jk5WQ8Uy_tK6TluH_tQ" column="KON_VersionLetzterDruck" valueType="Decimal" nullable="True" resultRank="70">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="54kRum98_kuJI7qiLgI89g" column="KON_VersionLetzterDruckAll" valueType="Decimal" nullable="True" resultRank="71">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="K5J427DRqkyxkowXJ8z7gA" column="KON_Version" valueType="Decimal" nullable="True" resultRank="72">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="vHiHUbr2F0C29eBhV7f1CA" column="KON_AO_Logistiktyp" valueType="String" nullable="True" resultRank="73">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="QFtXwegMDU67zN4-Xgl19w" column="KON_AO_AVGFZGArt" valueType="String" nullable="True" resultRank="74">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="QEw-q83_REiVTJzRwJGFYw" column="KON_AO_Absender_Land" valueType="String" nullable="True" resultRank="75">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Nmlj8x8MQkCbx716xaBPwQ" column="KON_AO_Absender_Plz" valueType="String" nullable="True" resultRank="76">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="vfuPZgGiYke_Gf4o5LPqfA" column="KON_AO_Absender_Ort" valueType="String" nullable="True" resultRank="77">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="5VmoZ2ynnU60W3gQKBNuAw" column="KON_AO_AVGPalTyp" valueType="String" nullable="True" resultRank="78">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Wr3qf_S-70G9XFOu4nriNQ" column="KON_AO_AVGAnzPalProLKW" valueType="Decimal" nullable="True" resultRank="79">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="76lkA_MdZk2BgiQ3_HzWHQ" column="KON_AO_Waehrung_ISO" valueType="String" nullable="True" resultRank="80">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="3jkjfk6UWk6Se3aenypwIQ" column="KON_AO_IDAbgangsort" valueType="Int64" nullable="True" resultRank="81">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="fKUKSQtB0UGseFPdD_lfJA" column="KON_AO_AVGTPMaxBel" valueType="Decimal" nullable="True" resultRank="82">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="d-XJisc_80mj1oLbBo3TrQ" column="KON_AO_AVGGewichtsdisposition" valueType="Boolean" nullable="True" resultRank="83">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="8YVOQklkI0W6AfSiPxX1tg" column="KON_AO_Transporttyp" valueType="String" nullable="True" resultRank="84">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="vC6pXl8nFEyHp_4lgG8ZMA" column="KON_EO_PalTyp_Bezeichnung" columnDisplayName="KON_EO_PalTyp-Bezeichnung" valueType="String" nullable="True" resultRank="85">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="WUVi9ZjJY0W9CNqs_eW2lw" column="KON_EO_MaxBelLKW" columnDisplayName="KON_EO_MaxBel [to]" valueType="Decimal" nullable="True" resultRank="86">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="fzwkQfHXV0iUxjeXA88qNA" column="KON_EO_Gewichtsdisposition" columnDisplayName="KON_EO_Gewichtsdisposition" valueType="Boolean" nullable="True" resultRank="87">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="cGcCk5FKj0qHH_0RQ1qt9g" column="KON_EO_Empfaenger_PartnerLokationRolle" columnDisplayName="KON_EO_Empfänger-Partner-Rolle" valueType="String" nullable="True" resultRank="88">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="24lroEjTKUKCLpZkroOV6w" column="KON_EO_GedrucktAm" columnDisplayName="KON_EO_Gedruckt am" valueType="DateTime" nullable="True" resultRank="89">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="n0vb9dvfTk-sSCyQWw4IlA" column="KON_EO_VersionLetzterDruck" columnDisplayName="KON_EO_Letzter Druck (Versionsnr)" valueType="Decimal" nullable="True" resultRank="90">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="3yNxVGYDR0GWfsfGUyIKtg" column="KON_EO_VersionLetzterDruckAll" columnDisplayName="KON_EO_Letzter Druck (Versionsnr) - all" valueType="Decimal" nullable="True" resultRank="91">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="jGyxylTsUUSNj6iJQhfD8A" column="KON_EO_HasChanged" columnDisplayName="KON_EO_Datensatz mit Änderungen" valueType="Boolean" nullable="True" resultRank="92">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="rUgELS1SFE-T12oGBy7HVQ" column="KON_LT_HasChanged" valueType="Boolean" nullable="True" resultRank="93">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="lJ8rgptRwEuf7PUbyiAbnA" column="KON_Land_HasChanged" valueType="Boolean" nullable="True" resultRank="94">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="-3f2uhYq6k6GS09rkyxrFg" column="KON_AO_HasChanged" valueType="Boolean" nullable="True" resultRank="95">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="UhAY8Qs99UyZpmqF90k2YQ" column="KON_AO_AVGMindestverladung" valueType="Decimal" nullable="True" resultRank="96">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="gBKczZweoU2x0e0kEbMasg" column="KON_AO_Absender_LokationsID" valueType="String" nullable="True" resultRank="97">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                        
+                <functionResultColumn id="Px4OiyLhyEKx2TIW68E-hA" column="KON_EO_LaufzeitInTagen" columnDisplayName="KON_EO_Laufzeit in Tagen" valueType="Decimal" nullable="True" resultRank="98">
+                              
+                    <columnDecorations foreColor="0" backColor="0" alignment="default"/>
+                            
+                </functionResultColumn>
+                      
+            </functionResult>
+                
+        </functionResult>
+          
+    </functionResults>
+      
+    <results>
+            
+        <result id="FLPb1cZ4ekirZFN3J5nnPA" location="0,13" name="KON_Strecke">
+                  
+            <input>
+                        
+                <source id="VbkP-To0SUaw3qxMD7-vPQ" node="6iGEl0HJkUC_Ob_Reni9yQ"/>
+                        
+                <source id="Id23PtEIj0uW_LJ0cy8kXw" node="Kz79XPIMBkutdzxOG2njPw"/>
+                        
+                <source id="QjzOoQb2pU-G5kGqpy5FOA" node="9bjbC6i59EyCwbQSPxwrLg"/>
+                      
+            </input>
+                
+        </result>
+          
+    </results>
+    
+</nodeSystem>

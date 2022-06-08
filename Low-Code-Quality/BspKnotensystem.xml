@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type="text/xsl" href="TransformNodes.xsl"?>
 <BspKnotensystem:DocumentRoot xmlns:BspKnotensystem="file:/C:/Users/hermanne/Documents/Bachelorarbeit/BspKnotensystem.xsd">
-<nodeSystem id="OymEi9a-1UaaAM-nYDr2ZA" ExpressionLanguageName="type-python" RuntimeVersion="2.0.0.0" Version="">
+<NodeSystem id="OymEi9a-1UaaAM-nYDr2ZA" ExpressionLanguageName="type-python" RuntimeVersion="2.0.0.0" Version="">
   <ViewOptions />
   <ParameterDefinitions />
   <Sources>
@@ -45,5 +45,5 @@
       </Input>
     </Result>
   </Results>
-</nodeSystem>
+</NodeSystem>
 </BspKnotensystem:DocumentRoot>

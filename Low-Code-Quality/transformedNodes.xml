@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?><NodeSystem Id="TPTdUWzsJ0SSeLPfV9a4Rw" ExpressionLanguageName="python" Version="">
+  <Sources>
+    <Source Id="Ljyt2afrnku3VYwu8SiXVw" TableName="BL_Sendungen_unaggregiert" Location="1092,396">
+      <SourceColumns>
+        <SourceColumn Id="fs7Gd0RAJk6gazaK9Bz-Ew" Column="Bruttogewicht" ValueType="Double" Nullable="True"/>
+        <SourceColumn Id="tciVHCCIvk-MmB6AN7b_TA" Column="Produktfamilie" ValueType="String" Nullable="True" Rank="1"/>
+        <SourceColumn Id="yx1pyYHelk-44vLxv5E91w" Column="Source_Art" ValueType="String" Nullable="True" Rank="3"/>
+        <SourceColumn Id="NPaoMVYbL02nhajdFeC1Cg" Column="Quelle_Art" ValueType="String" Nullable="True" Rank="4"/>
+        <SourceColumn Id="C7PAoBp_P0-qcgJi_Ikd5g" Column="Senke_Art" ValueType="String" Nullable="True" Rank="5"/>
+        <SourceColumn Id="NpvaSNxSzUOVKBuRGHFbiw" Column="Quelle" ValueType="String" Nullable="True" Rank="6"/>
+        <SourceColumn Id="nM2kpIhZrkSAqLnmsOm9_Q" Column="Senke" ValueType="String" Nullable="True" Rank="7"/>
+        <SourceColumn Id="RpAPgZyAdk6HyVO-gFKa1Q" Column="Transportleg" ValueType="String" Nullable="True" Rank="8"/>
+        <SourceColumn Id="bNucKTuOkkG-gVyCP304MA" Column="Transportmodus" ValueType="String" Nullable="True" Rank="9"/>
+        <SourceColumn Id="SCto2Y8NLU-7fYIFdhuoxw" Column="Flaeche_m2_Platte" ValueType="Double" Nullable="True" Rank="10"/>
+        <SourceColumn Id="vNlMDuMe5EyqVRZNat9pJQ" Column="Lieferung" ValueType="String" Nullable="True" Rank="11"/>
+        <SourceColumn Id="sJWJNPL6LUy0C5gMqs18AA" Column="Material" ValueType="String" Nullable="True" Rank="12"/>
+        <SourceColumn Id="bK5ONqOXWkmUISRgC6REKQ" Column="In_Scope" ValueType="Boolean" Nullable="True" Rank="13"/>
+        <SourceColumn Id="EEMB4_nhRkCpeDPBgsPkkw" Column="Sender_Key" ValueType="String" Nullable="True" Rank="14"/>
+        <SourceColumn Id="qEVD5vfLDkKjFRNsWJVstw" Column="anz_Pal" ValueType="Double" Nullable="True" Rank="15"/>
+        <SourceColumn Id="xw1tDu-vBEWuJ46nsk8sow" Column="Produktbezug" ValueType="String" Nullable="True" Rank="16"/>
+        <SourceColumn Id="PnF92LS-okqzNgSY114Drw" Column="Oversea" ValueType="Boolean" Nullable="True" Rank="17"/>
+        <SourceColumn Id="DNyHtDJZI0OZ9QW1lQazng" Column="Geo_Senke_Key" ValueType="String" Nullable="True" Rank="19"/>
+        <SourceColumn Id="6-yJQAiAXkKFijZzInGv3A" Column="Quelle_Land_geocoded" ValueType="String" Nullable="True" Rank="29"/>
+        <SourceColumn Id="RH8HjcH7oEuqCIOcUsH7cQ" Column="Quelle_PLZ_geocoded" ValueType="String" Nullable="True" Rank="30"/>
+        <SourceColumn Id="EY7CNBMQmkSq8cigR10cIg" Column="Quelle_Ort_geocoded" ValueType="String" Nullable="True" Rank="31"/>
+        <SourceColumn Id="H8aSsUsv10aoC3rC6sTvMg" Column="Senke_Land_geocoded" ValueType="String" Nullable="True" Rank="34"/>
+        <SourceColumn Id="SlEmE_1xWEKYwYdYr3Bu0A" Column="Senke_PLZ_geocoded" ValueType="String" Nullable="True" Rank="35"/>
+        <SourceColumn Id="jxXEZOTi4kuQ7GCmXCLV5g" Column="Senke_Ort_geocoded" ValueType="String" Nullable="True" Rank="36"/>
+        <SourceColumn Id="3tsdJxonsUmzzrdL2LJXcA" Column="Zahlungswirksam" ValueType="Boolean" Nullable="True" Rank="18"/>
+        <SourceColumn Id="aNYO54mbO0m5ROP7p_IDog" Column="Produkthierarchie" ValueType="String" Nullable="True" Rank="20"/>
+        <SourceColumn Id="Ea14y0c94UGXjoymDtxdIA" Column="Materialnummer" ValueType="String" Nullable="True" Rank="21"/>
+        <SourceColumn Id="tdcOv6-TwUuwQ7WbSVHwcA" Column="Produkthierarchie_Name" ValueType="String" Nullable="True" Rank="22"/>
+        <SourceColumn Id="nt3QKwi-QUCdwfYzi99O3Q" Column="Quelle_X_geocoded" ValueType="Int32" Nullable="True" Rank="32"/>
+        <SourceColumn Id="HG8wjtoWpUixOpInRCWBDA" Column="Quelle_Y_geocoded" ValueType="Int32" Nullable="True" Rank="33"/>
+        <SourceColumn Id="HeRo9bY0mUWX76DYwr5VNA" Column="Senke_X_geocoded" ValueType="Int32" Nullable="True" Rank="37"/>
+        <SourceColumn Id="-HXQss6mlESysB_mW7D4jA" Column="Senke_Y_geocoded" ValueType="Int32" Nullable="True" Rank="38"/>
+        <SourceColumn Id="HNm8_6amzEKB_uT5eUzx6Q" Column="WE_Ort_geocoded" ValueType="String" Nullable="True" Rank="23"/>
+        <SourceColumn Id="l37utGSKJUSCpbzle_W6XQ" Column="VkOrg" ValueType="String" Nullable="True" Rank="24"/>
+        <SourceColumn Id="-x2C9xOniU2jvdENaCMwkg" Column="Frachtbrief" ValueType="String" Nullable="True" Rank="25"/>
+        <SourceColumn Id="QsQ5eYneXkWtPJjcQMSflQ" Column="IstWA_Dat" ValueType="DateTime" Rank="26"/>
+        <SourceColumn Id="GoTSK0VHE0Oj1HlQbSDY1A" Column="Debitor" ValueType="String" Nullable="True" Rank="2"/>
+        <SourceColumn Id="slHcMWS86EmZNvEpl7xZNQ" Column="Sped_Debitor" ValueType="String" Nullable="True" Rank="27"/>
+        <SourceColumn Id="sO9opVG1xUGgxYQLneBtCg" Column="__discriminator__" ValueType="String" Nullable="True" Rank="28"/>
+      </SourceColumns>
+    </Source>
+    <Source Id="mv-IQl_x6US55FrY2N91Lg" TableName="FINAL_BL_Stufen" Location="44,600">
+      <SourceColumns>
+        <SourceColumn Id="TxsqQzsYQUeIfMRGINL7og" Column="Bruttogewicht" ValueType="Double" Nullable="True"/>
+        <SourceColumn Id="BfyAGtGbfUqNJnVkLIdhZg" Column="Flaeche_m2_Platte" ValueType="Double" Nullable="True" Rank="1"/>
+        <SourceColumn Id="PyfRvin8e0uDb8Og5_lGbQ" Column="WE_Ort_geocoded" ValueType="String" Nullable="True" Rank="2"/>
+        <SourceColumn Id="PQba3bUBM0msS6_Y99X5lA" Column="Produktfamilie" ValueType="String" Nullable="True" Rank="3"/>
+        <SourceColumn Id="vzqH1hFiv0-BTbE1twMk1A" Column="Produkthierarchie" ValueType="String" Nullable="True" Rank="4"/>
+        <SourceColumn Id="Qve0iPUKBEaZpzr-ZCw9Dw" Column="Lieferung" ValueType="String" Nullable="True" Rank="5"/>
+        <SourceColumn Id="VCtw7rGpokyNV3l23fOuAg" Column="VkOrg" ValueType="String" Nullable="True" Rank="6"/>
+        <SourceColumn Id="oCR_65zlOkq4mMEUINQ7Ng" Column="Frachtbrief" ValueType="String" Nullable="True" Rank="7"/>
+        <SourceColumn Id="hJuRhLOpQ0SFEA5ea1X7Jg" Column="Material" ValueType="String" Nullable="True" Rank="8"/>
+        <SourceColumn Id="uSgW0CHpqkGwB5W0jS5X_A" Column="Materialnummer" ValueType="String" Nullable="True" Rank="9"/>
+        <SourceColumn Id="ugmmPN0cUkuYKd4GyAPx1Q" Column="Debitor" ValueType="String" Nullable="True" Rank="10"/>
+        <SourceColumn Id="_BbB6t5ySEasUZKFHirZTA" Column="IstWA_Dat" ValueType="DateTime" Rank="11"/>
+        <SourceColumn Id="sWmjCfOh8EKU1Mclwv7uKw" Column="Sped_Debitor" ValueType="String" Nullable="True" Rank="12"/>
+        <SourceColumn Id="cztzSVIE4U6_OAOSYj8nZw" Column="Produkthierarchie_Name" ValueType="String" Nullable="True" Rank="13"/>
+        <SourceColumn Id="cWHxPS0-SkqizcWXJ5FkMQ" Column="Quelle" ValueType="String" Nullable="True" Rank="14"/>
+        <SourceColumn Id="eQeICneT7Uar9ssqyF7spg" Column="Produktbezug" ValueType="String" Nullable="True" Rank="15"/>
+        <SourceColumn Id="5nGCw-QoBkms1LsDmdttLA" Column="In_Scope" ValueType="Boolean" Nullable="True" Rank="16"/>
+        <SourceColumn Id="Z8v97YoL_EmKlDbUlGrojQ" Column="WE_Key" ValueType="String" Nullable="True" Rank="17"/>
+        <SourceColumn Id="q4F8p5a3yk-5y8DAKoam5Q" Column="Sender_Key" ValueType="String" Nullable="True" Rank="18"/>
+        <SourceColumn Id="oV-eVW9d4EyZDh5qgoZoVQ" Column="anz_Pal" ValueType="Double" Nullable="True" Rank="19"/>
+        <SourceColumn Id="L1_As_Ru9U-M06K7eRmgzA" Column="BL_Debitor" ValueType="String" Nullable="True" Rank="20"/>
+        <SourceColumn Id="z89Dw3MMjk6YmFVogr_ibw" Column="Oversea" ValueType="Boolean" Nullable="True" Rank="21"/>
+        <SourceColumn Id="-YBU0Gz4HUmfJhYDKQSKNA" Column="Zahlungswirksam" ValueType="Boolean" Nullable="True" Rank="22"/>
+        <SourceColumn Id="ay2JJmHu8USTN8jB8_1Adg" Column="Source" ValueType="String" Nullable="True" Rank="23"/>
+        <SourceColumn Id="ArwjvDJxlESjB9fY5kvI5g" Column="Lagerstufe1" ValueType="String" Nullable="True" Rank="24"/>
+        <SourceColumn Id="t_5sdFmzT0ms-_nBSS6L4w" Column="Lagerstufe2" ValueType="String" Nullable="True" Rank="25"/>
+        <SourceColumn Id="6oPP1CUDhkqBkRuAtdICtA" Column="__discriminator__" ValueType="String" Nullable="True" Rank="26"/>
+        <SourceColumn Id="UwDsRKMm30aEqmwro7gIjw" Column="Source_Art" ValueType="String" Nullable="True" Rank="27"/>
+        <SourceColumn Id="WAsCc68I_0GRnovKuKWvSQ" Column="Lagerstufe1_Art" ValueType="String" Nullable="True" Rank="28"/>
+        <SourceColumn Id="lvmgK-GiBEeBQmB8Kd1szg" Column="Lagerstufe2_Art" ValueType="String" Nullable="True" Rank="29"/>
+      </SourceColumns>
+    </Source>
+  </Sources>
+  <Nodes>
+    <DistinctRowsNode Id="fEH_EvE2CEq_mwx6TPx9Yg" NodeClassId="PVTOVUhxYEWWtVDhyu58Mg" NodeName="distinct-rows" Location="830,396">
+      <Inputs>
+        <Input Parameter="Source">
+          <Source Id="P98crK3zdU-IbZv4Hm55Zw" Node="nt3QKwi-QUCdwfYzi99O3Q"/>
+          <Source Id="mM2APobMOk-8Ih27ENmxWg" Node="HG8wjtoWpUixOpInRCWBDA"/>
+          <Source Id="r-kvCD8OQUWVvAmdqp0CLQ" Node="HeRo9bY0mUWX76DYwr5VNA"/>
+          <Source Id="ig-0PotDBkmdlAQboi7_LQ" Node="-HXQss6mlESysB_mW7D4jA"/>
+        </Input>
+        <Input Parameter="Columns">
+          <Source Id="aSfVqrhdAkWz0ySflGp3fg"/>
+        </Input>
+      </Inputs>
+    </DistinctRowsNode>
+    <AugmentNode Id="We_a8kvkB0uhmdp3NbUgBA" NodeClassId="3z8DY1_dU0aTkeHdrkCD0g" NodeName="augment" Location="568,156">
+      <Inputs>
+        <Input Parameter="Scope">
+          <Source Id="CTyCCLTNukyCG1OYm9vxgg" Node="fEH_EvE2CEq_mwx6TPx9Yg"/>
+        </Input>
+        <Input Parameter="AdditionalSymbols">
+          <Source Id="KNWSc_DA6UCcgR7hSLWeKw" Node="byoZ4xD0_keB3TU1jIqOiQ"/>
+          <Source Id="jQQ0IKR6D0u9rHqf-K1sBA" Node="kuinOKJH3UGT_M3HevhXrA"/>
+        </Input>
+        <Input Parameter="ColumnNames">
+          <Source Id="ege9GTX08kiYM0yoDNXoKw" Value="help_Entfernung"/>
+          <Source Id="G3ZKXq3BCECA5DHc_4X1pw" Value="Entfernung" Rank="1"/>
+        </Input>
+        <Input Parameter="Expressions">
+          <Source Id="h6FseeG5ukGhtk67fvBx0w" Value="EWS2019(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance if EWS2019(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance else &#13;&#10;Beeline(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance"/>
+          <Source Id="R-GDqJ0CCUaZv_FQIH8wtw" Value="max(help_Entfernung,3)" Rank="1"/>
+        </Input>
+        <Input Parameter="DataTypes">
+          <Source Id="UT5CdFmGX0G_Ggg9BJNAbw" Value="Double"/>
+          <Source Id="nzVi8HIXAEKf-v3YAYxuPA" Value="Double" Rank="1"/>
+        </Input>
+      </Inputs>
+    </AugmentNode><augmentNode Id="We_a8kvkB0uhmdp3NbUgBA" NodeClassId="3z8DY1_dU0aTkeHdrkCD0g" NodeName="augment" Location="568,156">
+      <Inputs>
+        <Input Parameter="Scope">
+          <Source Id="CTyCCLTNukyCG1OYm9vxgg" Node="fEH_EvE2CEq_mwx6TPx9Yg"/>
+        </Input>
+        <Input Parameter="AdditionalSymbols">
+          <Source Id="KNWSc_DA6UCcgR7hSLWeKw" Node="byoZ4xD0_keB3TU1jIqOiQ"/>
+          <Source Id="jQQ0IKR6D0u9rHqf-K1sBA" Node="kuinOKJH3UGT_M3HevhXrA"/>
+        </Input>
+        <Input Parameter="ColumnNames">
+          <Source Id="ege9GTX08kiYM0yoDNXoKw" Value="help_Entfernung"/>
+          <Source Id="G3ZKXq3BCECA5DHc_4X1pw" Value="Entfernung" Rank="1"/>
+        </Input>
+        <Input Parameter="Expressions">
+          <Source Id="h6FseeG5ukGhtk67fvBx0w" Value="EWS2019(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance if EWS2019(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance else &#13;&#10;Beeline(Quelle_X_geocoded,Quelle_Y_geocoded,Senke_X_geocoded,Senke_Y_geocoded).CompleteDistance"/>
+          <Source Id="R-GDqJ0CCUaZv_FQIH8wtw" Value="max(help_Entfernung,3)" Rank="1"/>
+        </Input>
+        <Input Parameter="DataTypes">
+          <Source Id="UT5CdFmGX0G_Ggg9BJNAbw" Value="Double"/>
+          <Source Id="nzVi8HIXAEKf-v3YAYxuPA" Value="Double" Rank="1"/>
+        </Input>
+      </Inputs>
+    </augmentNode>
+    
+    <lookupNode Id="jnQcWHJGlEG_jfN0lEJ9vg" NodeClassId="_gKX18gn70KjpgdUed9aTw" NodeName="lookup" Location="44,156">
+      <Inputs>
+        <Input Parameter="Source">
+          <Source Id="7ahNXrLruEamdb2jVGCxyw" Node="Ljyt2afrnku3VYwu8SiXVw"/>
+        </Input>
+        <Input Parameter="Target">
+          <Source Id="e1zQXN5mgkGWrv7u2773bA" Node="HkqmWIlYAkepNdI1drQQxw"/>
+        </Input>
+        <Input Parameter="SourceKeys">
+          <Source Id="KSaBflNu40CbWU7D2aMg7g" Node="nt3QKwi-QUCdwfYzi99O3Q"/>
+          <Source Id="AO7_tJkFx0S4Ly-QpvaGoQ" Node="HG8wjtoWpUixOpInRCWBDA" Rank="1"/>
+          <Source Id="Fsu25BXwmkelXMBTarqtrw" Node="HeRo9bY0mUWX76DYwr5VNA" Rank="2"/>
+          <Source Id="H8zSVwLK6EG-2MzXe4tNSw" Node="-HXQss6mlESysB_mW7D4jA" Rank="3"/>
+        </Input>
+        <Input Parameter="TargetKeys">
+          <Source Id="wDFFZokELUCqW-ZdrAu_kw" Node="KIzXBp2zFEST2WtFFT_5Lw"/>
+          <Source Id="15qBsElOQ0qNFjqE8eYyLw" Node="rQ4aWBG9SkGsAC7pCjGPwA" Rank="1"/>
+          <Source Id="Bef0b6DL8ECh97eFHNjk3A" Node="LVdfwroYx0mnu8IczS8oig" Rank="2"/>
+          <Source Id="EfsNGZlMAE6Y22P08n5UBQ" Node="KNQ8jb0r00-n1LoJMw5YAw" Rank="3"/>
+        </Input>
+        <Input Parameter="mode">
+          <Source Id="x03_YyFemkK2cLggDzjGPA" Value="first"/>
+        </Input>
+      </Inputs>
+    </lookupNode>
+    
+  </Nodes>
+  <FunctionResults>
+    <FunctionResult Id="LtHNjn4sIUOeaJ3ILxwj_w" Location="306,156">
+      <Input>
+        <Source Id="Yv2f9UHFc0a4hJx2gGtFhA" Node="We_a8kvkB0uhmdp3NbUgBA"/>
+      </Input>
+      <FunctionResult>
+        <FunctionResultColumn Id="S58HLxSNZEaO1IWPTG26EQ" ResultRank="7"/>
+        <FunctionResultColumn Id="HkqmWIlYAkepNdI1drQQxw" Column="Entfernung" ValueType="Double" Nullable="True" ResultRank="1">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+        <FunctionResultColumn Id="KIzXBp2zFEST2WtFFT_5Lw" Column="Quelle_X_geocoded" ValueType="Int32" Nullable="True" ResultRank="2">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+        <FunctionResultColumn Id="rQ4aWBG9SkGsAC7pCjGPwA" Column="Quelle_Y_geocoded" ValueType="Int32" Nullable="True" ResultRank="3">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+        <FunctionResultColumn Id="LVdfwroYx0mnu8IczS8oig" Column="Senke_X_geocoded" ValueType="Int32" Nullable="True" ResultRank="4">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+        <FunctionResultColumn Id="KNQ8jb0r00-n1LoJMw5YAw" Column="Senke_Y_geocoded" ValueType="Int32" Nullable="True" ResultRank="5">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+        <FunctionResultColumn Id="x3GSdBD5cEmuWrwWm_L83A" Column="help_Entfernung" ValueType="Double" Nullable="True" ResultRank="6" ResultDeleted="True">
+          <ColumnDecorations ForeColor="0" BackColor="0" Alignment="default"/>
+        </FunctionResultColumn>
+      </FunctionResult>
+    </FunctionResult>
+  </FunctionResults>
+  <Results>
+    <Result Id="T_TcJPV850C-jFUKvIO87A" Location="-218,156" Name="BL_Sendungen_unaggregiert">
+      <Input>
+        <Source Id="wz0Q1XLGvkGpLeyKgwqmZA" Node="jnQcWHJGlEG_jfN0lEJ9vg"/>
+      </Input>
+    </Result>
+    <Result Id="NffNLVSALku1Zkt2RcwWaw" Location="-218,600" Name="FINAL_BL_Stufen">
+      <Input>
+        <Source Id="ovuQaWfGtUSQ5aqruIOhLQ" Node="mv-IQl_x6US55FrY2N91Lg"/>
+      </Input>
+    </Result>
+  </Results>
+</NodeSystem>

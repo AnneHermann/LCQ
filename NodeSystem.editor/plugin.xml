@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated alleKnotenFormartiert -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="AlleKnotenFormartiert.presentation.AlleKnotenFormartiertModelWizardID"
+            name="%_UI_AlleKnotenFormartiertModelWizard_label"
+            class="AlleKnotenFormartiert.presentation.AlleKnotenFormartiertModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/AlleKnotenFormartiertModelFile.gif">
+         <description>%_UI_AlleKnotenFormartiertModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated alleKnotenFormartiert -->
+      <editor
+            id="AlleKnotenFormartiert.presentation.AlleKnotenFormartiertEditorID"
+            name="%_UI_AlleKnotenFormartiertEditor_label"
+            icon="icons/full/obj16/AlleKnotenFormartiertModelFile.gif"
+            extensions="alleknotenformartiert"
+            class="AlleKnotenFormartiert.presentation.AlleKnotenFormartiertEditor"
+            contributorClass="AlleKnotenFormartiert.presentation.AlleKnotenFormartiertActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>
